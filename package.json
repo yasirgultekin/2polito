@@ -25,5 +25,7 @@
   "private": "true",
   "engines": {
     "node": ">=20"
-  }
+  },
+  "license": "MIT",
+  "author": "Yusuf Gultekin"
 }
