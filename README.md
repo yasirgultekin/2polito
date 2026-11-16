@@ -4,10 +4,14 @@
 
 A study portal for Politecnico di Torino courses: an AI tutor that answers from your professor’s material, the past exam questions, a generator for new ones, an exam analyzer that estimates your grade out of 30, and spaced-repetition flashcards. All in one place, per course.
 
+### ▶ Live demo: [yusuf.gultekin.me/2polito](https://yusuf.gultekin.me/2polito/)
+
+The demo is a static version: past questions, flashcards and an example generated set work in the browser; the Tutor, question generation and exam analysis are shown but need the server version below with your own API key.
+
 > Prototype. **Computer Networks** is the live course; the other courses are on the panel, locked until their material is added.
 > Not affiliated with Politecnico di Torino.
 
-![The 2Poli.TO home page: a patch panel of courses, Computer Networks live and the others locked](docs/screenshots/home.png)
+[![The 2Poli.TO home page: a patch panel of courses, Computer Networks live and the others locked](docs/screenshots/home.png)](https://yusuf.gultekin.me/2polito/)
 
 ---
 
