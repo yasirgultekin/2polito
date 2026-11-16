@@ -1,0 +1,4026 @@
+{
+ "course": "computer-networks",
+ "source": "portale-dei-quiz",
+ "simulation": {
+  "questions": 33,
+  "minutes": 60
+ },
+ "topics": [
+  {
+   "id": "application-layer",
+   "label": "Application Layer"
+  },
+  {
+   "id": "data-link-layer-and-lans",
+   "label": "Data Link Layer & LANs"
+  },
+  {
+   "id": "error-and-flow-control",
+   "label": "Error & Flow Control"
+  },
+  {
+   "id": "general-networking",
+   "label": "General Networking"
+  },
+  {
+   "id": "multimedia-networking",
+   "label": "Multimedia Networking"
+  },
+  {
+   "id": "network-layer",
+   "label": "Network Layer"
+  },
+  {
+   "id": "network-topologies",
+   "label": "Network Topologies"
+  },
+  {
+   "id": "physical-layer",
+   "label": "Physical Layer"
+  },
+  {
+   "id": "switching-and-signaling",
+   "label": "Switching & Signaling"
+  },
+  {
+   "id": "transport-layer",
+   "label": "Transport Layer"
+  },
+  {
+   "id": "wireless-and-mobile-networks",
+   "label": "Wireless & Mobile Networks"
+  }
+ ],
+ "questions": [
+  {
+   "id": "cn-001",
+   "topic": "network-topologies",
+   "text": "Common channel signaling provides that",
+   "options": [
+    "Control equipment of switching centers exchange signaling information in packet switching",
+    "Each channel dedicated to user data transmission is associated with a different channel for signaling",
+    "Signaling between switching centers occurs by sharing a single satellite channel"
+   ],
+   "answer": 0,
+   "hint": "In the common channel signaling the user information travels on separate channels but with a single signaling channel used to control the reporting of all user channels. The channel signaling works in packet."
+  },
+  {
+   "id": "cn-002",
+   "topic": "network-topologies",
+   "text": "The characteristics of a fully connected mesh topology are",
+   "options": [
+    "High number of channels, good fault tolerance, easy routing",
+    "High number of channels, good fault tolerance, difficult routing",
+    "Low number of channels, bad fault tolerance, difficult routing"
+   ],
+   "answer": 0,
+   "hint": "See slides \"Knitted topology\". There is always a way in the fully connected mesh direct between each node."
+  },
+  {
+   "id": "cn-003",
+   "topic": "general-networking",
+   "text": "Conversational interactive telecommunication services are characterized by",
+   "options": [
+    "Low probability of error in the transfer of information",
+    "Transfer of information in real time",
+    "Storage of information on the network and delivery to the recipient in a deferred time"
+   ],
+   "answer": 1,
+   "hint": "In conversational interactive services, communication takes place with the transfer of extreme to extreme information in real time. See slides “Conversational Interactive Services”."
+  },
+  {
+   "id": "cn-004",
+   "topic": "error-and-flow-control",
+   "text": "In packet-switched networks the factors that lead to the choice of small packets dimensions are",
+   "options": [
+    "Lower impact of control information, higher efficiency in the transfer of big SDUs",
+    "Better chance of parallelization, less transfer delay, less chance of bit error",
+    "Better chance of parallelization, less delay in packaging, less probability of package error"
+   ],
+   "answer": 2,
+   "hint": "Short packets favor transmission in parallel on different channels of packets of the same communication, short packets reduce the delay of packetization, long packets reduce the percentage of control information."
+  },
+  {
+   "id": "cn-005",
+   "topic": "transport-layer",
+   "text": "In the OSI model, the transport layer provides services",
+   "options": [
+    "Building on services from the application layer",
+    "Relying on the services provided by the network layer",
+    "Relying on the services provided by the session level"
+   ],
+   "answer": 1,
+   "hint": "Think of the ISO / OSI stack. See slides on the OSI model."
+  },
+  {
+   "id": "cn-006",
+   "topic": "general-networking",
+   "text": "Which of the following statements conforms to the ISO / OSI reference model?",
+   "options": [
+    "An (N)-entity and an (N-1)-entity can have the same address",
+    "One (N)-entity can be associated with two different (N-1)-addresses",
+    "Two (N)-entities can be associated with the same (N-1)-address"
+   ],
+   "answer": 1,
+   "hint": "Each entity is characterized by the abbreviation (address) of its own layer, so A and C are wrong and by exclusion the correct answer is B. Internet source."
+  },
+  {
+   "id": "cn-007",
+   "topic": "error-and-flow-control",
+   "text": "In a Go-Back-N windowed protocol it may be convenient to increase the size of the transmission window",
+   "options": [
+    "When the transmission speed increases at the same size of the data units and the same delays",
+    "When the transmission speed decreases at the same size of the data units and the same delays",
+    "When the distance between transmitter and receiver decreases",
+    "When the probability of channel error increases"
+   ],
+   "answer": 0,
+   "hint": "Efficiency of a window protocol. Wt = k*(1 + 2*(tp/tx)). As the transmission speed increases, tx decreases, requiring Wt to increase to maintain efficiency."
+  },
+  {
+   "id": "cn-008",
+   "topic": "error-and-flow-control",
+   "text": "A Go-Back-N windowed protocol does not require an increase in complexity compared to Stop-And-Wait in relation to",
+   "options": [
+    "Amount of memory required by the transmitter",
+    "Minimum amount of sequence numbers required to distinguish data units",
+    "Amount of memory required at the receiver"
+   ],
+   "answer": 2,
+   "hint": "The Go-Back-N does not require an increase in complexity compared to the receiver window of Stop-And-Wait."
+  },
+  {
+   "id": "cn-009",
+   "topic": "network-topologies",
+   "text": "The Aloha and S-Aloha protocols",
+   "options": [
+    "To avoid interference between transmissions of users sharing a broadcast channel, assign each user a predetermined time interval in which to transmit",
+    "Do not implement any preventive control to avoid interference between transmissions of users sharing a broadcast channel; only in case of interference (collision) do they intervene, repeating transmission after a fixed delay",
+    "Do not implement any preventive control to avoid interference between transmissions of users sharing a broadcast channel; only in case of interference (collision) do they intervene, repeating transmission after a random delay"
+   ],
+   "answer": 2,
+   "hint": "Aloha has low efficiency because nodes transmit without coordination. Collisions trigger random backoff."
+  },
+  {
+   "id": "cn-010",
+   "topic": "general-networking",
+   "text": "The architecture of the Internet protocols is organized",
+   "options": [
+    "In seven levels",
+    "In four levels",
+    "In six levels",
+    "In a completely non-layered way"
+   ],
+   "answer": 1,
+   "hint": "Review the concepts related to General Networking."
+  },
+  {
+   "id": "cn-011",
+   "topic": "transport-layer",
+   "text": "The TCP receiver",
+   "options": [
+    "Send cumulative acknowledgments (ACKs)",
+    "Sends an acknowledgment (ACK) for each segment",
+    "Does not send feedback"
+   ],
+   "answer": 0,
+   "hint": "TCP uses window protocols with cumulative ACKs."
+  },
+  {
+   "id": "cn-012",
+   "topic": "transport-layer",
+   "text": "The header of the TCP segment",
+   "options": [
+    "Always fixed size of 20 bytes",
+    "Variable size depending on options",
+    "Fixed size of 40 bytes"
+   ],
+   "answer": 1,
+   "hint": "TCP header contains an options field of variable size. See slides \"TCP\"."
+  },
+  {
+   "id": "cn-013",
+   "topic": "network-layer",
+   "text": "The logical addresses on the Internet are",
+   "options": [
+    "Determinants free from subnet admins",
+    "Organized in domains",
+    "Completely free format"
+   ],
+   "answer": 1,
+   "hint": "See slides on IP."
+  },
+  {
+   "id": "cn-014",
+   "topic": "network-layer",
+   "text": "The routing protocol can be used between ASs (Autonomous Systems)",
+   "options": [
+    "EGP (Exterior Gateway Protocol)",
+    "RIP (Routing Information Protocol)",
+    "OSPF (Open Shortest Path First)"
+   ],
+   "answer": 0,
+   "hint": "Routers of different AS exchange information via EGP."
+  },
+  {
+   "id": "cn-015",
+   "topic": "network-layer",
+   "text": "In the OSI model, a (N)-connection",
+   "options": [
+    "Can be realized through one or more (N-1) connections",
+    "Terminated by two (N-1)-CEPs",
+    "Realized through one or more (N+1)-connections",
+    "Only through multiple (N-1) connections"
+   ],
+   "answer": 0,
+   "hint": "By definition, (N) layer provides services to (N+1) layer."
+  },
+  {
+   "id": "cn-016",
+   "topic": "transport-layer",
+   "text": "Compared to the 10 Mbit/s Ethernet standard, 100 Mbit/s Ethernet MAC protocol",
+   "options": [
+    "Modified for more efficient collision detection",
+    "Modified to avoid collisions, improve performance, support real-time",
+    "Unchanged, accepts reduction of “collision domain”",
+    "Unchanged, maximum size unchanged"
+   ],
+   "answer": 2,
+   "hint": "See slides on MAC."
+  },
+  {
+   "id": "cn-017",
+   "topic": "network-layer",
+   "text": "The metric (cost) in a routing algorithm",
+   "options": [
+    "Expresses the weight of a link in path selection",
+    "Expresses computational complexity",
+    "Expresses probability shortest path used"
+   ],
+   "answer": 0,
+   "hint": "See slides."
+  },
+  {
+   "id": "cn-018",
+   "topic": "network-layer",
+   "text": "Advantages of virtual circuit services over datagram services",
+   "options": [
+    "Less packet delay, routing calculation for each packet",
+    "Less variability of delays, maintain sequence, routing for each packet",
+    "Less variability of delays, maintain sequence, routing only when opening connection"
+   ],
+   "answer": 2,
+   "hint": "Virtual circuit maintains sequence, less delay variation, routing only at connection open."
+  },
+  {
+   "id": "cn-019",
+   "topic": "network-layer",
+   "text": "IEEE 802.1d Transparent Bridges",
+   "options": [
+    "Routing follows \"backward learning\" and flooding",
+    "Routing based on exchange of routing tables",
+    "Routing always occurs in flooding mode"
+   ],
+   "answer": 0,
+   "hint": "Internet source."
+  },
+  {
+   "id": "cn-020",
+   "topic": "data-link-layer-and-lans",
+   "text": "Compared to Fast Ethernet at 100 Mb/s, 1 Gb/s Ethernet respects collision recognition",
+   "options": [
+    "Decreasing distance between nodes",
+    "Using optical fiber",
+    "Increasing minimum size of PDUs"
+   ],
+   "answer": 2,
+   "hint": "Larger PDUs required to maintain Transmission > RTT."
+  },
+  {
+   "id": "cn-021",
+   "topic": "network-topologies",
+   "text": "Compared to CBR, VBR sources",
+   "options": [
+    "Greater difference between max and min transmission speed",
+    "More stringent max delay requirements",
+    "More stringent average delay requirements"
+   ],
+   "answer": 0,
+   "hint": "VBR used for streaming; CBR for videoconferencing."
+  },
+  {
+   "id": "cn-022",
+   "topic": "transport-layer",
+   "text": "End-to-end error recovery in Internet environment, when present:",
+   "options": [
+    "Is always performed only by application processes",
+    "Is performed at the Transport layer",
+    "Is performed at the Internet (network) layer",
+    "Is not provided for any type of service"
+   ],
+   "answer": 1,
+   "hint": "End-to-end principle applies at transport layer for TCP/UDP."
+  },
+  {
+   "id": "cn-023",
+   "topic": "application-layer",
+   "text": "The POP3 protocol",
+   "options": [
+    "Used for blocking pop-ups",
+    "Used for email exchange between servers",
+    "Used to transfer email from server to client",
+    "Uses encrypted authentication"
+   ],
+   "answer": 2,
+   "hint": "POP3 is client-server protocol for email access."
+  },
+  {
+   "id": "cn-024",
+   "topic": "transport-layer",
+   "text": "Collision domain in Ethernet",
+   "options": [
+    "Portion of network where same collision is detected",
+    "Number of bits in packet header damaged by collision",
+    "Set of nodes interrupting transmission due to collision"
+   ],
+   "answer": 0,
+   "hint": "See slides “Domain of collision”."
+  },
+  {
+   "id": "cn-025",
+   "topic": "network-layer",
+   "text": "In an IP subnet",
+   "options": [
+    "Hosts share same network prefix",
+    "Network prefix is first 3 bytes of address"
+   ],
+   "answer": 0,
+   "hint": "All subnets must share the same network address."
+  },
+  {
+   "id": "cn-026",
+   "topic": "general-networking",
+   "text": "OSI reference model: (N)-PCI can contain",
+   "options": [
+    "(N)-addresses",
+    "(N+1)-addresses",
+    "(N-1)-addresses"
+   ],
+   "answer": 0,
+   "hint": "N-level header contains N addresses; N-SDU contains (N+1) addresses."
+  },
+  {
+   "id": "cn-027",
+   "topic": "transport-layer",
+   "text": "The TCP protocol",
+   "options": [
+    "Provides error detection on data of each segment through a checksum",
+    "Provides error detection only on the segment header",
+    "Does not provide error detection and recovery on data"
+   ],
+   "answer": 0,
+   "hint": "TCP offers checksum on received packets."
+  },
+  {
+   "id": "cn-028",
+   "topic": "data-link-layer-and-lans",
+   "text": "P/F bit in LAPB",
+   "options": [
+    "Implicit confirmation",
+    "Request confirmation from receiver",
+    "Speeds up transmission"
+   ],
+   "answer": 1,
+   "hint": "Poll/Final field single bit: Poll for request, Final for response."
+  },
+  {
+   "id": "cn-029",
+   "topic": "data-link-layer-and-lans",
+   "text": "Protocols not performing data unit delimitation",
+   "options": [
+    "LAPB (ISDN B channel)",
+    "LaPF (Frame Relay)",
+    "PPP",
+    "IEEE 802.2 LLC"
+   ],
+   "answer": 3,
+   "hint": "Delimiters inserted by MAC protocol."
+  },
+  {
+   "id": "cn-030",
+   "topic": "transport-layer",
+   "text": "Ethernet full-duplex mode requires",
+   "options": [
+    "The ability to receive and transmit packets simultaneously",
+    "The availability of fault protection techniques through two disjoint paths between each pair of nodes",
+    "Full support for both 10 Mbit/s and 100 Mbit/s speeds"
+   ],
+   "answer": 0,
+   "hint": "Full-duplex uses separate cables for TX/RX."
+  },
+  {
+   "id": "cn-031",
+   "topic": "network-topologies",
+   "text": "Tree topology characteristics",
+   "options": [
+    "Low channels, bad fault tolerance, easy routing",
+    "Low channels, good fault tolerance, easy routing",
+    "High channels, good fault tolerance, difficult routing"
+   ],
+   "answer": 0,
+   "hint": "See slides \"Tree topology\"."
+  },
+  {
+   "id": "cn-032",
+   "topic": "network-layer",
+   "text": "IPv4 addresses are:",
+   "options": [
+    "Of fixed total length, composed of a variable-length part that identifies the network and a variable-length part that identifies the host",
+    "Of fixed total length, composed of a fixed-length part that identifies the network and a fixed-length part tha tidentifies the host",
+    "Of variable length, composed of a variable-length part that identifies the network and a variable-length part that identifies the host"
+   ],
+   "answer": 0,
+   "hint": "IPV4 definition."
+  },
+  {
+   "id": "cn-033",
+   "topic": "switching-and-signaling",
+   "text": "Store-and-forward large PDUs",
+   "options": [
+    "Decreases probability of bit errors",
+    "Minimizes transfer delay",
+    "Requires larger header",
+    "Increases overall transfer delay"
+   ],
+   "answer": 3,
+   "hint": "Large packets delay transmission; small packets preferred."
+  },
+  {
+   "id": "cn-034",
+   "topic": "error-and-flow-control",
+   "text": "Selective Repeat protocol Wt/Wr",
+   "options": [
+    "Works only if Wt + Wr <= 2^k",
+    "Only if Wt <= 2^k",
+    "Only if Wr <= 2^k"
+   ],
+   "answer": 0,
+   "hint": "See “Selective Repeat” slides."
+  },
+  {
+   "id": "cn-035",
+   "topic": "error-and-flow-control",
+   "text": "Point-to-Point Protocol (PPP)",
+   "options": [
+    "Go-Back-N for loss recovery",
+    "Use address field to distinguish commands",
+    "Uses 01111110 sequence to delimit data"
+   ],
+   "answer": 2,
+   "hint": "See slides “Encapsulating PPP PDUs”."
+  },
+  {
+   "id": "cn-036",
+   "topic": "error-and-flow-control",
+   "text": "Store-and-forward advantages",
+   "options": [
+    "Different speeds between channels on same switch",
+    "Reduce delays through switching node",
+    "Reduce packet header size",
+    "Use Forward Error Correction"
+   ],
+   "answer": 0,
+   "hint": "Ability to adapt to channels with different capacities."
+  },
+  {
+   "id": "cn-037",
+   "topic": "general-networking",
+   "text": "The difference between teleservices, bearer services and supplementary services lies in the fact that:",
+   "options": [
+    "While bearer services offer only information transfer between user-network interfaces, teleservices involve user equipment functions according to predetermined protocols; supplementary services instead modify or integrate a bearer service and a teleservice",
+    "While teleservices offer only information transfer between user-network interfaces, bearer services involve user equipment functions according to predetermined protocols; supplementary services are special services for data transfer",
+    "While bearer services offer only information transfer between user-network interfaces, teleservices involve user equipment functions according to predetermined protocols; supplementary services are special services for data transfer"
+   ],
+   "answer": 0,
+   "hint": "Bearer services are essential; teleservices rely on them."
+  },
+  {
+   "id": "cn-038",
+   "topic": "general-networking",
+   "text": "OSI model functions in telecom network",
+   "options": [
+    "Operations on service interface",
+    "Rules between entities in same layer",
+    "Operations within architectural layer"
+   ],
+   "answer": 2,
+   "hint": "B defines protocol."
+  },
+  {
+   "id": "cn-039",
+   "topic": "transport-layer",
+   "text": "Consider a transmitting host that uses the TCP protocol and a receiver at infinite speed, i.e., that always declares the maximum available value as the reception window. Given a current window at the transmitter of size equal to 10 segments, with a maximum receiver window equal to 20 segments, at the moment when the transmitter receives a segment containing an ACK from the receiver, which of the following situations is possible?",
+   "options": [
+    "Current window becomes 3 segments",
+    "Current window becomes 51 segments",
+    "Current window becomes 11 segments",
+    "Current window becomes 13 segments"
+   ],
+   "answer": 2,
+   "hint": "Slow-start, cwnd increases +1 segment per ACK."
+  },
+  {
+   "id": "cn-040",
+   "topic": "application-layer",
+   "text": "Domain Name System (DNS)",
+   "options": [
+    "Assign Ethernet address from IP",
+    "Map (3)-addresses to (2)-addresses",
+    "Know IP of logical name website",
+    "Know physical location of host"
+   ],
+   "answer": 2,
+   "hint": "DNS maps logical names to IP addresses."
+  },
+  {
+   "id": "cn-041",
+   "topic": "network-topologies",
+   "text": "Given a number of nodes and a number of channels, a topology T1 for which the average distance between nodes is smaller than another topology T2, in the presence of uniformly distributed traffic:",
+   "options": [
+    "Allows handling the same amount of traffic on the channels",
+    "Allows handling a lower amount of traffic on the channels",
+    "Allows handling a greater amount of traffic on the channels"
+   ],
+   "answer": 2,
+   "hint": "Throughput inversely proportional to average distance."
+  },
+  {
+   "id": "cn-042",
+   "topic": "network-layer",
+   "text": "The piggybacking technique in window protocols consists in the possibility of:",
+   "options": [
+    "Sending back to the transmitter any data units that have suffered transmission errors",
+    "Concatenating multiple acknowledgments in a data unit",
+    "Carrying acknowledgment information and user data in the same data unit",
+    "Having the receiver explicitly signal to the transmitter any data unit losses"
+   ],
+   "answer": 2,
+   "hint": "Piggybacking allows ACK info in opposite-direction PDU."
+  },
+  {
+   "id": "cn-043",
+   "topic": "data-link-layer-and-lans",
+   "text": "Distinguishing commands and responses in layer 2 LaPB protocol frames has the purpose of:",
+   "options": [
+    "Understanding whether a Poll bit or a Final bit was sent",
+    "Understanding who is the recipient of the frame",
+    "Distinguishing supervision frames from information frames"
+   ],
+   "answer": 2,
+   "hint": "LAPB frame: supervision field for control only."
+  },
+  {
+   "id": "cn-044",
+   "topic": "network-topologies",
+   "text": "LAN bus topology CSMA",
+   "options": [
+    "Time detection greater at ends, less at center",
+    "Same for all nodes",
+    "Depends on position relative to transmitters"
+   ],
+   "answer": 2,
+   "hint": "See slides \"CSMA\"."
+  },
+  {
+   "id": "cn-045",
+   "topic": "network-layer",
+   "text": "Header of packet in datagram service",
+   "options": [
+    "Source & destination addresses",
+    "Destination + connection ID",
+    "Connection ID",
+    "Source + connection ID"
+   ],
+   "answer": 0,
+   "hint": "See slides “IP datagram format”."
+  },
+  {
+   "id": "cn-046",
+   "topic": "transport-layer",
+   "text": "Compared to the 10 Mbit/s Ethernet standard, in the definition of 100 Mbit/s Ethernet, the MAC protocol",
+   "options": [
+    "Has been modified by introducing a collision avoidance mechanism, which allows improving performance and supporting real-time services",
+    "Has been kept unchanged, accepting the reduction by a factor of ten (approximately) of the maximum size of the \"collision domain\"",
+    "Has been kept unchanged, maintaining the maximum size of the \"collision domain\" unchanged, but increasing the minimum frame size by a factor of ten",
+    "Has been modified to allow more efficient collision detection"
+   ],
+   "answer": 1,
+   "hint": "See transparencies."
+  },
+  {
+   "id": "cn-047",
+   "topic": "error-and-flow-control",
+   "text": "PPP duplicate quiz",
+   "options": [
+    "Makes use of a go-back-n window protocol for recovery of data unit losses",
+    "Makes use of the address field in data units to distinguish those sent by the user from those sent by the operator",
+    "Makes use of a known bit sequence to delimit data units"
+   ],
+   "answer": 2,
+   "hint": "See transparencies “Encapsulating PPP PDUs”."
+  },
+  {
+   "id": "cn-048",
+   "topic": "network-layer",
+   "text": "IP router after calculating route",
+   "options": [
+    "Change source & destination IP",
+    "Edit TTL & checksum",
+    "Edit TTL only"
+   ],
+   "answer": 1,
+   "hint": "TTL changes require checksum update."
+  },
+  {
+   "id": "cn-049",
+   "topic": "network-layer",
+   "text": "An Ethernet card in a switch processes (that is, it reads and decides whether and how to route)",
+   "options": [
+    "Only packets with broadcast destination MAC address",
+    "All packets, regardless of the destination address",
+    "Only packets with unicast destination MAC address equal to that of the switch",
+    "Only packets with multicast destination MAC address"
+   ],
+   "answer": 1,
+   "hint": "See switch operation."
+  },
+  {
+   "id": "cn-050",
+   "topic": "application-layer",
+   "text": "Which of the following statements is true? A host connected to the Internet, at the moment when it wants to transmit/receive data to/from any other host on the Internet network, must know. where he wants to transmit / receive data to / from any other host on the Internet, he must know",
+   "options": [
+    "Its own IP address and related mask, its own MAC address, the IP address of the default router, the IP address of a DNS",
+    "Only its own MAC address",
+    "Only its own IP address"
+   ],
+   "answer": 0,
+   "hint": "Fonte Marchetto."
+  },
+  {
+   "id": "cn-051",
+   "topic": "general-networking",
+   "text": "By commutation we mean",
+   "options": [
+    "The exchange of information concerning the control and management of a telecommunications network",
+    "The transfer of information from one point to one or more other points",
+    "The process of interconnecting resources for the time necessary for communication"
+   ],
+   "answer": 2,
+   "hint": "See transparencies “Function: switching”. The C represents the 7 circuit switching! There control information."
+  },
+  {
+   "id": "cn-052",
+   "topic": "transport-layer",
+   "text": "In the OSI model, the transport layer provides services",
+   "options": [
+    "Building on services from the application layer",
+    "Relying on the services provided by the network layer",
+    "Relying on the services provided by the session level"
+   ],
+   "answer": 1,
+   "hint": "Review the concepts related to Transport Layer."
+  },
+  {
+   "id": "cn-053",
+   "topic": "transport-layer",
+   "text": "In the OSI model, the network layer provides services",
+   "options": [
+    "Building on the services provided by the application layer",
+    "Based on the services provided by the transport layer",
+    "Relying on the services provided by the link layer"
+   ],
+   "answer": 2,
+   "hint": "The network layer is above the connection layer."
+  },
+  {
+   "id": "cn-054",
+   "topic": "wireless-and-mobile-networks",
+   "text": "In a real mobile radio channel, the fading phenomenon consists in:",
+   "options": [
+    "Decrease in received power, caused by the distance between transmitter and receiver",
+    "Rapid variation of the received power, caused by sources operating at the same frequency",
+    "Reduction of the received power, caused by atmospheric sources such as rain and snow",
+    "Rapid variation of the received power, caused by the presence of moving obstacles"
+   ],
+   "answer": 3,
+   "hint": "See slides “Real (mobile) radio channel”."
+  },
+  {
+   "id": "cn-055",
+   "topic": "transport-layer",
+   "text": "In the IP header, or in the PCI of the IP protocol, they are mandatory contents:",
+   "options": [
+    "The IP address of a source and destination",
+    "The port of a source and destination",
+    "The Window field that allows the receiver to report the current size of the window reception to the transmitter"
+   ],
+   "answer": 0,
+   "hint": "See slides “IP datagram format”."
+  },
+  {
+   "id": "cn-056",
+   "topic": "network-layer",
+   "text": "The IP protocol:",
+   "options": [
+    "Guarantees error detection only on the datagram header",
+    "Guarantees error detection on the header and the content of the datagram",
+    "It does not provide any kind of error protection",
+    "Guarantees error detection only on the content of the datagram"
+   ],
+   "answer": 0,
+   "hint": "The Header Checksum field (16 bits) is used to verify that the IP header has arrived intact at destination. It only checks the integrity of the header."
+  },
+  {
+   "id": "cn-057",
+   "topic": "error-and-flow-control",
+   "text": "The Go-Back-N protocol is more complex than the Stop-And-Wait protocol due",
+   "options": [
+    "The greater complexity of the transmitter",
+    "The greater complexity of the receiver",
+    "The greater complexity of both the receiver and the transmitter"
+   ],
+   "answer": 0,
+   "hint": "Complexity at the receiver is nearly the same; the transmitter is more complex due to window >1."
+  },
+  {
+   "id": "cn-058",
+   "topic": "application-layer",
+   "text": "The use of cookies in the HTTP protocol allows you to",
+   "options": [
+    "Associate multiple requests made by the same browser or user",
+    "Cache the responses received",
+    "Download all the objects contained in a page by opening a single TCP connection",
+    "Send the response to the client using different fragments (Chunked Transfer)"
+   ],
+   "answer": 0,
+   "hint": "See slides \"cookies\"."
+  },
+  {
+   "id": "cn-059",
+   "topic": "network-topologies",
+   "text": "In a fully connected mesh topology with N nodes, the number of channels bidirectional is equal to",
+   "options": [
+    "N (N-1) / 2",
+    "2N",
+    "N-1",
+    "No."
+   ],
+   "answer": 0,
+   "hint": "See slides “Knitted topology”."
+  },
+  {
+   "id": "cn-060",
+   "topic": "general-networking",
+   "text": "The IP protocol provides a service",
+   "options": [
+    "Unreliable (i.e. no delivery guarantee) and connectionless",
+    "Reliable (i.e. with delivery guarantee) and connectionless",
+    "Unreliable (i.e. without delivery guarantee) and connection oriented"
+   ],
+   "answer": 0,
+   "hint": "IP is connectionless and best-effort; no guarantees."
+  },
+  {
+   "id": "cn-061",
+   "topic": "transport-layer",
+   "text": "Compared to the IP protocol, the UDP protocol",
+   "options": [
+    "It adds nothing",
+    "Adds the ability to carry messages by distinguishing between different application processes on the same host",
+    "It allows a reliable transport of information"
+   ],
+   "answer": 1,
+   "hint": "UDP is unreliable; it provides multiplexing and demultiplexing."
+  },
+  {
+   "id": "cn-062",
+   "topic": "physical-layer",
+   "text": "Which of the following line encodings is more efficient, i.e., requires physically lower bit rate at the same rate of information transmitted?",
+   "options": [
+    "4B5B encoding",
+    "64B66B encoding",
+    "8B10B encoding"
+   ],
+   "answer": 1,
+   "hint": "64B66B requires a minimal increase in physical bit rate (1.03×) versus 1.25× for 4B5B or 8B10B."
+  },
+  {
+   "id": "cn-063",
+   "topic": "network-layer",
+   "text": "The CIDR (Classless Inter Domain Routing), based on the use of netmasks in IP, is a technique used in order to",
+   "options": [
+    "Decrease the convergence time of routing protocols",
+    "Efficiently use the IP addressing space",
+    "Avoid the formation of routing loops in routing"
+   ],
+   "answer": 1,
+   "hint": "See transparencies."
+  },
+  {
+   "id": "cn-064",
+   "topic": "general-networking",
+   "text": "The DSL access network separates data and voice on the same transmission medium between the devices user and control panel devices using:",
+   "options": [
+    "Time multiplexing",
+    "Multiple access to frequency division",
+    "Multiple access to time division",
+    "Frequency multiplexing"
+   ],
+   "answer": 3,
+   "hint": "ADSL uses frequency division with filters at user and central side."
+  },
+  {
+   "id": "cn-065",
+   "topic": "network-topologies",
+   "text": "The Stop-And-Wait protocol",
+   "options": [
+    "It can only work using more than one numbering bit",
+    "It can work using a number of numbering bits greater than or equal to 1",
+    "It can only work using a single numbering bit",
+    "It can only work using fewer numbering bits than the window size transmission"
+   ],
+   "answer": 1,
+   "hint": "Using ≥1 bit reduces malfunctions and allows PDU/ACK tracking."
+  },
+  {
+   "id": "cn-066",
+   "topic": "network-topologies",
+   "text": "In a tree topology with N nodes, the number of bidirectional channels is equal to",
+   "options": [
+    "N",
+    "N-1",
+    "2N",
+    "N (N-1) / 2"
+   ],
+   "answer": 1,
+   "hint": "See slides “Tree Topology”."
+  },
+  {
+   "id": "cn-067",
+   "topic": "transport-layer",
+   "text": "In the UDP header, or in the PCI of the UDP protocol, are mandatory contents",
+   "options": [
+    "The value of the Maximum Segment Size negotiated between transmitter and receiver",
+    "The checksum field, for error detection",
+    "Some flags (in the CODE field) for opening and closing the connection"
+   ],
+   "answer": 1,
+   "hint": "UDP provides multiplexing and checksum error checking."
+  },
+  {
+   "id": "cn-068",
+   "topic": "transport-layer",
+   "text": "The transport layer on the Internet",
+   "options": [
+    "Provides reliable information transport if UDP protocol is used",
+    "It only provides unreliable transportation",
+    "Always provides reliable information transport",
+    "Provides reliable information transport if using the TCP protocol"
+   ],
+   "answer": 3,
+   "hint": "TCP provides reliable transport; UDP does not."
+  },
+  {
+   "id": "cn-069",
+   "topic": "network-layer",
+   "text": "In a routing table of an IP router there is a mask in which the first 24 bits (the most significant) are 1 and the last 8 bits (the least significant) are 0. Which of the following statements is true?",
+   "options": [
+    "The mask can be associated with a \"subneted\" class B address",
+    "The mask is definitely associated with a \"subneted\" class A address",
+    "The mask cannot be associated with a class C address"
+   ],
+   "answer": 0,
+   "hint": "This mask can be used for a subneted class B address."
+  },
+  {
+   "id": "cn-070",
+   "topic": "network-topologies",
+   "text": "A Go-Back-N protocol with a transmission window of size Wt",
+   "options": [
+    "It can only work using a number of numbering bits greater than or equal to log2(Wt)",
+    "It can only work using a number of numbering bits greater than or equal to log2(Wt-1)",
+    "It can only work using a number of numbering bits greater than or equal to log2(Wt + 1)"
+   ],
+   "answer": 2,
+   "hint": "Go-Back-N allows Wt <= 2^k-1, so k ≥ log2(Wt+1)."
+  },
+  {
+   "id": "cn-071",
+   "topic": "application-layer",
+   "text": "ADSL (Asymmetric Digital Subscriber Line) technology",
+   "options": [
+    "It was mainly designed to provide a voice / data access service to a residential user mainly accessing the Web as a client",
+    "It was mainly designed to allow interconnection of local networks over large distances",
+    "It has been designed primarily to provide a purely data access service to web servers"
+   ],
+   "answer": 0,
+   "hint": "See transparencies “ADSL”."
+  },
+  {
+   "id": "cn-072",
+   "topic": "physical-layer",
+   "text": "The quality characteristics required by a telephony service are:",
+   "options": [
+    "Transfer of information with a maximum delay of the order of hundreds of milliseconds and extremely low jitter; bit rate of the order of tens of kbit/s; probability of error not more than a few percent; probability of block not exceeding a few percent",
+    "Transfer of information with a maximum delay of the order of tens of seconds; negligible error and block probability",
+    "Transfer of information with a maximum delay of hundreds of milliseconds; bit rate of tens of Mbit/s; low error"
+   ],
+   "answer": 0,
+   "hint": "See slides \"Quality indices (telephony)\"."
+  },
+  {
+   "id": "cn-073",
+   "topic": "network-layer",
+   "text": "In the original IP routing, i.e., without the use of masks, the choice of the output interface on which to forward a packet is based",
+   "options": [
+    "The full IP address subnet(net_id + host_id) of the recipient",
+    "On the network part subnet(net_id) of the recipient's IP address",
+    "Only on the host subnet(host_id) part of the recipient's IP address"
+   ],
+   "answer": 1,
+   "hint": "Forwarding is based on net_id only."
+  },
+  {
+   "id": "cn-074",
+   "topic": "application-layer",
+   "text": "The DNS (Domain Name Service):",
+   "options": [
+    "To increase reliability and responsiveness uses caches, but each resolution must reach authoritative server",
+    "Used by operators for sale of domain names",
+    "Based on hierarchical servers, each responsible for a zone",
+    "Product to distribute load on routers"
+   ],
+   "answer": 2,
+   "hint": "DNS resolves host names using distributed hierarchical servers."
+  },
+  {
+   "id": "cn-075",
+   "topic": "network-topologies",
+   "text": "Which of the following statements in the comparison between the Aloha and Slotted-Aloha protocols is false?",
+   "options": [
+    "Slotted-Aloha allows a better exploitation of the capacity of the transmission medium",
+    "The performance of Aloha is less dependent than Slotted-Aloha on propagation delays",
+    "Aloha is simpler to implement by not requiring slot synchronization"
+   ],
+   "answer": 1,
+   "hint": "Slotted-Aloha reduces partial collisions; Aloha simpler but more affected by delays."
+  },
+  {
+   "id": "cn-076",
+   "topic": "error-and-flow-control",
+   "text": "In the case of packet switching",
+   "options": [
+    "The switching function allocates to the interlocutors a subset of network resources with which one or more circuits are established for connecting user terminals; the resources must be released if they are needed for establishing other circuits",
+    "The switching function allocates to the interlocutors in exclusive use a subset of network resources with which one or more circuits are established for connecting user terminals; the resources are released only at the end of communication",
+    "The switching function does not allocate to the interlocutors in exclusive use a subset of network resources; all network resources are always available for packet transmission; packets wait in appropriate queues until the necessary resources become available"
+   ],
+   "answer": 2,
+   "hint": "See transparencies “Packet switching”."
+  },
+  {
+   "id": "cn-077",
+   "topic": "transport-layer",
+   "text": "In the header (header) UDP, or in the PCI of the UDP protocol are mandatory contents",
+   "options": [
+    "The TTL (Time To Live) field",
+    "The source and destination port",
+    "The source and destination IP address"
+   ],
+   "answer": 1,
+   "hint": "See transparencies “UDP: segment header”."
+  },
+  {
+   "id": "cn-078",
+   "topic": "network-layer",
+   "text": "Internet routing tables",
+   "options": [
+    "They indicate the sequence of routers to cross to reach a destination",
+    "They only indicate the next router to cross to reach the destination",
+    "They indicate the autonomous system sequence"
+   ],
+   "answer": 1,
+   "hint": "See sheets “IP routing (next hop)”."
+  },
+  {
+   "id": "cn-079",
+   "topic": "general-networking",
+   "text": "Data transfer between two application processes in the OSI model occurs by involving",
+   "options": [
+    "Only two entities of the application layer, one per system",
+    "At least one entity for each of the seven levels in both systems",
+    "An entity in each system, independent of the level"
+   ],
+   "answer": 1,
+   "hint": "Transmitter passes all layers down; receiver goes up all layers."
+  },
+  {
+   "id": "cn-080",
+   "topic": "transport-layer",
+   "text": "Consider two Ethernet LANs A and B, connected by a switch B1 and a router R1 (B1 and R1 are in parallel between the two LANs). Suppose that both the switch and router have all ports active and know all addresses (MAC and IP respectively) of hosts connected to the two LANs. When a host connected to LAN A transmits an ARP packet to obtain the MAC address of router R1, which of the following statements is true?",
+   "options": [
+    "Forwarded on LAN B only by router R1",
+    "Forwarded on LAN B only by switch B1",
+    "The packet is forwarded on LAN B either by the switch or by the router, depending on the value of the destination MAC address contained in the packet",
+    "The packet is forwarded on LAN B by both router R1 and switch B1"
+   ],
+   "answer": 1,
+   "hint": "Switch forwards broadcast to all ports; router responds only if target."
+  },
+  {
+   "id": "cn-081",
+   "topic": "network-topologies",
+   "text": "The SMTP protocol",
+   "options": [
+    "Operates on the UDP protocol, since email messages are usually short",
+    "Is based on messages that always include encrypted authentication",
+    "Is used for delivering outgoing email messages from a client to a given server",
+    "Is used to transfer email messages from a server to a client installed on a PC"
+   ],
+   "answer": 2,
+   "hint": "SMTP sends messages from client to mail server."
+  },
+  {
+   "id": "cn-082",
+   "topic": "error-and-flow-control",
+   "text": "Using Stop-And-Wait on a non-sequential channel",
+   "options": [
+    "Always handled without problems",
+    "Can cause protocol malfunctions and algorithm blocking",
+    "Can cause malfunctions but not blocking"
+   ],
+   "answer": 1,
+   "hint": "With k=1, examples of blocking and information loss."
+  },
+  {
+   "id": "cn-083",
+   "topic": "general-networking",
+   "text": "An (N-1)-protocol allows interaction",
+   "options": [
+    "Between (N+1) and (N-1)-entity",
+    "Between two (N-1)-entities",
+    "Between any two entities at different levels",
+    "Between two (N)-entities"
+   ],
+   "answer": 1,
+   "hint": "Protocols work between same-layer entities."
+  },
+  {
+   "id": "cn-084",
+   "topic": "error-and-flow-control",
+   "text": "In the case of circuit switching:",
+   "options": [
+    "The switching function allocates to the interlocutors a subset of network resources with which one or more circuits are established for connecting user terminals; the resources must be released if they are needed for establishing other circuits",
+    "The switching function allocates to the interlocutors in exclusive use a subset of network resources with which one or more circuits are established for connecting user terminals; the resources are released only at the end of communication",
+    "The switching function does not allocate to the interlocutors in exclusive use a subset of network resources; all network resources are always available for packet transmission; packets wait in appropriate queues until the necessary resources become available"
+   ],
+   "answer": 1,
+   "hint": "See transparencies “Switching to circuit”."
+  },
+  {
+   "id": "cn-085",
+   "topic": "network-layer",
+   "text": "Version 4 IP addresses of class C characterize:",
+   "options": [
+    "Multicast communications",
+    "Few networks with many hosts",
+    "Many networks with a small number of hosts"
+   ],
+   "answer": 2,
+   "hint": "Class C addresses: many networks, few hosts."
+  },
+  {
+   "id": "cn-086",
+   "topic": "network-topologies",
+   "text": "The CSMA and CSMA-CD protocols",
+   "options": [
+    "Try to avoid interference between transmissions of users sharing a broadcast channel through preventive listening to the channel state; transmission can begin only if the channel is heard free",
+    "Do not implement any preventive control to avoid interference between transmissions of users sharing a broadcast channel; only in case of interference (collision) is action taken, repeating the transmission after a random delay",
+    "Try to avoid interference between transmissions of users sharing a broadcast channel through preventive listening to the channel state; transmission can begin only if the channel is actually free"
+   ],
+   "answer": 0,
+   "hint": "Preventive listening reduces collisions."
+  },
+  {
+   "id": "cn-087",
+   "topic": "switching-and-signaling",
+   "text": "By signaling is meant",
+   "options": [
+    "The transfer of information from one point to one or more other points",
+    "The exchange of information concerning the control of a telecommunications network"
+   ],
+   "answer": 1,
+   "hint": "Reporting refers to signaling/control exchange."
+  },
+  {
+   "id": "cn-088",
+   "topic": "application-layer",
+   "text": "The MIME protocol allows",
+   "options": [
+    "To have data encoded differently within the e-mail message",
+    "To reserve the resources on the network so that an email message with a multimedia file attached can reach the destination with guaranteed quality",
+    "To transmit useful information to the recipients of the e-mail to monitor the quality of the transmission",
+    "Check the playback of a multimedia file downloaded from the network"
+   ],
+   "answer": 0,
+   "hint": "See slides “Message format: multimedia extensions”."
+  },
+  {
+   "id": "cn-089",
+   "topic": "transport-layer",
+   "text": "Statistical multiplexing means",
+   "options": [
+    "A fixed frequency multiplexing scheme in which the band assigned to the different information flows it is proportional to the transmission speed",
+    "A multiplexing scheme that provides for a random choice between frequency multiplexing and multiplexing over time",
+    "A multiplexing scheme that does not foresee a predetermined allocation of resources transmissive to information flows"
+   ],
+   "answer": 2,
+   "hint": "The C corresponds to the definition of statistical multiplexing."
+  },
+  {
+   "id": "cn-090",
+   "topic": "physical-layer",
+   "text": "What is the order of magnitude of the maximum transmission speed on an optical fiber?",
+   "options": [
+    "1 Tbit / s",
+    "1 kbit / s",
+    "1 Mbit / s",
+    "1 Gbit / s",
+    "1 bit / s"
+   ],
+   "answer": 0,
+   "hint": "See transparencies “The optical fiber”."
+  },
+  {
+   "id": "cn-091",
+   "topic": "transport-layer",
+   "text": "If a router receives a correct TCP packet, encapsulated in an IP packet with header destined for a non-existent TCP port (for which no application process is waiting):",
+   "options": [
+    "Discard it and send an ICMP packet to the destination",
+    "Pass it to a default application process that handles all TCP packets for which no there is an application process available",
+    "Ignore the TCP port value and send the packet",
+    "Discard it and send an ICMP packet to the source"
+   ],
+   "answer": 2,
+   "hint": "Since the TCP packet is encapsulated in an IP packet, the latter will not be able to detect the TCP port error, so the correct answer is C."
+  },
+  {
+   "id": "cn-092",
+   "topic": "network-topologies",
+   "text": "The increment of the current window of the TCP transmitter",
+   "options": [
+    "It is regulated only by the receiver",
+    "It is regulated only by the slow-start congestion control phase",
+    "It is regulated by the congestion control phase called slow-start and congestion avoidance"
+   ],
+   "answer": 2,
+   "hint": "See “TCP congestion control” slides."
+  },
+  {
+   "id": "cn-093",
+   "topic": "network-topologies",
+   "text": "The CSMA and CSMA-CD protocols admit 1-persistent and non-persistent versions",
+   "options": [
+    "In the case of the 1-persistent version, if listening to the channel indicates that it is busy, the attempt is proposed for a random delay; in the case of non-persistent versions, if listening to the channel indicates that it is busy, the transmission starts as soon as the current transmission ends",
+    "In the case of the non-persistent version, if listening to the channel indicates that it is busy, the attempt is proposed for a random delay; in the case of 1-persistent versions, if listening to the channel indicates that it is busy, the transmission begins as soon as the current transmission ends",
+    "In both cases, if listening to the channel indicates that it is busy, the transmission attempt it is postponed with a random delay"
+   ],
+   "answer": 1,
+   "hint": "See slides \"CSMA\"."
+  },
+  {
+   "id": "cn-094",
+   "topic": "network-topologies",
+   "text": "Suppose that between a transmitter and a receiver they implement an ARQ scheme (Automatic repeat request) of the Go-Back-N type the time that elapses between the start of the transmission of a data unit and the end of receipt of the corresponding acknowledgment is constant and greater than the time necessary to transmit the information that can be stored in the transmission window. In this situation, the increase of the transmission speed on the channels that connect the transmitter to the receiver",
+   "options": [
+    "It decreases the amount of information transferred on average in the unit of time between the transmitter and the receiver",
+    "It fails to increase the amount of information transferred on average in the unit of time between transmitter and receiver",
+    "Increases the amount of information transferred on average in the unit of time between the transmitter and the receiver"
+   ],
+   "answer": 2,
+   "hint": "n = Wt / (1 + 2 (Tp / Tx)) => at higher speeds, Tx decreases and n (efficiency) increases."
+  },
+  {
+   "id": "cn-095",
+   "topic": "error-and-flow-control",
+   "text": "In the OSI model, the delimitation of frames, ie the ability to identify on a channel the end of a packet, is a function:",
+   "options": [
+    "Performed by all OSI levels",
+    "Typical of the level or sub-level adjacent to the physical level",
+    "Exclusive to the network level"
+   ],
+   "answer": 1,
+   "hint": "Level 2 takes care of this."
+  },
+  {
+   "id": "cn-096",
+   "topic": "transport-layer",
+   "text": "In the event of a loss of segments identified by receiving three hits, the current window size of the reno TCP transmitter",
+   "options": [
+    "It is brought to half the size of the receiver window",
+    "It is brought back to the initial value, equal to one segment",
+    "It is placed in the middle of the current value (to be precise, in half of the current value plus a segment)"
+   ],
+   "answer": 2,
+   "hint": "This is how TCP reno works."
+  },
+  {
+   "id": "cn-097",
+   "topic": "data-link-layer-and-lans",
+   "text": "Frame Relay technology predicts",
+   "options": [
+    "The transfer of fixed-size data units in non-connection-oriented mode",
+    "The transfer of data units of fixed size on virtual circuits",
+    "The transfer of data units of variable size on virtual circuits"
+   ],
+   "answer": 2,
+   "hint": "See “Frame Relay” slides."
+  },
+  {
+   "id": "cn-098",
+   "topic": "network-layer",
+   "text": "The Network Address Translation (NAT) Mechanism",
+   "options": [
+    "Realizes in OSI terms a mapping function",
+    "Can modify the IP addresses of the packets",
+    "Allows you to set the logical address of a host to the IP address"
+   ],
+   "answer": 1,
+   "hint": "See slides \"NAT\"."
+  },
+  {
+   "id": "cn-099",
+   "topic": "network-layer",
+   "text": "In the absence of other packets, the minimum time it takes for a packet to traverse the switch operating in store-and-forward mode",
+   "options": [
+    "It grows as the packet transmission speed increases",
+    "It grows as the distance between the source and destination of the packet increases",
+    "It grows as the number of bits of which the packet is composed increases"
+   ],
+   "answer": 2,
+   "hint": "See “Store and forward” slides."
+  },
+  {
+   "id": "cn-100",
+   "topic": "transport-layer",
+   "text": "The PING application program",
+   "options": [
+    "It uses ICMP protocol messages to determine the path followed to reach a host belonging to the internet",
+    "Use a TCP protocol option to check the connectivity of a host belonging to the network Internet",
+    "It uses ICMP protocol messages to check the connectivity of a host belonging to the network Internet"
+   ],
+   "answer": 2,
+   "hint": "See transparencies of the “PING” command."
+  },
+  {
+   "id": "cn-101",
+   "topic": "network-topologies",
+   "text": "A network topology with N nodes and M unidirectional channels is given. Each channel has capabilities C Mbit / s. The routing algorithm is such as to evenly distribute traffic over the network channels. The average number of channels traversed by a packet in the path from the source to the destination is equal to D. The maximum amount of traffic disposed of by the network increases if:",
+   "options": [
+    "Decreases C to equal N, M and D.",
+    "Decreases M to equal N, D and C",
+    "Decreases D to equal N, M and C",
+    "Decreases N to equal D, M and C"
+   ],
+   "answer": 2,
+   "hint": "if the average distance decreases, with the same channel capacity, the traffic disposed of should increase."
+  },
+  {
+   "id": "cn-102",
+   "topic": "network-topologies",
+   "text": "Statistical multiplexing",
+   "options": [
+    "Can only be used in connectionless networks",
+    "It is used in telephone networks because it is closely associated with the use of constant speed channels",
+    "It consists in sharing the same resource (transmission channel, memory device, etc.) by traffic sources that use it on an instantaneous need",
+    "Can only be used in connection oriented networks, but not circuit switched"
+   ],
+   "answer": 2,
+   "hint": "By definition in statistical multiplexing the same resource can be used in frequency or in time to multiple sources."
+  },
+  {
+   "id": "cn-103",
+   "topic": "network-layer",
+   "text": "In a packet-switched network operating in store-and-forward mode, a larger data unit size",
+   "options": [
+    "The routing complexity of each data unit increases",
+    "Increases the time that elapses from when a data unit reaches the input of a switch a when this leaves the switch",
+    "Increase the number of operations that must be performed by a switch to transfer the same total amount of user information"
+   ],
+   "answer": 1,
+   "hint": "Long packets lead to a longer store time by the receiving node."
+  },
+  {
+   "id": "cn-104",
+   "topic": "transport-layer",
+   "text": "Congestion control in the TCP protocol",
+   "options": [
+    "It is not available",
+    "It is based on an autonomous decision by the transmitter based on any feedback (ACK) duplicates and on the expiry of the time-out",
+    "It is based on the signaling by the receiver of the available reception window"
+   ],
+   "answer": 1,
+   "hint": "Per il controllo della congestione la CWND aumenta di 1 MSS per ogni ACK ricevuto finché non avviene un timeout."
+  },
+  {
+   "id": "cn-105",
+   "topic": "error-and-flow-control",
+   "text": "Window protocols are also called ARQ (Automatic Retransmission reQuest) because",
+   "options": [
+    "In case of arrival of an incorrect packet, the receiver requests retransmission",
+    "If an ACK fails to return, the receiver requests retransmission",
+    "The expiration of the timeout at the transmitter corresponds to an automatic request for retransmission"
+   ],
+   "answer": 2,
+   "hint": "see window protocols slide."
+  },
+  {
+   "id": "cn-106",
+   "topic": "error-and-flow-control",
+   "text": "In the case of common channel signaling",
+   "options": [
+    "A signaling channel corresponds to each channel for the transfer of user information",
+    "A single signaling channel is used to control several transfer channels user information; the signaling channel operates in packet mode",
+    "A single signaling channel is used to control several transfer channels user information; the signaling channel operates in circuit mode"
+   ],
+   "answer": 1,
+   "hint": "In common channel signaling, a single signaling channel operates in packet mode to control several user transfer channels."
+  },
+  {
+   "id": "cn-107",
+   "topic": "physical-layer",
+   "text": "In the current state of technology, it is possible to transmit information without amplification along the transmission line over greater distances using",
+   "options": [
+    "The Hertzian channel (radio, satellite)",
+    "Optical fibers",
+    "The twisted pairs",
+    "Coaxial cables"
+   ],
+   "answer": 0,
+   "hint": "Radio/satellite channels allow for very long distances without intermediate amplification compared to physical cables."
+  },
+  {
+   "id": "cn-108",
+   "topic": "general-networking",
+   "text": "The (N + 1) -directory function associates",
+   "options": [
+    "An (N + 1) -address to an (N) -address",
+    "A (N + 1) -title to an (N) -address",
+    "A (N + 1) -title to an (N + 2) -address"
+   ],
+   "answer": 1,
+   "hint": "This follows the OSI naming conventions where titles are mapped to addresses of the layer below."
+  },
+  {
+   "id": "cn-109",
+   "topic": "data-link-layer-and-lans",
+   "text": "The preamble prepended to IEEE 802.3 (Ethernet) data units is required for",
+   "options": [
+    "Allow to keep the network synchronous",
+    "Allow the synchronization of repeaters and receivers encountered on the local network",
+    "Allow repeaters to retransmit data drives at the same rate at which they were received"
+   ],
+   "answer": 1,
+   "hint": "The preamble provides a bit pattern for receiver clock synchronization."
+  },
+  {
+   "id": "cn-110",
+   "topic": "network-topologies",
+   "text": "If a router detects an incorrect checksum on an IP packet, and therefore a potential error on the IP addresses contained in the packet, during the routing phase",
+   "options": [
+    "Discard it and send an ICMP packet to the source only",
+    "It discards it and sends an ICMP packet to both the source and the destination",
+    "Discards it without reporting it to any other network entity",
+    "It still forwards it to the destination, however sending an ICMP packet to the source for report the error"
+   ],
+   "answer": 2,
+   "hint": "If the header is corrupted (checksum error), the router cannot trust the source address to send an ICMP, so it just drops the packet."
+  },
+  {
+   "id": "cn-111",
+   "topic": "network-layer",
+   "text": "In the OSI model, which of the following functions is performed by session-level entities?",
+   "options": [
+    "The routing of the data units in a type that is not completely connected",
+    "The choice of data representation syntax for a work session",
+    "The definition of synchronization points in a data unit stream"
+   ],
+   "answer": 2,
+   "hint": "Session layer manages dialogue control and synchronization points."
+  },
+  {
+   "id": "cn-112",
+   "topic": "network-layer",
+   "text": "The complexity of the routing procedures used, within a node, for forwarding information has the greatest influence on the performance of a network in the case of",
+   "options": [
+    "Packet switching without virtual circuits (datagram mode)",
+    "Packet switching with virtual circuits",
+    "Circuit switching"
+   ],
+   "answer": 0,
+   "hint": "In datagram mode, every packet is routed independently, increasing per-packet processing overhead."
+  },
+  {
+   "id": "cn-113",
+   "topic": "network-topologies",
+   "text": "The LLC SNaP (SubNetwork access Protocol) format of the IEEE 802.2 LLC protocol",
+   "options": [
+    "Allows sharing of a broadcast transmission medium",
+    "Allows coexistence of a large number of protocols at levels higher than level",
+    "Is required in Internet for data unit transfer in subnets",
+    "Guarantees the recognition of transmission errors"
+   ],
+   "answer": 1,
+   "hint": "SNAP allows multiplexing of various network layer protocols over LLC."
+  },
+  {
+   "id": "cn-114",
+   "topic": "network-topologies",
+   "text": "In the CSMA and CSMA-CD protocol the concept of \"persistence\" refers to:",
+   "options": [
+    "The way in which the transmission attempt occurs, if listening to the channel indicates that it is busy",
+    "The calculation of the time for which a station is authorized to occupy the channel",
+    "How the retransmission attempt occurs, if a collision has occurred",
+    "The time during which two transmissions overlap on the channel, which is a necessary condition for the collision to be detected"
+   ],
+   "answer": 0,
+   "hint": "Persistence defines the behavior (wait or retry) when a node senses the medium is busy."
+  },
+  {
+   "id": "cn-115",
+   "topic": "network-topologies",
+   "text": "In the IP header, or in the PCI of the IP protocol, they are contained:",
+   "options": [
+    "The 16-bit Checksum field for checking the correctness of the header and of the data contained in the package",
+    "The Sequence Number field for numbering the segments",
+    "The Identification 3e Fragment Offset fields that allow the management of the fragmentation of packages"
+   ],
+   "answer": 2,
+   "hint": "IP header contains fields specifically for fragmentation; checksum only covers the header, not data."
+  },
+  {
+   "id": "cn-116",
+   "topic": "physical-layer",
+   "text": "Why does VDSL technology have high performance only if the distance between the cab of road and user's home is less than a hundred meters?:",
+   "options": [
+    "Because the end-to-end delay between the user's home and the operator's control panel is reduced",
+    "Because the costs of laying cables are reduced",
+    "Because the shorter length of the copper cable allows the use of higher bit rate modulation",
+    "Because the connections have to cross fewer intermediate nodes"
+   ],
+   "answer": 2,
+   "hint": "High-frequency signals used in VDSL attenuate quickly over copper, requiring short distances."
+  },
+  {
+   "id": "cn-117",
+   "topic": "data-link-layer-and-lans",
+   "text": "Point-to-Point Protocol (PPP) does not use address fields because",
+   "options": [
+    "Take advantage of the underlying MAC addresses",
+    "Take advantage of top-level addresses",
+    "It must operate on point-to-point connections",
+    "It has no space in the plot header"
+   ],
+   "answer": 2,
+   "hint": "In a direct point-to-point link, there is only one possible recipient, so addressing is redundant."
+  },
+  {
+   "id": "cn-118",
+   "topic": "application-layer",
+   "text": "The DHCP protocol provides that",
+   "options": [
+    "A client uses an IP address as soon as it receives it from the server in a DHCP offer message.",
+    "A client may disconnect from the network without communicating it to the server.",
+    "If a server exists, it is unique on the client's local network.",
+    "The server never also provides the IP address of a DNS server in its response."
+   ],
+   "answer": 1,
+   "hint": "Clients can simply leave; DHCP leases eventually expire if not renewed."
+  },
+  {
+   "id": "cn-119",
+   "topic": "transport-layer",
+   "text": "The fundamental functions of the link layer in the OSI model are",
+   "options": [
+    "Flow control and recovery of transmission errors",
+    "Data drive routing",
+    "Transfer of binary digits on the channel"
+   ],
+   "answer": 0,
+   "hint": "Error detection/recovery and flow control are core Layer 2 functions."
+  },
+  {
+   "id": "cn-120",
+   "topic": "network-topologies",
+   "text": "During the slow-start phase of the TCP congestion control, the window transmitter current",
+   "options": [
+    "It is halved for each missing ACK",
+    "It grows by one segment for each acknowledgment (ACK) received",
+    "Double for each acknowledgment (ACK) received",
+    "It remains constant over time"
+   ],
+   "answer": 1,
+   "hint": "In slow start, the congestion window increases by 1 MSS for every ACK, effectively doubling every RTT."
+  },
+  {
+   "id": "cn-121",
+   "topic": "physical-layer",
+   "text": "What is the order of magnitude of the maximum transmission rate on coaxial cable?",
+   "options": [
+    "1 Tbit / s",
+    "1 Mbit / s",
+    "1 bit / s",
+    "1 kbit / s",
+    "1 Gbit / s"
+   ],
+   "answer": 1,
+   "hint": "Standard coaxial typically operates in the range of hundreds of Mbps."
+  },
+  {
+   "id": "cn-122",
+   "topic": "error-and-flow-control",
+   "text": "Window protocols can be used",
+   "options": [
+    "Only for communications that use a connection",
+    "Both for communications that use a connection and for those that don't",
+    "Only for communications that do not use a connection"
+   ],
+   "answer": 0,
+   "hint": "Windowing requires state synchronization (sequence numbers/ACKs), typical of connection-oriented services."
+  },
+  {
+   "id": "cn-123",
+   "topic": "application-layer",
+   "text": "The Address Resolution Protocol (ARP)",
+   "options": [
+    "Obtain an Ethernet address to assign to the machine card it has made the ARP request",
+    "It allows a host to know the IP address of its DNS server",
+    "Realizes in OSI terms a mapping (translation) function between (3)-addresses and (2)-address"
+   ],
+   "answer": 2,
+   "hint": "ARP maps Layer 3 (IP) addresses to Layer 2 (MAC) addresses."
+  },
+  {
+   "id": "cn-124",
+   "topic": "transport-layer",
+   "text": "In the OSI model, the segmentation performed by a level entity (N + 1)",
+   "options": [
+    "Create many (N + 1)-PDUs from a single (N + 1)-SDU",
+    "Create a (N + 1)-PDU from many (N)-SDUs",
+    "It combines many (N + 1)-PDUs in a single (N)-SDU",
+    "Create many (N + 1)-PCI for the same (N + 1)-PDU"
+   ],
+   "answer": 0,
+   "hint": "Segmentation breaks down a larger service data unit into multiple protocol data units."
+  },
+  {
+   "id": "cn-125",
+   "topic": "general-networking",
+   "text": "Let Wt and Wr be the dimensions, respectively, of the transmission window and of the receive windows in a windowed protocol. Also let N be the total quantity of sequence numbers available to distinguish data drives. Which of the following constraints is a necessary and sufficient condition to avoid malfunctions on a channel that does not reverse the order of the data units?",
+   "options": [
+    "N = Wt + 1",
+    "N = (Wt + Wr) / 2",
+    "N = Wr + 1",
+    "N >= Wt + Wr"
+   ],
+   "answer": 3,
+   "hint": "The range of sequence numbers must be at least the sum of the sender and receiver windows to prevent overlap issues."
+  },
+  {
+   "id": "cn-126",
+   "topic": "general-networking",
+   "text": "The three fundamental elements that define a protocol are:",
+   "options": [
+    "Algorithms, formats, timings",
+    "Syntax, semantics, timing",
+    "Algorithms, services, timing",
+    "Algorithms, formats, entities"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to General Networking."
+  },
+  {
+   "id": "cn-127",
+   "topic": "network-layer",
+   "text": "An Ethernet card of a Bridge (ie it reads and decides if and how to route)",
+   "options": [
+    "All packets, regardless of the destination address",
+    "Only packets with a unicast destination MAC address equal to that of the bridge",
+    "Packets with broadcast destination MAC address only",
+    "Packets with multicast destination MAC address only"
+   ],
+   "answer": 0,
+   "hint": "By definition a Bridge's ethernet reads and routes all packets."
+  },
+  {
+   "id": "cn-128",
+   "topic": "network-layer",
+   "text": "Which of the following statements is false?",
+   "options": [
+    "An IP router can use the Address Resolution Protocol (ARP) to know the MAC address of the router or host to which it is to deliver an IP packet",
+    "A host can use ICMP messages to verify another host's connectivity to the network Internet.",
+    "An IP router, which does not perform a NAT (Network Address Translator) function, does not modify the IP addresses of the packets to be re-transmitted",
+    "An IP host always only makes direct deliveries"
+   ],
+   "answer": 3,
+   "hint": "A, B and C are correct as the ARP definitions are ICMP and NAT. By exclusion the answer is the D."
+  },
+  {
+   "id": "cn-129",
+   "topic": "general-networking",
+   "text": "To avoid blocking or loss of data units in a windowed protocol due to channels non-sequential, it is useful",
+   "options": [
+    "Number the PDUs on a number of bits greater than 1 and do not limit the life time of the PDUs in the net",
+    "Number the PDUs on a number of bits greater than 1 and limit the life time of the PDUs in the network",
+    "Number the PDUs on a single bit and limit the life time of the PDUs in the network"
+   ],
+   "answer": 1,
+   "hint": "By definition, in window protocols, PDUs must be numbered on a number of bits greater than 1. It is necessary that the packets have a minimum life time (Time to Live) otherwise it would lead to congestion of the intermediate nodes."
+  },
+  {
+   "id": "cn-130",
+   "topic": "data-link-layer-and-lans",
+   "text": "The constraints on the maximum extension of an IEEE 802.3 local network (CSMA / CD) arise",
+   "options": [
+    "Both from the propagation delay of the signals from one end of the network to the other, and from the attenuation of the signals on the transmission media.",
+    "Both from the attenuation of the signals on the transmission media and from the maximum delays tolerated by the users MAC service",
+    "By the number of bits that would be needed to increase the data units in the case of large delays propagation"
+   ],
+   "answer": 0,
+   "hint": "Collision detection requires that the transmission time is at least twice the propagation delay."
+  },
+  {
+   "id": "cn-131",
+   "topic": "network-topologies",
+   "text": "In the case where a windowed protocol is used on a channel that does not allow inversions in the sequence order of transmitted data units (that is on sequential channel), assuming to use a non-cyclic progressive numbering, the transmission and reception windows can never be in the following situation:",
+   "options": [
+    "No sequence number included in the receive window is also included in the trasmission windows",
+    "The smallest sequence number in the transmission window is smaller than the smallest sequence number in the receiving window",
+    "The smallest sequence number in the receive window is smaller than the smallest number of sequence in the transmission window.",
+    "The largest sequence number in the receive window is larger than the largest number of sequence in the transmission window"
+   ],
+   "answer": 2,
+   "hint": "The send window can advance only after receiving ACKs which must be sent by the receiver after the receiving a packet, but receiving it would necessarily involve a slide forward of the receiver."
+  },
+  {
+   "id": "cn-132",
+   "topic": "network-topologies",
+   "text": "Medium Access Control (MAC) sublevel protocols serve purpose",
+   "options": [
+    "To allow the sharing of a broadcast channel by means of a distributed algorithm",
+    "To allow the sharing of a broadcast channel through a centralized algorithm",
+    "To allow the sharing of a point-to-point channel"
+   ],
+   "answer": 0,
+   "hint": "In the MAC sub-level the random access protocols (Aloha, CSMA, etc.) use distributed algorithms."
+  },
+  {
+   "id": "cn-133",
+   "topic": "data-link-layer-and-lans",
+   "text": "The IEEE 802.3 standard (CSMA / CD) provides data units (also including layer 2)",
+   "options": [
+    "Variable in size between 10 and 4500 octets",
+    "Variable in size between 64 and 1518 octets",
+    "Fixed size of 53"
+   ],
+   "answer": 1,
+   "hint": "Review the concepts related to Data Link Layer & LANs."
+  },
+  {
+   "id": "cn-134",
+   "topic": "error-and-flow-control",
+   "text": "Which of the following statements is true?",
+   "options": [
+    "In the commercial standard Ethernet (CSMA / CD access protocols), one is defined minimum packet size to ensure correct collision identification",
+    "In the commercial standard Ethernet (CSMA / CD access protocol), one is defined minimum packet size to distinguish packets from IEEE 802.3 standard packets",
+    "In the commercial standard Ethernet (CSMA / CD access protocol), one is defined minimum packet size to ensure better performance, in terms of traffic disposed of, al access protocol compared to what you would have with maximum size packets"
+   ],
+   "answer": 0,
+   "hint": "On ethernet the collision detection is a function of the length of the packet and the network extension."
+  },
+  {
+   "id": "cn-135",
+   "topic": "network-topologies",
+   "text": "In the header (header) TCP, or in the PCI of the TCP protocol, they are mandatory content",
+   "options": [
+    "The TTL (Time To Live) field that allows the elimination from the network of packets that have too many routers went through",
+    "The sequence number and the ack number, for the numbering of the segment and the acknowledgments (ACK)",
+    "The fragmentation field for managing segment fragmentation"
+   ],
+   "answer": 1,
+   "hint": "See TCP slides for sequence and acknowledgement number fields."
+  },
+  {
+   "id": "cn-136",
+   "topic": "general-networking",
+   "text": "A protocol",
+   "options": [
+    "It is a set of semantic and syntactic rules to allow communication between two entities equal level",
+    "It is a set of semantic and syntactic rules to allow communication between two entities same system",
+    "It is a set of semantic and syntactic rules to allow communication between two systems which are linked together",
+    "It is a set of semantic and syntactic rules to allow communication between two entities different systems"
+   ],
+   "answer": 0,
+   "hint": "By definition, an entity communicates with other peer entities (same level)."
+  },
+  {
+   "id": "cn-137",
+   "topic": "transport-layer",
+   "text": "In a Store-and-Forward packet network, increasing the number of nodes between source and destination",
+   "options": [
+    "It leads to an increase in the delivery time, directly proportional to the size of the package",
+    "It leads to an increase in delivery time, directly proportional to the average speed of the channels",
+    "It leads to an increase in the delivery time, inversely proportional to the size of the package"
+   ],
+   "answer": 0,
+   "hint": "Each node must store the entire packet before forwarding, adding a delay proportional to the packet size at each hop."
+  },
+  {
+   "id": "cn-138",
+   "topic": "transport-layer",
+   "text": "The UDP protocol provides a service",
+   "options": [
+    "Unreliable (i.e. no delivery guarantee) and connectionless",
+    "Reliable (i.e. with delivery guarantee) and connectionless",
+    "Unreliable (i.e. without delivery guarantee) and connection oriented"
+   ],
+   "answer": 0,
+   "hint": "UDP implements simple, unreliable connectionless multiplexing."
+  },
+  {
+   "id": "cn-139",
+   "topic": "transport-layer",
+   "text": "The TCP protocol provides a service",
+   "options": [
+    "Unreliable (i.e. no delivery guarantee) and connectionless",
+    "Reliable (i.e. with delivery guarantee) and connectionless",
+    "Unreliable (i.e. without delivery guarantee) and connection oriented",
+    "Reliable (i.e. with delivery guarantee) and connection oriented"
+   ],
+   "answer": 3,
+   "hint": "TCP provides reliable, connection-oriented data transfer with flow and congestion control."
+  },
+  {
+   "id": "cn-140",
+   "topic": "data-link-layer-and-lans",
+   "text": "The PPP (Point-to-point-Protocol)",
+   "options": [
+    "Use the byte-stuffing technique to ensure data transparency",
+    "Use the bit-stuffing technique to ensure data transparency",
+    "Does not guarantee the transparency of data"
+   ],
+   "answer": 0,
+   "hint": "PPP uses a special flag byte and escapes it via byte-stuffing."
+  },
+  {
+   "id": "cn-141",
+   "topic": "network-topologies",
+   "text": "Comparing Fast Ethernet at 100 Mb / s (100Base T) with Ethernet at 10 Mb / s, which of the following statements is false?",
+   "options": [
+    "The distance constraints between the nodes are more stringent",
+    "A different access protocol is used",
+    "A different physical layer is used"
+   ],
+   "answer": 1,
+   "hint": "Both use the same CSMA/CD access protocol."
+  },
+  {
+   "id": "cn-142",
+   "topic": "data-link-layer-and-lans",
+   "text": "Which of the following protocols does not perform error detection functions on data drives?",
+   "options": [
+    "LaPB (Link access Protocol Balanced)",
+    "IEEE 802.2 LLC (Logical Link Protocol)",
+    "PPP (Point-to-Point Protocol)",
+    "LaPF (Link access Procedure to Frame-mode bearer services)"
+   ],
+   "answer": 1,
+   "hint": "LLC (specifically Type 1) does not perform error control."
+  },
+  {
+   "id": "cn-143",
+   "topic": "network-topologies",
+   "text": "Which of the following statements is true?",
+   "options": [
+    "A T1 topology, with N nodes, C channels and M1 average distance, always allows one to be disposed of lower amount of traffic of a T2 topology, with N nodes, C channels and average distance M2> M1, only with traffic evenly distributed between nodes.",
+    "A T1 topology, with N nodes, C channels and M1 average distance, always allows one to be disposed of traffic quantity lower than a T2 topology, with N nodes, C channels and average distance M2> M1, regardless of the traffic distribution.",
+    "The amount of traffic disposed of in a T1 topology, with N nodes, C channels and average distance M1, with respect to to that disposed of in a T2 topology, with N nodes, C channels and average distance M2> M1, depends on the traffic distribution between nodes"
+   ],
+   "answer": 2,
+   "hint": "Network performance depends heavily on the specific traffic matrix and distribution."
+  },
+  {
+   "id": "cn-144",
+   "topic": "error-and-flow-control",
+   "text": "The main differences between a Frame Relay network and an Internet IP network are possible include:",
+   "options": [
+    "The use or non-use of aRQ (automatic Retransmission reQuest) techniques in each section of the network",
+    "The transfer of information in connection-oriented rather than non-connection-oriented mode connection",
+    "Transfer of data units of variable size instead of fixed size"
+   ],
+   "answer": 1,
+   "hint": "Frame relay is connection-oriented (virtual circuits), IP is connectionless (datagrams)."
+  },
+  {
+   "id": "cn-145",
+   "topic": "data-link-layer-and-lans",
+   "text": "Consider an Ethernet LAN with 10 nodes. Partition the network into two networks interconnected by transparent bridges. Which of the following statements is false?",
+   "options": [
+    "The bridge separates the collision domains of the two interconnected networks",
+    "The performance of the network in terms of traffic disposed improves in any traffic condition, that is, completely independent of the distribution of traffic between nodes",
+    "The bridge introduces an additional delay in transmissions between bridged nodes",
+    "It is not necessary to change the configuration of the nodes connected to the LAN to allow a correct operation after partitioning the network"
+   ],
+   "answer": 1,
+   "hint": "If all traffic is inter-segment, performance might not improve due to bridge processing."
+  },
+  {
+   "id": "cn-146",
+   "topic": "transport-layer",
+   "text": "Consider two LANs (Ethernet 10BaSE) A and B, connected by a bridge B1 and by a router R1 (B1 and R1 are in parallel between the two LANs). Suppose the bridge and router have both ports active and know all the addresses (MAC and IP respectively) of the hosts connected to two LANs. When a host connected to LAN A transmits an IP packet to a host connected to the LAN B",
+   "options": [
+    "The packet is forwarded over LAN B either by the bridge or by the router, depending on the address value Destination MAC contained in the packet",
+    "The packet is forwarded on LAN B by both router R1 and bridge B1",
+    "The packet is forwarded on LAN B only by router R1",
+    "The packet is forwarded on LAN B only by bridge B1"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Transport Layer."
+  },
+  {
+   "id": "cn-147",
+   "topic": "network-topologies",
+   "text": "The size of the current TCP transmitter window during a connection",
+   "options": [
+    "It is regulated exclusively on the basis of the notification by the receiver of the size of the receiving window to perform flow control",
+    "It varies with congestion in the network and due to the flow control exercised by the receiver",
+    "It is fixed"
+   ],
+   "answer": 1,
+   "hint": "The sender window is the minimum between the congestion window (cwnd) and the receiver's advertised window (rwnd)."
+  },
+  {
+   "id": "cn-148",
+   "topic": "transport-layer",
+   "text": "In the event of a segment loss identified by receiving three hits, the size of the current TCP transmitter window",
+   "options": [
+    "It is brought to a value equal to half of the threshold",
+    "It is brought to a value equal to the threshold value",
+    "It is returned to the initial value, equal to one segment"
+   ],
+   "answer": 0,
+   "hint": "This refers to the Fast Recovery mechanism in TCP Reno."
+  },
+  {
+   "id": "cn-149",
+   "topic": "physical-layer",
+   "text": "What is the order of magnitude of the maximum transmission rate on a twisted pair?",
+   "options": [
+    "1 Tbit / s",
+    "1 kbit / s",
+    "1 Mbit / s",
+    "1 Gbit / s",
+    "1 bit / s"
+   ],
+   "answer": 3,
+   "hint": "Modern twisted pair (e.g., Cat6e) supports Gbit speeds."
+  },
+  {
+   "id": "cn-150",
+   "topic": "network-layer",
+   "text": "An IP router",
+   "options": [
+    "It performs both fragmentation and reassembly of the datagram",
+    "Performs fragmentation of datagrams, but not reassembly",
+    "It does not perform datagram fragmentation",
+    "Performs fragmentation of datagrams, and reassembly only if an appropriate bit is set in the IP header"
+   ],
+   "answer": 1,
+   "hint": "Reassembly is only done by the destination host."
+  },
+  {
+   "id": "cn-151",
+   "topic": "error-and-flow-control",
+   "text": "Common channel signaling",
+   "options": [
+    "It requires the use of signaling messages that contain the identifier of the connection to which they refer to",
+    "It is only used in packet-switched networks, because in circuit, the associated channel signaling technique is used",
+    "It cannot be used in cell or packet switched networks because it is too difficult identify connections in these networks without associating them with a signaling channel",
+    "It makes use of common transmission channels that are associated with each connection being made opening the connection itself"
+   ],
+   "answer": 0,
+   "hint": "Common channel signaling uses a separate packet network for control messages."
+  },
+  {
+   "id": "cn-152",
+   "topic": "data-link-layer-and-lans",
+   "text": "Code division multiplexing",
+   "options": [
+    "it is a special case of time division only",
+    "it is a special case of frequency division only",
+    "it allows to use multiplexing and switching on the same physical medium",
+    "it does not necessarily need to be coupled to time or frequency multiplexing"
+   ],
+   "answer": 3,
+   "hint": "CDMA is based on orthogonal codes, independent of time/frequency slots."
+  },
+  {
+   "id": "cn-153",
+   "topic": "error-and-flow-control",
+   "text": "An (N) -protocol regulates interactions",
+   "options": [
+    "between an (N) -entity and a (N-1) -SAP",
+    "between (N) -entities of the same system or of different systems",
+    "between an (N) -entity and all entities below it in the protocol stack",
+    "between an (N) -entity and the (N-1) -entity"
+   ],
+   "answer": 1,
+   "hint": "Protocols define rules between peer entities."
+  },
+  {
+   "id": "cn-154",
+   "topic": "network-topologies",
+   "text": "A Go-Back-N window protocol provides that:",
+   "options": [
+    "when a packet is received with an error, the last N data units are retransmitted",
+    "the transmitter receives feedback for the last N data units transmitted before it can start transmission of other data units",
+    "the transmitter cannot send more than N data units before having received one or more acknowledgments",
+    "every time a time-out expires, the data unit whose sequence order is equal to is retransmitted sequence number of the last transmitted data unit decreased by N"
+   ],
+   "answer": 2,
+   "hint": "The window size N limits the number of unacknowledged packets."
+  },
+  {
+   "id": "cn-155",
+   "topic": "application-layer",
+   "text": "Which of these HTTP statements is false?",
+   "options": [
+    "HTTP is an application-level protocol that allows you to transfer objects on a web page",
+    "HTTP is a language that allows you to define the format of Web pages",
+    "HTTP is based on a client-server architecture",
+    "Without additional workarounds, HTTP is a stateless type protocol"
+   ],
+   "answer": 1,
+   "hint": "HTML is the language for defining format; HTTP is the transfer protocol."
+  },
+  {
+   "id": "cn-156",
+   "topic": "error-and-flow-control",
+   "text": "Using the piggybacking technique in window protocols the advantage of:",
+   "options": [
+    "Confirm the receipt of more than one data unit through a single acknowledgment",
+    "Transmit data units even outside the transmission window",
+    "Increase the likelihood that an ACK will be received by the transmitter",
+    "Reduce the percentage of control information that is carried over the network"
+   ],
+   "answer": 3,
+   "hint": "Piggybacking sends ACKs inside data packets, reducing overhead."
+  },
+  {
+   "id": "cn-157",
+   "topic": "application-layer",
+   "text": "The DHCP discover message is sent over UDP using as the IP destination address:",
+   "options": [
+    "The limited broadcast IP address 255.255.255.255",
+    "The loopback address 127.0.0.1",
+    "The IP address of the local DNS servers",
+    "The IP address of the DHCP servers on the local network"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Application Layer."
+  },
+  {
+   "id": "cn-158",
+   "topic": "network-layer",
+   "text": "What disadvantage does datagram packet switching present compared to circuit switching?",
+   "options": [
+    "Calculation of the routing to the source",
+    "Variability of data delays",
+    "Routing calculation at communication opening",
+    "High communication opening time"
+   ],
+   "answer": 1,
+   "hint": "Datagram switching introduces jitter (variable delay) due to independent routing."
+  },
+  {
+   "id": "cn-159",
+   "topic": "error-and-flow-control",
+   "text": "In the absence of errors, the efficiency of a Stop and Wait protocol:",
+   "options": [
+    "it is always higher than the efficiency of a Go-Back-N protocol",
+    "it is less than the efficiency of a Go-Back-N protocol only if the transmission time of a packet plus the round trip time on the channel is less than the time it takes to send the entire window transmission of the Stop and Wait protocol",
+    "it is less than the efficiency of a Go-Back-N protocol only if the transmission time of a packet is greater than the round trip propagation time on the channel",
+    "it is always less than the efficiency of a Go-Back-N protocol"
+   ],
+   "answer": 3,
+   "hint": "Stop and Wait is a Go-Back-N with window size 1; if N > 1, Go-Back-N is more efficient."
+  },
+  {
+   "id": "cn-160",
+   "topic": "transport-layer",
+   "text": "What is the playout buffer for?",
+   "options": [
+    "To avoid situations of congestion on the network",
+    "Access multimedia content faster thanks to local caching",
+    "To compensate for network delays in streaming multimedia content",
+    "To manage the retransmission window for multimedia contents"
+   ],
+   "answer": 2,
+   "hint": "Playout buffers smooth out jitter in streaming."
+  },
+  {
+   "id": "cn-161",
+   "topic": "transport-layer",
+   "text": "In a virtual circuit packet-switched network the number of labels used for routing it is proportional:",
+   "options": [
+    "To the number of possible destinations",
+    "At the average number of channels outgoing from each node",
+    "The number of active connections",
+    "At the average number of nodes to cross"
+   ],
+   "answer": 2,
+   "hint": "Review the concepts related to Transport Layer."
+  },
+  {
+   "id": "cn-162",
+   "topic": "application-layer",
+   "text": "How are ARP messages encapsulated?",
+   "options": [
+    "In the body of an HTTP message",
+    "Directly in an Ethernet frame",
+    "In one or more TCP segments",
+    "Directly in an IP datagram"
+   ],
+   "answer": 1,
+   "hint": "ARP is a Layer 2 protocol that doesn't use IP headers."
+  },
+  {
+   "id": "cn-163",
+   "topic": "transport-layer",
+   "text": "What happens when the transmission timeout in TCP is set to a value significantly less than the round-trip time?",
+   "options": [
+    "The time it takes to recover from segment loss situations is getting longer",
+    "Unnecessary segment retransmissions may occur",
+    "There is never any visible effect",
+    "The receiver no longer guarantees that correct data is supplied to the process listening on the socket"
+   ],
+   "answer": 1,
+   "hint": "Early timeouts trigger retransmissions of packets that are still in flight."
+  },
+  {
+   "id": "cn-164",
+   "topic": "data-link-layer-and-lans",
+   "text": "The instability of the Aloha and Slotted Aloha protocols is caused by:",
+   "options": [
+    "The increase in propagation delay when the traffic offered exceeds a certain threshold",
+    "The decrease in traffic disposed of when the traffic offered exceeds a certain threshold",
+    "The increase in traffic disposed of when the offered traffic exceeds a certain threshold"
+   ],
+   "answer": 1,
+   "hint": "High traffic leads to more collisions, reducing successful throughput."
+  },
+  {
+   "id": "cn-165",
+   "topic": "transport-layer",
+   "text": "Consider a host that is transmitting data using the TCP protocol. Given a transmitter current window of size equal to 10 segments, with a maximum receiver window equal to 40 segments, when the transmitter receives a segment containing an ACK from the side of the receiver, which of the following situations is impossible?",
+   "options": [
+    "The transmitter's current window becomes 1 segment",
+    "The transmitter's current window becomes 51 segments",
+    "The current window at the transmitter becomes equal to 9 segments",
+    "The current window at the transmitter becomes equal to 5 segments"
+   ],
+   "answer": 1,
+   "hint": "The sender window cannot exceed the receiver's advertised window (40 segments in this case)."
+  },
+  {
+   "id": "cn-166",
+   "topic": "transport-layer",
+   "text": "Which of these fields is not contained in the header of an IPv4 datagram?",
+   "options": [
+    "Destination IP address",
+    "Time to live (TTL)",
+    "Protocol",
+    "Destination port"
+   ],
+   "answer": 3,
+   "hint": "The destination port is a field belonging to the transport layer (TCP/UDP), not the network layer (IP)."
+  },
+  {
+   "id": "cn-167",
+   "topic": "application-layer",
+   "text": "In the hierarchy provided by the DNS for the resolution of names not present in the cache, which one level is located immediately below the Root DNS Server?",
+   "options": [
+    "Top-level domain (TLD) DNS server",
+    "Local DHCP servers",
+    "Local DNS server",
+    "Authoritative DNS servers"
+   ],
+   "answer": 0,
+   "hint": "The DNS hierarchy starts at Root, followed by TLD servers (.com, .org, .it), then Authoritative servers."
+  },
+  {
+   "id": "cn-168",
+   "topic": "network-topologies",
+   "text": "The current congestion window at the TCP transmitter at the start of the connection:",
+   "options": [
+    "It has a size negotiated with the receiver and equal to half the window of the receiver",
+    "It has a size equal to a segment of maximum size (MSS)",
+    "It has a size negotiated with the receiver and equal to the maximum value of the receiver window",
+    "It has a random size chosen during the opening phase of the connection"
+   ],
+   "answer": 1,
+   "hint": "At the start of a connection (Slow Start phase), the cwnd is initialized to 1 MSS."
+  },
+  {
+   "id": "cn-169",
+   "topic": "network-layer",
+   "text": "In a packet-switched network operating in store-and-forward mode a smaller size of data units:",
+   "options": [
+    "Decreases the number of operations that must be performed by a switch to transfer the same total amount of user information",
+    "The probability of losing the packet increases with the same probability of error on the bit",
+    "The routing complexity of each data unit decreases",
+    "Decreases the time from when a data unit reaches the input of a switch until it leaves the switch"
+   ],
+   "answer": 3,
+   "hint": "Smaller packets require less time to be fully received (stored) before the forwarding process can begin."
+  },
+  {
+   "id": "cn-170",
+   "topic": "network-topologies",
+   "text": "In a one-way ring topology, with 10 nodes and uniform unicast traffic (all nodes transmit the same amount of traffic to all others), the average number of channels traversed by a package is equal to:",
+   "options": [
+    "20",
+    "10",
+    "5",
+    "1"
+   ],
+   "answer": 2,
+   "hint": "In a unidirectional ring of N nodes, the average distance is (N-1)/2. For N=10, it's 4.5, which rounds to 5 in this context."
+  },
+  {
+   "id": "cn-171",
+   "topic": "transport-layer",
+   "text": "Transmission Control Protocol (TCP) congestion control is based on:",
+   "options": [
+    "On the variation of the number of parity bits inserted in the transmitted segments",
+    "On the trend of the size of the segments transmitted to the state of the network",
+    "About adapting the transmitter window to the receiver's memory availability",
+    "On the dynamics of the transmitter window size"
+   ],
+   "answer": 3,
+   "hint": "Congestion control adjusts the congestion window (cwnd) based on perceived network loss or delay."
+  },
+  {
+   "id": "cn-172",
+   "topic": "error-and-flow-control",
+   "text": "The minimum time required to send a 100Kbyte packet between two stations separated by 300 meters, using a wired network with UTP (Unshielded Twisted Pair) and crossing 3 interconnection equipment operating in store and forward mode, is of the order of:",
+   "options": [
+    "A few seconds",
+    "It can only be calculated by knowing the transmission bit rate on the channels",
+    "A few milliseconds",
+    "Hundreds of milliseconds"
+   ],
+   "answer": 1,
+   "hint": "Without the transmission rate (bandwidth), the serialization delay (the dominant factor) cannot be determined."
+  },
+  {
+   "id": "cn-173",
+   "topic": "transport-layer",
+   "text": "What are the source and destination port fields in TCP and UDP for?",
+   "options": [
+    "To implement a multiplexing / demultiplexing mechanism for processes on hosts",
+    "To manage the allocation of resources on the router on the path from source to destination",
+    "To indicate the network interfaces on which packets will be forwarded by IP",
+    "To indicate the physical interfaces on which the frames will be transmitted by Ethernet"
+   ],
+   "answer": 0,
+   "hint": "Ports allow the transport layer to direct data to the specific application process (socket) on a host."
+  },
+  {
+   "id": "cn-174",
+   "topic": "transport-layer",
+   "text": "Among the fundamental functions of the transport layer in the OSI model we find:",
+   "options": [
+    "Exchange of labels in circuit switching",
+    "Reading data from a terminal device",
+    "Recovery of transmission errors",
+    "Data drive routing"
+   ],
+   "answer": 2,
+   "hint": "The transport layer (like TCP) provides end-to-end error recovery and reliability."
+  },
+  {
+   "id": "cn-175",
+   "topic": "physical-layer",
+   "text": "At the same rate of information transmitted, which of the following line codings it requires a physically lower bitrate?",
+   "options": [
+    "12B15B encoding",
+    "4B5B encoding",
+    "They all require the same bit rate",
+    "8B10B encoding"
+   ],
+   "answer": 2,
+   "hint": "If the \"rate of information transmitted\" refers to the effective bit rate, the physical line rate adapts to the overhead of each specific encoding."
+  },
+  {
+   "id": "cn-176",
+   "topic": "transport-layer",
+   "text": "If a router receives an IP packet, with correct checksum, with source IP address and destination equal and TTL field = 9",
+   "options": [
+    "It routes it to the destination",
+    "It still forwards it to the destination, however sending an ICMP packet to the source for report the error",
+    "It discards it and sends an ICMP error packet to the source",
+    "Discard the package"
+   ],
+   "answer": 0,
+   "hint": "While unusual, an IP packet with the same source/destination is valid (loopback or local delivery) as long as the checksum and TTL are valid."
+  },
+  {
+   "id": "cn-177",
+   "topic": "transport-layer",
+   "text": "The preamble in the Ethernet packet:",
+   "options": [
+    "It allows to recognize transmission errors",
+    "Used to identify the type of protocol transported in the data field of the Ethernet packet",
+    "It allows you to identify the application process to which to deliver the package",
+    "It is necessary to allow the receiver node to tune its clock with the clock of the transmitter node"
+   ],
+   "answer": 3,
+   "hint": "The preamble provides a bit pattern for clock synchronization between transmitter and receiver."
+  },
+  {
+   "id": "cn-178",
+   "topic": "network-layer",
+   "text": "Two IP stations 130.192.40.1/24 and 130.192.40.200/24",
+   "options": [
+    "They have no valid IP addresses",
+    "They can exchange IP packets directly",
+    "They can only exchange IP packets via a router",
+    "They cannot exchange IP packets"
+   ],
+   "answer": 1,
+   "hint": "Since they share the same subnet prefix (/24), they are on the same local network and can communicate directly."
+  },
+  {
+   "id": "cn-179",
+   "topic": "application-layer",
+   "text": "The protocol SMTP",
+   "options": [
+    "it is used by a mail client to get a mail message from a server",
+    "allows a mail server to tell another mail server who the sender of a mail server is message",
+    "allows a mail server to verify the identity of a user who wants to send a message",
+    "it is based on the telnet protocol"
+   ],
+   "answer": 1,
+   "hint": "SMTP is used for \"pushing\" mail from client to server or between servers."
+  },
+  {
+   "id": "cn-180",
+   "topic": "transport-layer",
+   "text": "TCP messages contain a sequence number indicating",
+   "options": [
+    "the next byte the receiver expects to receive",
+    "the message number in the sequence of messages transmitted over the TCP connection",
+    "the sequence number of the message in a set of fragments produced by fragmenting a bigger message",
+    "the position of the first byte of the message in the sequence of bytes transmitted on the TCP connection"
+   ],
+   "answer": 3,
+   "hint": "TCP sequence numbers track bytes, not packets, identifying the position of the first byte in the stream."
+  },
+  {
+   "id": "cn-181",
+   "topic": "transport-layer",
+   "text": "Congestion control in TCP",
+   "options": [
+    "imposes a maximum number of TCP connections that a station can open",
+    "is based on information received from routers present on the path",
+    "is present only for some types of connection",
+    "limits the size of the transmission window"
+   ],
+   "answer": 3,
+   "hint": "Congestion control effectively caps the window size to match network capacity."
+  },
+  {
+   "id": "cn-182",
+   "topic": "error-and-flow-control",
+   "text": "In the WI-FI protocol with DCF and handshaking",
+   "options": [
+    "sending the RTS and CTS packets reduces the probability of collisions on the data packets",
+    "collisions are completely avoided thanks to the carrier sense mechanism",
+    "sending the RTS packets and the CTS allows two terminals, one of which is hidden, to send their plots at the same time",
+    "collisions on any type of data transmitted are completely avoided"
+   ],
+   "answer": 0,
+   "hint": "The RTS/CTS mechanism addresses the \"hidden node\" problem, reducing collisions on large data frames."
+  },
+  {
+   "id": "cn-183",
+   "topic": "application-layer",
+   "text": "The HEAD method of the HTTP protocol is used to:",
+   "options": [
+    "get the header of a web page",
+    "send only the header of an HTTP request",
+    "change the header, or home page, of a web server",
+    "receive only the HTTP response header"
+   ],
+   "answer": 3,
+   "hint": "HEAD requests the same response as GET but without the message body."
+  },
+  {
+   "id": "cn-184",
+   "topic": "network-layer",
+   "text": "The receipt on node A of an ICMP Echo Reply packet sent by node B indicates that",
+   "options": [
+    "A and B are able to exchange IP packets",
+    "A is able to send IP packets to B but not vice versa",
+    "B is able to send IP packets to A but not vice versa",
+    "B is able to send IP packets to A but vice versa is not guaranteed"
+   ],
+   "answer": 0,
+   "hint": "An Echo Reply proves that the request reached B and the response reached A."
+  },
+  {
+   "id": "cn-185",
+   "topic": "network-layer",
+   "text": "The ARP Request frame is used for learning",
+   "options": [
+    "the MAC address of a station connected to an IP network other than that of the source",
+    "the IP address of an Ethernet node directly connected to the source node",
+    "the IP address of a station given its internet name",
+    "the MAC address of an IP node directly connected to the source node"
+   ],
+   "answer": 3,
+   "hint": "ARP resolves a known IP address to a MAC address on the same local segment."
+  },
+  {
+   "id": "cn-186",
+   "topic": "network-topologies",
+   "text": "The DHCP protocol",
+   "options": [
+    "it is used for automatic configuration of an IP station",
+    "it only provides IP stations with private type addresses",
+    "provides the stations with the IP address corresponding to a given domain name",
+    "it does not allow a station to reuse the same IP address already used during a previous connection to the local network"
+   ],
+   "answer": 0,
+   "hint": "DHCP assigns IP addresses, masks, gateways, and DNS server info automatically."
+  },
+  {
+   "id": "cn-187",
+   "topic": "network-topologies",
+   "text": "Given a topology (nodes, channels and associated costs), the optimal path between a source and a destination",
+   "options": [
+    "it never changes even if a channel becomes unavailable",
+    "it changes depending on the node running the link state algorithm",
+    "it is the same whether a link state algorithm is used or a distance vector algorithm is used",
+    "it never changes even if the cost of the channels changes"
+   ],
+   "answer": 2,
+   "hint": "Both algorithms are designed to find the shortest path based on the same metrics; they just use different methods."
+  },
+  {
+   "id": "cn-188",
+   "topic": "application-layer",
+   "text": "When an Ethernet switch receives an ARP Request packet",
+   "options": [
+    "it only forwards it to the port to which the network's DHCP server is connected",
+    "forwards it on all ports except the one from which the packet was received",
+    "it forwards it only on ports on which multicast traffic has been enabled",
+    "it only forwards it on the port to which the destination node / host is connected"
+   ],
+   "answer": 1,
+   "hint": "ARP Requests are broadcast at the MAC layer; a switch floods broadcast frames to all ports except the source."
+  },
+  {
+   "id": "cn-189",
+   "topic": "general-networking",
+   "text": "IP version 4 addresses are:",
+   "options": [
+    "randomly assigned to the various stations connected to the internet, regardless of theirs position",
+    "assigned by the manufacturers of the network cards",
+    "generally assigned on a geographical and topological basis, in order to favor their aggregation"
+   ],
+   "answer": 2,
+   "hint": "Hierarchical addressing allows routers to use a single routing table entry for a large block of addresses (aggregation)."
+  },
+  {
+   "id": "cn-190",
+   "topic": "network-topologies",
+   "text": "The slow start phase in TCP",
+   "options": [
+    "expects the congestion window to remain at a very low value for the duration of the connection",
+    "it is one of the phases that carry out the flow control",
+    "it allows the congestion window to grow quickly starting from a very initial value low",
+    "allows the congestion window to grow slowly in order to avoid situations congestion"
+   ],
+   "answer": 2,
+   "hint": "Despite the name, Slow Start doubles the cwnd every RTT, leading to exponential growth."
+  },
+  {
+   "id": "cn-191",
+   "topic": "error-and-flow-control",
+   "text": "The minimum packet size in the CSMA / CD protocol of the Ethernet network",
+   "options": [
+    "it is necessary to ensure recognition of the collision",
+    "it is preferable to maximize performance in terms of traffic disposed of",
+    "it is necessary to ensure that you avoid causing multiple consecutive collisions on the same packet",
+    "it does not depend in any way on the maximum allowed size (in meters) of the network"
+   ],
+   "answer": 0,
+   "hint": "The packet must be long enough so the transmitter is still sending when a collision signal from the far end of the cable returns."
+  },
+  {
+   "id": "cn-192",
+   "topic": "network-topologies",
+   "text": "A ring topology may be preferable to a mesh topology because:",
+   "options": [
+    "it can carry data and voice communications at the same time",
+    "routing is simpler",
+    "it is more robust to failure",
+    "allows bi-directional paths"
+   ],
+   "answer": 1,
+   "hint": "Routing in a ring is trivial (send left or right), whereas mesh requires complex routing tables."
+  },
+  {
+   "id": "cn-193",
+   "topic": "error-and-flow-control",
+   "text": "Two stations in the same collision domain on an Ethernet network",
+   "options": [
+    "they can create a collision only in the case of exactly simultaneous transmission",
+    "they can never create a collision thanks to the carrier sense operation typical of the protocol CSMA-CD",
+    "they identify the collision thanks to a NACK frame sent by the switch on which they are connected",
+    "they can create a collision when they transmit a packet"
+   ],
+   "answer": 3,
+   "hint": "Collisions are a fundamental characteristic of shared media/collision domains."
+  },
+  {
+   "id": "cn-194",
+   "topic": "transport-layer",
+   "text": "The TCP segments sent from host A to host B contain an acknowledgment number (Acknowledgment number) indicating:",
+   "options": [
+    "the next byte host B expects to receive",
+    "the next byte host A expects to receive in the segments sent from host B",
+    "the position of the segment in the sequence of segments transmitted on the TCP connection",
+    "the position of the first byte of the segment in the sequence of bytes transmitted on the TCP connection"
+   ],
+   "answer": 1,
+   "hint": "ACKs are \"next-byte expected\" numbers, informing the other side of what was successfully received."
+  },
+  {
+   "id": "cn-195",
+   "topic": "error-and-flow-control",
+   "text": "A node using a Selective Repeat windowed protocol with cumulative semantics of ACK to receive data from another node is expected to deliver a duplicate PDU. Assuming none given it was lost, which of the following reasons is most likely the cause of this behavior?",
+   "options": [
+    "The receiver window is too small",
+    "transmitter timeout is too short",
+    "transmitter timeout is too long",
+    "the transmitter window is too small"
+   ],
+   "answer": 1,
+   "hint": "If the timeout is shorter than the RTT, the sender will retransmit before the ACK can arrive."
+  },
+  {
+   "id": "cn-196",
+   "topic": "error-and-flow-control",
+   "text": "A node using a Go-Back-N windowed protocol with cumulative ACK semantics to receive data from another node, a duplicate PDU is delivered. Which of the following actions undertakes?",
+   "options": [
+    "Always send an ACK for the expected sequence number",
+    "if the PDU is within the receiving window, it always sends an ACK relative to the sequence number of the duplicated PDU",
+    "sends an ACK relative to the expected sequence number only if the timeout has not yet expired transmitter",
+    "always sends an ACK regarding the sequence number of the duplicated PDU"
+   ],
+   "answer": 0,
+   "hint": "In GBN, the receiver re-acknowledges the last correctly received in-order packet."
+  },
+  {
+   "id": "cn-197",
+   "topic": "transport-layer",
+   "text": "The IP protocol",
+   "options": [
+    "implements the transport layer of the Internet network",
+    "makes a large network more scalable thanks to address aggregation",
+    "it is not used in local networks as the Ethernet technology is adequate",
+    "provides the mechanisms for accessing a shared medium"
+   ],
+   "answer": 1,
+   "hint": "IP's hierarchical structure is what allows the Internet to scale via routing table aggregation."
+  },
+  {
+   "id": "cn-198",
+   "topic": "transport-layer",
+   "text": "A routing protocol",
+   "options": [
+    "involves exchanging information on the state of the network to build routing tables",
+    "defines the operations to be performed to forward individual packets on the outbound port",
+    "defines the operations to be performed to choose the path to the destination",
+    "it uses routing tables but only in the case of circuit switching"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Transport Layer."
+  },
+  {
+   "id": "cn-199",
+   "topic": "transport-layer",
+   "text": "In the ATM protocol of the B-ISDN network, the data units, called cells, are small in size (48byte + 5byte header)",
+   "options": [
+    "to segment the data units of the IP protocol into cells in order to decrease the probability of data loss",
+    "to improve the relationship between headers and user data in the cell",
+    "to reduce the packaging time (package creation) to transfer the voice for real-time applications",
+    "to increase the transfer speed of a large file thanks to the efficient segmentation and reassembly process"
+   ],
+   "answer": 2,
+   "hint": "Small cell sizes minimize packetization delay, which is critical for real-time voice services."
+  },
+  {
+   "id": "cn-200",
+   "topic": "application-layer",
+   "text": "The DNS",
+   "options": [
+    "it is a system used for the automatic configuration of the domain name on the hosts on the network Internet",
+    "is a distributed database that, given a search key, allows you to identify, within one server hierarchy, a record of a specified type",
+    "is a system used by the IANA to delegate the assignment of domain names (Top Level Domain)",
+    "is a server that is installed within a corporate network and contains the correspondence between name and address of any host on the internet"
+   ],
+   "answer": 1,
+   "hint": "DNS is a distributed, hierarchical database primarily used to map hostnames to IP addresses."
+  },
+  {
+   "id": "cn-201",
+   "topic": "network-topologies",
+   "text": "Simultaneous sharing of the same physical channel between different sources can take place",
+   "options": [
+    "through frequency multiplexing",
+    "through circuit multiplexing",
+    "through circuit switching",
+    "through virtual circuit packet switching"
+   ],
+   "answer": 0,
+   "hint": "Frequency Division Multiplexing (FDM) allows multiple signals to share the same medium by using different frequency bands simultaneously."
+  },
+  {
+   "id": "cn-202",
+   "topic": "data-link-layer-and-lans",
+   "text": "The IP network can be assigned to an Ethernet network containing 200 stations",
+   "options": [
+    "130.192.2.0/24",
+    "130.192.0.0/25",
+    "130.192.2.0/25",
+    "130.192.2.0/26"
+   ],
+   "answer": 0,
+   "hint": "A /24 network provides 254 usable addresses, which fits 200 stations. A /25 only provides 126, and a /26 only 62."
+  },
+  {
+   "id": "cn-203",
+   "topic": "transport-layer",
+   "text": "The TCP segments",
+   "options": [
+    "they have a fixed size negotiated when the connection is established",
+    "have a fixed size specified by the TCP standard",
+    "they vary in size which is decided on the basis of the level of congestion on the network",
+    "they vary in size which does not depend on the level of congestion on the network"
+   ],
+   "answer": 3,
+   "hint": "While the window size depends on congestion, the individual segment size (up to MSS) is determined by MTU and application data, not network congestion levels."
+  },
+  {
+   "id": "cn-204",
+   "topic": "network-layer",
+   "text": "To reduce the packaging delay it is advisable",
+   "options": [
+    "increase the size of the header",
+    "choose a nearby destination",
+    "reduce the size of the PDU data field",
+    "use a contention access protocol"
+   ],
+   "answer": 2,
+   "hint": "Reducing the payload size means the transmitter spends less time \"filling\" the packet before sending it."
+  },
+  {
+   "id": "cn-205",
+   "topic": "physical-layer",
+   "text": "In a UTP cable (Unshielded Twisted Pair) the signal transmission takes place by exploiting",
+   "options": [
+    "the difference between the voltages of different pairs of conductors",
+    "the difference between the voltages on the components of a pair of conductors",
+    "the difference between the voltage of a single conductor and the \"earth\"",
+    "the difference between the voltage of a single conductor and the metallic braid"
+   ],
+   "answer": 1,
+   "hint": "Differential signaling on a twisted pair uses the voltage difference between the two wires in the pair to cancel out electromagnetic interference."
+  },
+  {
+   "id": "cn-206",
+   "topic": "network-topologies",
+   "text": "Considering the transmission of a single packet in a multiple access network",
+   "options": [
+    "the ALOHA protocol always guarantees the same access delay as that of the protocol SLOTTED ALOHA",
+    "the SLOTTED ALOHA protocol guarantees a shorter access delay than the protocol ALOHA",
+    "it is preferable to use an ordered access protocol to reduce the access delay",
+    "the ALOHA protocol guarantees a shorter access delay than that of the SLOTTED protocol ALOHA"
+   ],
+   "answer": 3,
+   "hint": "In Slotted ALOHA, a node must wait for the start of the next slot; in pure ALOHA, it can transmit immediately."
+  },
+  {
+   "id": "cn-207",
+   "topic": "transport-layer",
+   "text": "Flow control",
+   "options": [
+    "it is offered by UDP using a special field in the header",
+    "it is offered by both TCP and UDP as it is fundamental in the realization of a end-to-end communication",
+    "it is not offered by either TCP or UDP as it is already present in the lower level protocols",
+    "it is offered by TCP using a special field in the header"
+   ],
+   "answer": 3,
+   "hint": "TCP uses the \"Receive Window\" field in its header to implement flow control."
+  },
+  {
+   "id": "cn-208",
+   "topic": "wireless-and-mobile-networks",
+   "text": "An example of multiple access is represented by",
+   "options": [
+    "base station that transmits to mobile terminals of a cellular network",
+    "local fixed telephone exchange",
+    "television broadcasts radiated by satellite",
+    "mobile terminals that transmit to the base station in a cellular network"
+   ],
+   "answer": 3,
+   "hint": "Multiple mobile terminals compete to access the shared uplink channel to the base station."
+  },
+  {
+   "id": "cn-209",
+   "topic": "transport-layer",
+   "text": "Which of the following functions are not performed by the Transmission Control Protocol (TCP)?",
+   "options": [
+    "Congestion control",
+    "Maintenance of the byte sequence",
+    "Multiplexing / demultiplexing through the door mechanism",
+    "Choice of packet routing"
+   ],
+   "answer": 3,
+   "hint": "Routing is a Network Layer (Layer 3 - IP) function, not a Transport Layer (Layer 4) function."
+  },
+  {
+   "id": "cn-210",
+   "topic": "error-and-flow-control",
+   "text": "For a transmitter that implements an ARQ (Automatic Retransmission reQuest), the receipt of a succession of hits containing the same sequence number is a symptom from",
+   "options": [
+    "an increase in the duration of the timeout",
+    "a loss of acknowledgment data drive (ACK)",
+    "an increase in the bandwidth availability between transmitter and receiver",
+    "a loss of a data unit of information"
+   ],
+   "answer": 3,
+   "hint": "Duplicate ACKs are sent by the receiver when it receives out-of-order segments, usually indicating that an intermediate segment was lost."
+  },
+  {
+   "id": "cn-211",
+   "topic": "network-layer",
+   "text": "Which of the following functions is not characteristic of the second architectural level of the OSI model?",
+   "options": [
+    "delimitation of data units",
+    "addressing on the local network",
+    "error checking on data drives",
+    "end-to-end routing of data drives"
+   ],
+   "answer": 3,
+   "hint": "Routing is the primary function of the Network Layer (Level 3)."
+  },
+  {
+   "id": "cn-212",
+   "topic": "network-topologies",
+   "text": "Which of the following statements applies to Fast Ethernet in full-duplex mode (bidirectional)?",
+   "options": [
+    "The full-duplex mode can be used between a user station and a switch port, or between the ports of two switches",
+    "The full-duplex mode does not allow a greater distance between a user station and one switch",
+    "The full-duplex mode allows you to interconnect switches in a ring topology",
+    "The full-duplex mode does not increase the amount of information that can be disposed of between a user station and a switch, compared to half-duplex mode"
+   ],
+   "answer": 0,
+   "hint": "Full-duplex eliminates collisions, allowing simultaneous transmission and reception between two point-to-point entities."
+  },
+  {
+   "id": "cn-213",
+   "topic": "network-topologies",
+   "text": "The TCP transmitter window control algorithm switches from the slow-start phase to congestion avoidance (AIMD)",
+   "options": [
+    "upon notification by the receiver",
+    "when the current window reaches a threshold value",
+    "after a timeout expires",
+    "as soon as an out of sequence feedback is received"
+   ],
+   "answer": 1,
+   "hint": "The transition occurs when cwnd reaches the ssthresh (slow start threshold)."
+  },
+  {
+   "id": "cn-214",
+   "topic": "network-layer",
+   "text": "In a packet-switched network of the virtual circuit type, the algorithm of routing applies to switching nodes",
+   "options": [
+    "to all packets received",
+    "only to the request packets for opening and closing the virtual circuit",
+    "to data packets only",
+    "to the virtual circuit opening request packets only"
+   ],
+   "answer": 3,
+   "hint": "Routing decisions are made during the signaling phase (opening the circuit); subsequent data packets simply follow the established path using labels."
+  },
+  {
+   "id": "cn-215",
+   "topic": "network-layer",
+   "text": "Which of these statements regarding peer-to-peer architectures is false?",
+   "options": [
+    "They are self-scaling, i.e. the performances do not change drastically as the number of peer",
+    "The peers are located in large data centers and are managed by the same administrator",
+    "Resources usually remain accessible even if some peers are turned off",
+    "Peers can change their IP address over time"
+   ],
+   "answer": 1,
+   "hint": "P2P is characterized by decentralized control and resources located at the edge (user devices), not central data centers."
+  },
+  {
+   "id": "cn-216",
+   "topic": "network-layer",
+   "text": "Which of these statements regarding datagram routing in IP networks is true?",
+   "options": [
+    "It is done by routers on the basis of the destination IP address",
+    "It is done by routers on the basis of the source IP address",
+    "It is performed by routers on the basis of the virtual-circuit (VC) identifier",
+    "IP is based on circuit switching, so no routing is done"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Network Layer."
+  },
+  {
+   "id": "cn-217",
+   "topic": "data-link-layer-and-lans",
+   "text": "The fact that the Point-to-Point Protocol (PPP) operates on point-to-point links involves, among other things:",
+   "options": [
+    "That PPP should use MAC layer addresses to distinguish sender and recipient",
+    "That it is not necessary to use addresses in the PPP header",
+    "That PPP should send the identity of the recipient to the higher levels",
+    "That the PPP frames have a fixed length"
+   ],
+   "answer": 1,
+   "hint": "In a direct point-to-point link, there is only one possible receiver, making individual addressing unnecessary."
+  },
+  {
+   "id": "cn-218",
+   "topic": "network-topologies",
+   "text": "Which of the following is necessary to make the operation of a window protocol in case of non-sequential channel between transmitter and receiver?",
+   "options": [
+    "Use of cumulative confirmations",
+    "Increase of the bits in the address fields of the data units",
+    "Choice of transmission and reception windows of equal size",
+    "Increase of the bits used for the numbering of the data units"
+   ],
+   "answer": 3,
+   "hint": "More sequence number bits are needed to distinguish between new and old (delayed) packets on a non-sequential channel."
+  },
+  {
+   "id": "cn-219",
+   "topic": "transport-layer",
+   "text": "Which of these statements about TCP's retransmission mechanism is false?",
+   "options": [
+    "Receiving a triple duplicate ACK causes retransmission of the oldest segment awaiting confirmation",
+    "A timeout causes retransmission of the oldest segment awaiting confirmation",
+    "A timeout causes retransmission of all segments awaiting confirmation",
+    "Receiving an ACK cumulatively confirms all previous segments as well"
+   ],
+   "answer": 2,
+   "hint": "TCP typically retransmits only the specific segment that timed out (or the one identified by triple duplicate ACKs)."
+  },
+  {
+   "id": "cn-220",
+   "topic": "application-layer",
+   "text": "Which of these DASH statements is false?:",
+   "options": [
+    "It is based on the availability of different bit encoded versions of the same multimedia content installments",
+    "It produces messages that are packaged in RTP to make internet telephony",
+    "Make a compromise between available network bandwidth and multimedia content quality",
+    "It is used for streaming multimedia content over HTTP"
+   ],
+   "answer": 1,
+   "hint": "DASH (Dynamic Adaptive Streaming over HTTP) is for video streaming, not real-time RTP-based telephony."
+  },
+  {
+   "id": "cn-221",
+   "topic": "network-layer",
+   "text": "In datagram type packet switching it is foreseen:",
+   "options": [
+    "An allocation of transmission resources only for the duration of packet transmission",
+    "A statistical choice between frequency multiplexing and time multiplexing",
+    "A preventive allocation of transmission resources based on source activity statistics",
+    "A permanent allocation of transmission resources to different information flows"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Network Layer."
+  },
+  {
+   "id": "cn-222",
+   "topic": "transport-layer",
+   "text": "The TCP protocol dynamically varies the size of the current window at the transmitter to obtain:",
+   "options": [
+    "The window does not change",
+    "Both flow control and congestion control",
+    "Congestion Control Only",
+    "Flow control only"
+   ],
+   "answer": 1,
+   "hint": "TCP window size is limited by both the network capacity (congestion window) and the receiver's capacity (advertised window)."
+  },
+  {
+   "id": "cn-223",
+   "topic": "wireless-and-mobile-networks",
+   "text": "Which of the following is NOT an example of multiple access?",
+   "options": [
+    "A switch that transmits packets on an output interface in a switched network package",
+    "Aloha stations towards the Master station",
+    "Smartphones transmitting to a base station in the access network of a cellular network",
+    "Transmission of computers equipped with a WIFI card to an Access Point"
+   ],
+   "answer": 0,
+   "hint": "A switch port output is typically a point-to-point link to the next node; the others involve shared media."
+  },
+  {
+   "id": "cn-224",
+   "topic": "network-topologies",
+   "text": "There exists at least one tree topology with 5 nodes and 4 channels in which, if a channel is added between two nodes not directly connected to each other, the topology:",
+   "options": [
+    "Becomes a ring topology",
+    "Remains a tree topology",
+    "Becomes a star topology",
+    "Become a fully connected topology"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Network Topologies."
+  },
+  {
+   "id": "cn-225",
+   "topic": "application-layer",
+   "text": "Which of these DHCP claims is false?",
+   "options": [
+    "DHCP dynamically supplies an IP address to a requesting host",
+    "Among the information provided by the DHCP server there is also the default gateway address",
+    "DHCP messages are enveloped in UDP datagrams sent in broadcast",
+    "There can be at most one DHCP server on a network"
+   ],
+   "answer": 3,
+   "hint": "Multiple DHCP servers can coexist on a network for redundancy or different subnet management."
+  },
+  {
+   "id": "cn-226",
+   "topic": "network-topologies",
+   "text": "In the IP header, or in the PCI of the IP protocol, it is mandatory content:",
+   "options": [
+    "The Time To Live field that allows the elimination from the network of packets that have passed through too many routers",
+    "The source MAC address, useful for sending replies to received packets",
+    "The ACK Number field for the numbering of the hits (ACK)",
+    "The CODE field, which contains the SYN, FIN and ACK flags for opening and closing the connection"
+   ],
+   "answer": 0,
+   "hint": "TTL is an IP header field; MAC addresses are Layer 2, and ACKs/Flags are Layer 4 (TCP)."
+  },
+  {
+   "id": "cn-227",
+   "topic": "network-layer",
+   "text": "A link state routing algorithm provides that:",
+   "options": [
+    "Each node of the network communicates the information on the cost of transmission to all the nodes of the network towards the nodes adjacent to it",
+    "Each node in the network generates its own routing tables and then distributes them to the nodes only adjacent",
+    "Each node in the network communicates information on cost and direction to the nodes adjacent to it of the roads that lead to every possible destination",
+    "Each node on the network generates its own routing tables and then distributes them to everyone else network nodes"
+   ],
+   "answer": 0,
+   "hint": "Link-state (OSPF) involves flooding local connectivity info to all nodes so everyone can build the full map."
+  },
+  {
+   "id": "cn-228",
+   "topic": "transport-layer",
+   "text": "In an Ethernet network where terminals are connected in full-duplex mode to the ports of one switch using a UTP cable:",
+   "options": [
+    "The CSMA / CD access protocol is in fact useless because the switch separates the collision domains between its doors",
+    "The CSMA / CD access protocol is in fact useless because the switch works at higher bit rates or equal to 1GB / s, making frames short-lived",
+    "The CSMA / CD access protocol is still used for bit rates below 100Mb / s",
+    "The CSMA / CD access protocol is still used, but only in case two transmissions begin at the same time"
+   ],
+   "answer": 0,
+   "hint": "Full-duplex switching creates dedicated, collision-free paths."
+  },
+  {
+   "id": "cn-229",
+   "topic": "error-and-flow-control",
+   "text": "Over a time interval T, a transmitter node using a windowed protocol Go-Back-N with window equal to 5 PDUs transmits PDUs numbered 9, 10, 11 and receives ACK (cumulative) 8. Assuming the timeout has not expired and ACK 8 is the one with the highest sequence number received up to this point, which of the following actions is allowed by the protocol rules in this one situation?",
+   "options": [
+    "Send PDU 12",
+    "Send PDU 8",
+    "Send PDUs 12 and 13",
+    "No action until more ACKs are received"
+   ],
+   "answer": 0,
+   "hint": "Review the concepts related to Error & Flow Control."
+  },
+  {
+   "id": "cn-230",
+   "topic": "general-networking",
+   "text": "A (N) -PDU (Protocol Data Unit), passing to level (N-1) becomes:",
+   "options": [
+    "One or more (N) -SDUs (Service Data Units)",
+    "One or more (N-1) -SDU (Service Data Unit)",
+    "Una (N-1) -PCI (Protocol Control Information)",
+    "One or more (N-1) -SDUs (Service Data Units) to which N-PCI are added"
+   ],
+   "answer": 1,
+   "hint": "Data encapsulation: a PDU at one layer becomes the payload (SDU) for the layer below."
+  },
+  {
+   "id": "cn-231",
+   "topic": "network-layer",
+   "text": "The Address Resolution Protocol (ARP) allows you to:",
+   "options": [
+    "Obtain an unknown IP address of a host from a domain name",
+    "Send error messages between routers",
+    "Obtain an unknown MAC address of a host from an IP address",
+    "Obtain an unknown IP address of a host from a MAC address"
+   ],
+   "answer": 2,
+   "hint": "ARP maps Layer 3 (IP) addresses to Layer 2 (Physical/MAC) addresses."
+  },
+  {
+   "id": "cn-232",
+   "topic": "application-layer",
+   "text": "Which of these Web cookie statements is false?",
+   "options": [
+    "A browser in possession of a cookie includes it in subsequent requests to its HTTP server",
+    "The browser creates a different cookie every time it accesses the same HTTP server",
+    "The cookie is created by the HTTP server when a browser logs in for the first time",
+    "The cookie is stored by the browser in the client host's file system"
+   ],
+   "answer": 1,
+   "hint": "The server creates the cookie to identify a returning user; the browser sends back the same existing cookie rather than creating a new one."
+  },
+  {
+   "id": "cn-233",
+   "topic": "network-topologies",
+   "text": "Which of the following statements about the comparison between the Aloha and Slotted-Aloha protocols is true?",
+   "options": [
+    "Collisions in Aloha can occur at any time, while in Slotted-Aloha they coincide with the beginning of the plots",
+    "Broadcasts in Aloha can start at any time, while in Slotted-Aloha they must be preceded by a channel reservation slot",
+    "The transmission in Slotted-Aloha must be preceded by listening to the channel, while in Aloha it can happen as soon as the plot is available",
+    "Unlike Slotted-Aloha, Aloha's performance depends on propagation delays"
+   ],
+   "answer": 0,
+   "hint": "Slotted-Aloha restricts transmissions to the start of discrete time slots, reducing the collision window."
+  },
+  {
+   "id": "cn-234",
+   "topic": "network-topologies",
+   "text": "In the event that an error in the configuration of the forwarding tables on the routers generates a closed path on the net, which of these statements is true?",
+   "options": [
+    "A datagram that circulates on that path is sooner or later deleted by routers on the basis of the TTL field",
+    "The spanning tree protocol prevents these problems from arising before they arise",
+    "A datagram can circulate on this path indefinitely",
+    "A datagram that circulates on this path is sooner or later eliminated by the routers, which detect it comparing the content to the copies kept in the local cache"
+   ],
+   "answer": 0,
+   "hint": "The Time To Live (TTL) field is decremented by each router; when it reaches zero, the packet is discarded to prevent infinite loops."
+  },
+  {
+   "id": "cn-235",
+   "topic": "error-and-flow-control",
+   "text": "The transmission delay of a PDU in a packet switching network:",
+   "options": [
+    "It depends on the size of the PDU and the distance between the transmitter and receiver",
+    "It just depends on the bit rate of the transmitter",
+    "It depends on the bit rate of the transmitter and the distance between the transmitter and the receiver",
+    "It depends on the bit rate of the transmitter and the size of the PDU"
+   ],
+   "answer": 3,
+   "hint": "Transmission delay = (Size of PDU in bits) / (Bit rate in bps). Distance affects propagation delay, not transmission delay."
+  },
+  {
+   "id": "cn-236",
+   "topic": "transport-layer",
+   "text": "Consider an extended LAN in Ethernet technology whose nodes are interconnected by transparent switches. Which of the following statements is false?",
+   "options": [
+    "Switches can support the creation of Virtual LANs",
+    "Switches introduce additional delay in transmissions between nodes connected through the switches themselves",
+    "It is necessary to change the configuration of the nodes connected to the LAN to allow correct routing of MAC frames between switches",
+    "The switches separate the collision domains of the interconnected network portions"
+   ],
+   "answer": 2,
+   "hint": "Switches are transparent; end nodes do not need any special configuration to work through them."
+  },
+  {
+   "id": "cn-237",
+   "topic": "network-topologies",
+   "text": "Regarding the reception of an out of sequence segment in TCP, which one of these statements is true?",
+   "options": [
+    "The reordering of segments is the responsibility of the RTP protocol",
+    "The receiver immediately delivers the segment to the higher protocol levels",
+    "The receiver always discards the segment which is to be transmitted again",
+    "The receiver returns an acknowledgment number referring to the next expected byte"
+   ],
+   "answer": 3,
+   "hint": "TCP uses cumulative acknowledgments; it ACKs the last in-order byte received, even if higher-sequence segments have arrived."
+  },
+  {
+   "id": "cn-238",
+   "topic": "physical-layer",
+   "text": "With the same number of bits of information transmitted, which of the following line codings requires a physically higher bit rate?",
+   "options": [
+    "4B5B encoding",
+    "Polar coding NRZ",
+    "Manchester coding",
+    "Unipolar coding"
+   ],
+   "answer": 2,
+   "hint": "Manchester encoding requires 2 symbols per bit, effectively doubling the required baud rate/bandwidth compared to NRZ."
+  },
+  {
+   "id": "cn-239",
+   "topic": "network-topologies",
+   "text": "During the slow-start phase of the TCP management control, the window transmitter current:",
+   "options": [
+    "It grows by one segment for each acknowledgment (ACK) received",
+    "Double for each acknowledgment (ACK) received",
+    "It is halved for each missing ACK",
+    "It remains constant over time"
+   ],
+   "answer": 0,
+   "hint": "In slow start, the congestion window (cwnd) increases by 1 MSS for every individual ACK received."
+  },
+  {
+   "id": "cn-240",
+   "topic": "network-topologies",
+   "text": "Which of the following services are possible thanks to the Store & Forward in a packet network?",
+   "options": [
+    "The possibility of having different transmission speeds between the different channels attested to one same switch",
+    "The reduction of delays in transferring information through a node switch",
+    "The possibility of using forward error correction channel encodings",
+    "The reduction of the packet header size"
+   ],
+   "answer": 0,
+   "hint": "Because the switch buffers the entire packet, it can receive it at one speed and transmit it at another."
+  },
+  {
+   "id": "cn-241",
+   "topic": "network-topologies",
+   "text": "Why does VDSL technology have high performance only if the distance between street cabin and user's home is less than a hundred meters?",
+   "options": [
+    "Because the connections have to go through fewer intermediate nodes",
+    "Because the end-to-end delay between the user's home and the operator's control panel is reduced",
+    "Because the costs of laying cables are reduced",
+    "Because the shorter length of the copper cable allows the use of bit rate modulations high"
+   ],
+   "answer": 3,
+   "hint": "Higher frequency signals allow higher bit rates but attenuate very quickly over copper distance."
+  },
+  {
+   "id": "cn-242",
+   "topic": "network-layer",
+   "text": "An IP router after calculating the route:",
+   "options": [
+    "Change the source and destination IP addresses in the datagram header",
+    "Only change the Time To Live (TTL) field in the datagram header",
+    "Change only in the Header Checksum field in the datagram header",
+    "Edit the Time To Live and Header Checksum fields in the datagram header"
+   ],
+   "answer": 3,
+   "hint": "The router decrements the TTL, which necessitates a recalculation of the Header Checksum."
+  },
+  {
+   "id": "cn-243",
+   "topic": "network-topologies",
+   "text": "The Stop & Wait protocol",
+   "options": [
+    "It can work using a number of numbering bits greater than or equal to 1",
+    "It can only work using more than one numbering bit",
+    "It can only work using fewer numbering bits than the size of the transmission window",
+    "It can only work using a single numbering bit"
+   ],
+   "answer": 0,
+   "hint": "While 1 bit is the minimum (alternating bit protocol), more bits can be used without breaking the logic."
+  },
+  {
+   "id": "cn-244",
+   "topic": "network-topologies",
+   "text": "The TCP transmission window control algorithm passes from the slow-start to congestion avoidance (AIMD)",
+   "options": [
+    "Upon notification by the receiver",
+    "After the timeout expires",
+    "As soon as an out of sequence feedback is received",
+    "When the current window reaches a threshold value"
+   ],
+   "answer": 3,
+   "hint": "The threshold is known as ssthresh (slow start threshold)."
+  },
+  {
+   "id": "cn-245",
+   "topic": "network-topologies",
+   "text": "Which of the following is a consequence of increasing the number of numbering bits in the data units of a windowing protocol?",
+   "options": [
+    "Increase in the number of possible virtual circuits",
+    "Increase in malfunctions due to non-sequential channel between transmitter and receiver",
+    "Potential increase in protocol throughput",
+    "Failure to detect collisions on broadcast channel"
+   ],
+   "answer": 2,
+   "hint": "A higher number of bits allows for a larger transmission window, preventing the transmitter from stopping while waiting for ACKs on channels with a high Bandwidth-Delay Product, thus increasing throughput."
+  },
+  {
+   "id": "cn-246",
+   "topic": "network-topologies",
+   "text": "Which of these statements regarding TCP slow start is false?",
+   "options": [
+    "Upon reaching a threshold (ssthresh) it switches to congestion avoidance mode",
+    "It is based on an exponential increase of the congestion window (cwnd)",
+    "It constantly maintains low throughput in TCP to avoid network congestion",
+    "It is executed following a timeout event that occurs on the connection"
+   ],
+   "answer": 2,
+   "hint": "Slow Start does not maintain low throughput; on the contrary, it increases it exponentially to quickly discover the maximum available capacity of the network."
+  },
+  {
+   "id": "cn-247",
+   "topic": "transport-layer",
+   "text": "Flow control in TCP:",
+   "options": [
+    "Bases its operations on the receive window (rwnd) field in TCP segment headers",
+    "Is managed by the default gateway that limits the throughput of datagrams sent on the network",
+    "Bases its operations on TCP timeout and reception of duplicate ACKs",
+    "Requires establishment of a virtual circuit through intermediate routers"
+   ],
+   "answer": 0,
+   "hint": "Flow control is an end-to-end mechanism where the receiver informs the transmitter of its remaining buffer space using the \"Receive Window\" field."
+  },
+  {
+   "id": "cn-248",
+   "topic": "transport-layer",
+   "text": "Which of these statements regarding Real Time Protocol is false?",
+   "options": [
+    "Can be used to carry multimedia streams in IP telephony",
+    "Is an application layer protocol that normally relies on UDP",
+    "Offers guarantees on transmission times on the internet",
+    "Allows specifying the codec used for the multimedia stream"
+   ],
+   "answer": 2,
+   "hint": "RTP provides timestamps and sequence numbers to manage jitter and reordering, but it cannot offer \"guarantees\" on transmission times as it depends on the underlying network state."
+  },
+  {
+   "id": "cn-249",
+   "topic": "physical-layer",
+   "text": "A line coding and a digital modulation:",
+   "options": [
+    "Can both be used for transmission on radio media",
+    "Can only be used for transmission on electrical media",
+    "Can only be used for transmission on electrical media (the first) and radio media (the second)",
+    "Can both be used for transmission on optical fiber"
+   ],
+   "answer": 2,
+   "hint": "Line codings (baseband) are suitable for guided media like copper or fiber, while digital modulation (passband) is necessary for radio media to shift the signal to the desired frequency."
+  },
+  {
+   "id": "cn-250",
+   "topic": "error-and-flow-control",
+   "text": "In a Selective Repeat protocol with receive window equal to 2 PDUs, and initially positioned on sequence numbers 0 and 1, the following reception of PDUs in the indicated order does not result in PDU discard:",
+   "options": [
+    "0,3,1,2",
+    "2,0,1,3",
+    "0,2,3,1",
+    "1,0,3,2"
+   ],
+   "answer": 3,
+   "hint": "In Selective Repeat with Wr=2 positioned on [0,1], the receiver accepts packets 0 and 1 in any order. Once both are received, the window slides to [2,3]. In option D, 1 and 0 arrive (accepted), the window slides, and then 3 and 2 arrive (accepted)."
+  },
+  {
+   "id": "cn-251",
+   "topic": "network-layer",
+   "text": "A routing table contains, simultaneously, all four of the following entries. Identify the entry selected following forwarding procedures for a datagram with destination 130.192.15.200:",
+   "options": [
+    "0.0.0.0/0",
+    "130.192.14.128/25",
+    "130.192.0.0/16",
+    "130.192.15.128/25"
+   ],
+   "answer": 3,
+   "hint": "Longest Prefix Match rule. The address 130.192.15.200 belongs to the subnet 130.192.15.128/25 (range .128 to .255). Since /25 is the most specific mask, this entry is selected."
+  },
+  {
+   "id": "cn-252",
+   "topic": "wireless-and-mobile-networks",
+   "text": "The term \"Roaming\" in a cellular network indicates:",
+   "options": [
+    "The overlap of multiple cells in a specific area of the territory",
+    "The possibility of tracking a terminal regardless of the cell it is in",
+    "The persistence of connection even when moving to an adjacent cell",
+    "The speed of movement of a terminal from one cell to another"
+   ],
+   "answer": 1,
+   "hint": "Roaming allows a terminal to be located and to make/receive calls even when under the coverage of a network other than its home network."
+  },
+  {
+   "id": "cn-253",
+   "topic": "network-layer",
+   "text": "A packet begins reception at a switching node at time t=15ms and ends at t=35ms. Assuming there are no other packets in queue and processing time is negligible, its forwarding on an output channel having quadruple speed compared to the input channel is completed at time:",
+   "options": [
+    "t=40ms",
+    "t=45ms",
+    "Depends on propagation time to destination",
+    "t=50ms"
+   ],
+   "answer": 0,
+   "hint": "The reception time (serialization on the first link) is 35 - 15 = 20 ms. Since the output channel is 4 times faster, the transmission time will be 20 / 4 = 5 ms. In store-and-forward mode, transmission starts at t=35 ms and ends at 35 + 5 = 40 ms."
+  },
+  {
+   "id": "cn-254",
+   "topic": "wireless-and-mobile-networks",
+   "text": "In a WiFi network, sending an ACK for a unicast frame by the receiver is:",
+   "options": [
+    "Not necessary if the channel has been reserved through RTS/CTS",
+    "Mandatory only if the receiver is the Access Point",
+    "Mandatory after waiting a NAV time",
+    "Mandatory if frame reception is correct"
+   ],
+   "answer": 3,
+   "hint": "In the 802.11 standard, due to the high error probability of the wireless medium, every unicast frame must be explicitly acknowledged at the MAC layer."
+  },
+  {
+   "id": "cn-255",
+   "topic": "network-topologies",
+   "text": "A source sends 12 PDUs using a Go-Back-N protocol with transmission window equal to 5 PDUs, numbering them starting from 1. The first ACK is received after completing transmission of packet 5 and is ACK 2. Knowing that no timeout has expired, which action follows:",
+   "options": [
+    "The source sends packet 3",
+    "The source sends packet 6",
+    "No action",
+    "The source retransmits packet 2"
+   ],
+   "answer": 1,
+   "hint": "In GBN, ACK 2 is cumulative and indicates that packets 1 and 2 have been received. The window (initially [1,2,3,4,5]) slides two positions forward to [3,4,5,6,7]. The sender can then proceed to send packet 6."
+  },
+  {
+   "id": "cn-256",
+   "topic": "network-topologies",
+   "text": "Removing a bidirectional channel from a ring topology, the resulting topology:",
+   "options": [
+    "Becomes a tree topology",
+    "Becomes a passive star topology",
+    "Remains a ring topology",
+    "Becomes an active star topology"
+   ],
+   "answer": 0,
+   "hint": "A ring is a connected graph where every node has a degree of 2. Removing an edge breaks the cycle but leaves the graph connected, becoming a \"bus\" (a type of linear tree)."
+  },
+  {
+   "id": "cn-257",
+   "topic": "physical-layer",
+   "text": "In data transmission over a radio channel, it is preferable to use:",
+   "options": [
+    "A polar line coding like Manchester coding to facilitate clock recovery",
+    "An nBmB type line coding to reduce bandwidth occupation",
+    "A unipolar line coding to guarantee the DC component necessary for transmission",
+    "A digital modulation like 64-QAM to be able to transmit in the appropriate frequency band"
+   ],
+   "answer": 3,
+   "hint": "For radio transmissions, modulation (such as QAM) is essential to shift the signal to the antenna frequency and to optimize spectral efficiency."
+  },
+  {
+   "id": "cn-258",
+   "topic": "general-networking",
+   "text": "A host must send a 4800-byte file using 800-byte PDUs with 100-byte PCI. What size is the last PDU sent?",
+   "options": [
+    "900 bytes",
+    "100 bytes",
+    "700 bytes",
+    "800 bytes"
+   ],
+   "answer": 2,
+   "hint": "Each PDU carries 800 - 100 = 700 bytes of data. For 4800 bytes, 4800 / 700 = 6.85 packets are needed. That is 6 full packets (800 bytes total) and a final one. The remaining data is 4800 - (6 * 700) = 600 bytes. The size of the last PDU is 600 (data) + 100 (PCI) = 700 bytes."
+  },
+  {
+   "id": "cn-259",
+   "topic": "transport-layer",
+   "text": "IP datagram segmentation is an example of:",
+   "options": [
+    "Generation of multiple 3-SDUs from one 3-PDU",
+    "Generation of multiple 2-SDUs from one 3-SDU",
+    "Generation of multiple 3-PDUs from one 3-SDU",
+    "Generation of multiple 2-SDUs from one 3-PDU"
+   ],
+   "answer": 2,
+   "hint": "IP fragmentation takes one Layer 3 Service Data Unit (the original packet) and generates multiple Layer 3 Protocol Data Units (the fragments)."
+  },
+  {
+   "id": "cn-260",
+   "topic": "transport-layer",
+   "text": "In a virtual circuit packet switching network, the number of labels used by a node for routing is proportional to:",
+   "options": [
+    "The number of possible sources",
+    "The sum of the average number of input and output channels from each node",
+    "The number of active connections",
+    "The number of possible destinations"
+   ],
+   "answer": 2,
+   "hint": "In a virtual circuit network, each active connection has its own identifier (label or VCI) local to the link, so the switching tables grow with the number of established circuits."
+  },
+  {
+   "id": "cn-261",
+   "topic": "data-link-layer-and-lans",
+   "text": "In which of the following protocols is no form of error detection provided:",
+   "options": [
+    "Ethernet",
+    "IEEE 802.2 LLC (Logical Link Control)",
+    "PPP (Point-to-point Protocol)",
+    "IEEE 802.3"
+   ],
+   "answer": 1,
+   "hint": "IEEE 802.2 LLC (Type 1) provides connectionless service without error detection or flow control; these functions are typically delegated to higher layers."
+  },
+  {
+   "id": "cn-262",
+   "topic": "network-topologies",
+   "text": "In case an error in router forwarding table configuration generates a closed path in the network, which of these statements is true?",
+   "options": [
+    "A datagram can circulate on such path indefinitely",
+    "The spanning tree protocol prevents these problems from arising before they occur",
+    "A datagram circulating on such path is eventually eliminated by routers, which identify it by comparing its content with copies maintained in local cache",
+    "A datagram circulating on such path is eventually eliminated by routers based on the TTL field"
+   ],
+   "answer": 3,
+   "hint": "The Time To Live (TTL) field is decremented by each router. If the packet enters a loop, the TTL eventually reaches zero, and the router discards it."
+  },
+  {
+   "id": "cn-263",
+   "topic": "multimedia-networking",
+   "text": "A playout delay of 2 seconds:",
+   "options": [
+    "Is compatible with streaming stored content but not for VoIP",
+    "Is compatible with both streaming stored content and VoIP",
+    "Is not compatible with either streaming stored content or VoIP",
+    "Is compatible with VoIP but not for streaming stored content"
+   ],
+   "answer": 0,
+   "hint": "Playout buffers of 2 seconds are excellent for smoothing out jitter in non-interactive streaming, but would make real-time conversation (VoIP) impossible."
+  },
+  {
+   "id": "cn-264",
+   "topic": "transport-layer",
+   "text": "Which of these statements regarding UDP is true?",
+   "options": [
+    "UDP automatically retransmits datagrams for which no acknowledgment has been received",
+    "UDP implements flow control but not congestion control",
+    "UDP implements both flow control and congestion control",
+    "UDP allows multiplexing/demultiplexing thanks to the port concept"
+   ],
+   "answer": 3,
+   "hint": "UDP is a connectionless protocol that uses source and destination ports to direct data to the correct application process."
+  },
+  {
+   "id": "cn-265",
+   "topic": "general-networking",
+   "text": "In the byte stuffing procedure:",
+   "options": [
+    "The receiver discards every byte that corresponds to the delimiter used by the protocol",
+    "The receiver discards the delimiter used by the protocol that precedes the escape byte",
+    "The receiver discards the escape byte that precedes the delimiter used by the protocol",
+    "The receiver discards every byte that corresponds to the escape byte used by the protocol"
+   ],
+   "answer": 2,
+   "hint": "During the de-stuffing process, the receiver identifies the escape byte, removes it, and treats the following byte as literal data."
+  },
+  {
+   "id": "cn-266",
+   "topic": "network-topologies",
+   "text": "In case of stations all within radio range of each other, which of the following statements about comparing Aloha and CSMA protocols is true?",
+   "options": [
+    "Unlike CSMA, a station transmitting using Aloha needs a reception acknowledgment",
+    "Unlike Aloha, a station using CSMA never collides with a transmission started more than the maximum propagation delay ago",
+    "Aloha transmissions can start at any time, while in CSMA they must be preceded by a channel reservation slot",
+    "Unlike Aloha, in CSMA a station never collides with other stations"
+   ],
+   "answer": 1,
+   "hint": "CSMA senses the carrier. After the propagation delay, all other stations will see the channel as \"busy\" and will not start a new transmission."
+  },
+  {
+   "id": "cn-267",
+   "topic": "network-topologies",
+   "text": "Which of the following statements is true, considering classic IP router operations (excluding firewall, NAT, etc.)?",
+   "options": [
+    "A router modifies at least one IP address of packets it must transmit",
+    "A router uses ICMP messages to determine the path to follow to reach a host belonging to the internet network",
+    "An IP router uses ARP (address resolution protocol) to know the IP address of the router to write as destination address in the IP packet",
+    "A router modifies at least one MAC address of packets containing IP, but not the IP addresses"
+   ],
+   "answer": 3,
+   "hint": "A router strips the Layer 2 header and builds a new one with its own MAC as the source and the next hop's MAC as the destination, but the original source/destination IP addresses remain unchanged."
+  },
+  {
+   "id": "cn-268",
+   "topic": "network-layer",
+   "text": "How many hosts can be managed at most in a network with netmask 255.255.255.128?",
+   "options": [
+    "254",
+    "255",
+    "126",
+    "64"
+   ],
+   "answer": 2,
+   "hint": "A .128 mask leaves 7 bits for the host part ($2^7 = 128$). Subtracting the network and broadcast addresses gives 126 usable hosts."
+  },
+  {
+   "id": "cn-269",
+   "topic": "error-and-flow-control",
+   "text": "If a node using a windowing protocol receives an out-of-sequence PDU with incorrect parity bits:",
+   "options": [
+    "Discards the PDU and sends no ACK",
+    "Sends an ACK relative to the sequence number contained in the PDU but discards the PDU",
+    "Discards the PDU and sends an ACK of the expected sequence number",
+    "Inserts the PDU in memory if it falls within the receive window, without sending any ACK"
+   ],
+   "answer": 0,
+   "hint": "If the PDU has error bits, it is considered invalid and must be discarded. No ACK is sent because the receiver cannot trust the information in the PDU."
+  },
+  {
+   "id": "cn-270",
+   "topic": "network-layer",
+   "text": "A frame received by an Ethernet card of a switch is processed to decide its routing:",
+   "options": [
+    "Only if the destination MAC address is broadcast",
+    "Only if the unicast destination MAC address corresponds to that of the switch",
+    "Always, whatever the destination address",
+    "Only if the destination MAC address is multicast and the switch belongs to the corresponding multicast group"
+   ],
+   "answer": 2,
+   "hint": "Switches examine every incoming frame to learn MAC addresses and determine the correct output port based on their switching table."
+  },
+  {
+   "id": "cn-271",
+   "topic": "network-topologies",
+   "text": "Compared to 1-persistent CSMA, non-persistent CSMA provides that:",
+   "options": [
+    "After a collision, wait a random time before trying to transmit",
+    "The new listening of the channel, if found busy, occurs after a random time",
+    "Wait a random time and then send the frame on the channel",
+    "Transmission occurs as soon as the channel becomes free"
+   ],
+   "answer": 1,
+   "hint": "In non-persistent CSMA, if the station senses a busy channel, it waits a random time before sensing again, which reduces the probability of a collision when the channel becomes free."
+  },
+  {
+   "id": "cn-272",
+   "topic": "application-layer",
+   "text": "The ICMP (Internet Control Message Protocol) protocol allows:",
+   "options": [
+    "Exchange of error messages between routers and hosts",
+    "Transfer of email messages between host and host",
+    "Exchange of error messages between TCP protocol and IP protocol",
+    "Transfer of a web page from a server to a client"
+   ],
+   "answer": 0,
+   "hint": "ICMP is a support protocol for the IP layer used to send error reports and operational information."
+  },
+  {
+   "id": "cn-273",
+   "topic": "transport-layer",
+   "text": "In the TCP header, i.e., in the PCI of the TCP protocol, are mandatorily contained:",
+   "options": [
+    "Some flags used for opening and closing the connection",
+    "The current value of the congestion window",
+    "The header checksum field, for error detection on the header only",
+    "The Maximum Segment Size value negotiated between transmitter and receiver"
+   ],
+   "answer": 0,
+   "hint": "The TCP header contains 6 control flags (SYN, ACK, FIN, etc.) used for state management. The checksum covers both the header and the data."
+  },
+  {
+   "id": "cn-274",
+   "topic": "network-topologies",
+   "text": "In an ARQ (Automatic Retransmission Request) scheme with non-cyclic numbering, with window Wt > 1, the number of the first packet in the transmission window can refer to:",
+   "options": [
+    "None of the other answers",
+    "A packet transmitted by the transmitter, received by the receiver and for which the transmitter has received the corresponding ACK",
+    "A packet for which the receiver has no space in the buffer",
+    "A packet transmitted by the transmitter, received by the receiver and for which the transmitter has not yet received the corresponding ACK"
+   ],
+   "answer": 3,
+   "hint": "The transmission window represents the set of packets that have been sent but are still \"in flight\" or not yet acknowledged by the receiver."
+  },
+  {
+   "id": "cn-275",
+   "topic": "network-topologies",
+   "text": "In the CSMA-CD protocol a station completes transmission of a frame:",
+   "options": [
+    "Only if it has higher priority than the station it collides with",
+    "Only if, listening to the channel, no simultaneous reception to the ongoing transmission is detected",
+    "Always after starting it",
+    "Only if it receives an ACK frame from the receiver"
+   ],
+   "answer": 1,
+   "hint": "CSMA-CD stations monitor the medium while transmitting. If they detect a collision (simultaneous signal), they stop and send a jam signal."
+  },
+  {
+   "id": "cn-276",
+   "topic": "error-and-flow-control",
+   "text": "If a node using a Selective Repeat protocol receives a PDU with sequence number within the receive window with incorrect parity bits:",
+   "options": [
+    "Discards the PDU and sends no ACK",
+    "Discards the PDU and sends an ACK of the expected sequence number"
+   ],
+   "answer": 0,
+   "hint": "Any corrupted PDU is simply discarded. In Selective Repeat, the receiver only ACKs correct segments."
+  },
+  {
+   "id": "cn-277",
+   "topic": "general-networking",
+   "text": "Which of these CANNOT be a network ID:",
+   "options": [
+    "130.192.55.0/16",
+    "130.192.55.0/24",
+    "130.192.16.0/20",
+    "130.192.16.0/24"
+   ],
+   "answer": 0,
+   "hint": "In a /16 network, the first two octets are the network part. The ID should be 130.192.0.0. 130.192.55.0/16 represents a specific host address, not the network identifier."
+  },
+  {
+   "id": "cn-278",
+   "topic": "network-topologies",
+   "text": "A source must send 6 PDUs using a Go-Back-N protocol with cumulative ACKs and transmission window equal to 3 PDUs, numbering them starting from 1. After transmission of the first window, and before timeout expiration, the only acknowledgment received is ACK 3. Which of the following actions is plausible to be executed by the source:",
+   "options": [
+    "The source retransmits PDU 2",
+    "The source sends PDUs 3 and 4",
+    "The source sends PDUs 4 and 5",
+    "The source sends nothing more and waits for timeout expiration"
+   ],
+   "answer": 2,
+   "hint": "Cumulative ACK 3 means packets 1, 2, and 3 were successfully received. The window slides forward, allowing the source to send packets 4, 5, and 6."
+  },
+  {
+   "id": "cn-279",
+   "topic": "network-layer",
+   "text": "Which field in the IP header is used to prevent a packet from being forwarded by more than N routers?",
+   "options": [
+    "Destination address",
+    "Version",
+    "None of the answers"
+   ],
+   "answer": 2,
+   "hint": "The correct field is the TTL (Time To Live), which is not listed in the options."
+  },
+  {
+   "id": "cn-280",
+   "topic": "network-layer",
+   "text": "In a WiFi network the use of RTS/CTS messages:",
+   "options": [
+    "Eliminates collisions with other stations",
+    "Reduces the probability of collision between stations"
+   ],
+   "answer": 1,
+   "hint": "RTS/CTS helps mitigate the \"hidden terminal\" problem, but collisions can still occur on the RTS frames themselves or due to other interference."
+  },
+  {
+   "id": "cn-281",
+   "topic": "transport-layer",
+   "text": "Which of the following statements about NAT is true?",
+   "options": [
+    "NAT uses an IP address/port combination to create associations between internal hosts and internet destinations",
+    "Port forwarding is necessary to allow communication between internal network hosts toward the internet",
+    "NAT dynamically assigns IP addresses to internal network hosts that request them",
+    "It is always possible to contact internal network hosts from the internet, without particular additional solutions"
+   ],
+   "answer": 0,
+   "hint": "NAPT (Network Address Port Translation) maps multiple private IP addresses to a single public IP by using unique source port numbers."
+  },
+  {
+   "id": "cn-282",
+   "topic": "general-networking",
+   "text": "Which of the following is not a network ID?",
+   "options": [
+    "192.168.16.0/24",
+    "130.192.36.128/25",
+    "13.0.0.0/8",
+    "192.168.16.0/16"
+   ],
+   "answer": 3,
+   "hint": "For a /16 prefix, the network identifier must be 192.168.0.0."
+  },
+  {
+   "id": "cn-283",
+   "topic": "network-layer",
+   "text": "A router can be associated with:",
+   "options": [
+    "Only one IP address",
+    "Multiple IP addresses"
+   ],
+   "answer": 1,
+   "hint": "A router has multiple interfaces, and each active interface is assigned its own unique IP address."
+  },
+  {
+   "id": "cn-284",
+   "topic": "network-topologies",
+   "text": "The Aloha protocol starts transmitting:",
+   "options": [
+    "After listening to the channel, finding it free",
+    "Regardless of channel state"
+   ],
+   "answer": 1,
+   "hint": "Pure Aloha does not perform carrier sensing; it transmits as soon as a frame is ready."
+  },
+  {
+   "id": "cn-285",
+   "topic": "data-link-layer-and-lans",
+   "text": "The byte stuffing technique in the PPP protocol serves to:",
+   "options": [
+    "Separate the header from the data field",
+    "Correctly detect the beginning and end of the frame"
+   ],
+   "answer": 1,
+   "hint": "It allows the protocol to use a specific flag byte as a delimiter while ensuring the same byte value appearing in the data part doesn't prematurely end the frame."
+  },
+  {
+   "id": "cn-286",
+   "topic": "application-layer",
+   "text": "Which of these statements regarding HTTP 1.1 protocol is true?",
+   "options": [
+    "HTTP 1.1 is based on a client-server paradigm",
+    "HTTP 1.1 uses UDP at the transport layer",
+    "HTTP 1.1 is natively stateful (not stateless)",
+    "HTTP 1.1 messages use binary encoding"
+   ],
+   "answer": 0,
+   "hint": "HTTP is a request-response protocol based on the client-server model and typically runs over TCP."
+  },
+  {
+   "id": "cn-287",
+   "topic": "network-layer",
+   "text": "The fragmentation operation performed by IPv4 routers is an example of:",
+   "options": [
+    "Generation of multiple 2-SDUs from one 3-SDU",
+    "Generation of multiple 3-SDUs from one 3-PDU",
+    "Generation of multiple 3-PDUs from one 3-SDU",
+    "Generation of multiple 2-SDUs from one 3-PDU"
+   ],
+   "answer": 2,
+   "hint": "Fragmentation takes a Layer 3 SDU (the data) and creates multiple smaller Layer 3 PDUs (the fragments) to fit the MTU of the next link."
+  },
+  {
+   "id": "cn-288",
+   "topic": "network-layer",
+   "text": "Associating a dynamic cost instead of a static cost to a transmission channel:",
+   "options": [
+    "Can cause frequent modifications of the path chosen from a source to a destination",
+    "Avoids possible oscillations in path choice caused by cost variation over time",
+    "Is preferable in case of packet switching but not in circuit switching",
+    "Reduces variations in path choice from a source to a destination"
+   ],
+   "answer": 0,
+   "hint": "Dynamic costs (like current load) can cause \"routing oscillations\" where paths change frequently as load shifts, potentially leading to instability."
+  },
+  {
+   "id": "cn-289",
+   "topic": "error-and-flow-control",
+   "text": "Consider a network consisting of transmitter, intermediate node and receiver. There are 2 packets (10ms each) arriving at intermediate node at t=20ms. The output channel has double speed. At what time is transmission completed?",
+   "options": [
+    "40ms",
+    "50ms",
+    "45ms",
+    "70ms"
+   ],
+   "answer": 2,
+   "hint": "Packet 1 is fully received at 30ms; its transmission to the receiver (double speed) takes 5ms (total 35ms). Packet 2 is fully received at 40ms; its transmission takes 5ms (total 45ms)."
+  },
+  {
+   "id": "cn-290",
+   "topic": "error-and-flow-control",
+   "text": "A node sends 2200 bytes of data, using 900-byte PDUs with 100-byte PCI, on a 4Mbit/s channel. Time needed for the last packet?",
+   "options": [
+    "1.4ms",
+    "1.8ms",
+    "1ms",
+    "5ms"
+   ],
+   "answer": 0,
+   "hint": "Data per packet = 800 bytes. 2200 = 800+800+600. Last packet is 600 (data) + 100 (PCI) = 700 bytes (5600 bits). $5600 / 4,000,000 = 1.4ms$."
+  },
+  {
+   "id": "cn-291",
+   "topic": "transport-layer",
+   "text": "Given a 100Mbit/s channel with 2 TCP (30Mbit/s) and 2 UDP (40Mbit/s) connections. Which is correct?",
+   "options": [
+    "UDP connections block TCP connections",
+    "TCP connections have a transmission speed of 25Mbit/s, due to TCP Fairness",
+    "UDP connections have a transmission speed of 30Mbit/s, due to TCP congestion control",
+    "TCP connections have a transmission speed of 10Mbit/s"
+   ],
+   "answer": 3,
+   "hint": "UDP connections do not react to congestion and take 80Mbit/s total. The remaining 20Mbit/s is shared by the 2 TCP connections (10Mbit/s each)."
+  },
+  {
+   "id": "cn-292",
+   "topic": "network-topologies",
+   "text": "Bluetooth:",
+   "options": [
+    "Uses frequency hopping spread spectrum modulation short-range radio transmission ISM band connected to a Master node in star topology",
+    "Uses frequency hopping spread spectrum modulation long-range radio transmission High band",
+    "Is used only by mobile telephony for transmission"
+   ],
+   "answer": 0,
+   "hint": "Bluetooth operates in the 2.4 GHz ISM band and organizes devices into piconets using a master/slave star architecture."
+  },
+  {
+   "id": "cn-293",
+   "topic": "multimedia-networking",
+   "text": "Which of these is false for VoIP?",
+   "options": [
+    "RTP provides mechanisms to guarantee real-time delivery",
+    "RTP can be used for audio/video transfer",
+    "SIP can be used to open and close a session",
+    "SIP provides mechanisms to determine the called party's address"
+   ],
+   "answer": 0,
+   "hint": "RTP provides timing and sequencing, but it is a \"best-effort\" protocol over UDP; it cannot guarantee delivery or timing by itself."
+  },
+  {
+   "id": "cn-294",
+   "topic": "error-and-flow-control",
+   "text": "Selective repeat with Wt=Wr=4, receiver receives PDUs 0,2,3. After the first reception of PDU 3, what sequence does the receiver see arriving?",
+   "options": [
+    "1",
+    "1,2,3",
+    "0,1",
+    "0,1,2,3"
+   ],
+   "answer": 0,
+   "hint": "In Selective Repeat, the receiver buffers 0, 2, and 3. It is only waiting for PDU 1 to complete the window and deliver data to the higher layer."
+  },
+  {
+   "id": "cn-295",
+   "topic": "wireless-and-mobile-networks",
+   "text": "What is the speed of WiFi technology nowadays?",
+   "options": [
+    "Hundreds of Gigabit/s",
+    "On the order of Tbit/s",
+    "A few Gigabit/s",
+    "Tens of Mbit/s"
+   ],
+   "answer": 2,
+   "hint": "Modern Wi-Fi standards like Wi-Fi 6 (802.11ax) and Wi-Fi 7 reach theoretical speeds of several Gbps."
+  },
+  {
+   "id": "cn-296",
+   "topic": "transport-layer",
+   "text": "The FTTx residential access network consists of:",
+   "options": [
+    "A passive optical fiber distribution network and, optionally, a terminal segment in copper",
+    "Always entirely of an active optical fiber distribution network",
+    "A passive copper distribution network and, optionally, a terminal segment in optical fiber",
+    "An optical distribution network based on IEEE 802.3 Gigabit Ethernet technology"
+   ],
+   "answer": 0,
+   "hint": "FTTx (Fiber-to-the-x) typically uses PON (Passive Optical Network) technology. Depending on whether it is FTTC or FTTH, the final segment may be copper or fiber."
+  },
+  {
+   "id": "cn-297",
+   "topic": "physical-layer",
+   "text": "A 16-QAM digital modulation:",
+   "options": [
+    "Provides for sending 16 bits every symbol time",
+    "Provides for sending 4 bits every symbol time",
+    "Provides for sending 4 symbols every bit time",
+    "Provides for sending 16 symbols every bit time"
+   ],
+   "answer": 1,
+   "hint": "In 16-QAM, there are 16 possible states ($2^4$), meaning each symbol carries 4 bits of information."
+  },
+  {
+   "id": "cn-298",
+   "topic": "application-layer",
+   "text": "Servers that implement the distributed DNS database store resource records:",
+   "options": [
+    "Type A record serves to obtain an IP address given the host name",
+    "CNAME record serves to obtain the canonical name of a mail server",
+    "Type A record serves to provide requesting hosts the canonical name relative to a host name"
+   ],
+   "answer": 0,
+   "hint": "An 'A' record (Address) maps a domain name to its corresponding IPv4 address. CNAME is for aliases, and MX is for mail servers."
+  },
+  {
+   "id": "cn-299",
+   "topic": "network-layer",
+   "text": "Which of the following statements regarding a standard IP router (without additional functionality like firewall, NAT...):",
+   "options": [
+    "The router modifies at least one IP address of the packets",
+    "The router forwards datagrams using frames, the outgoing frame has at least one different MAC address compared to the incoming frame",
+    "Hosts communicate always passing through a router"
+   ],
+   "answer": 1,
+   "hint": "A router strips the old Layer 2 header and adds a new one. The source MAC becomes the router's interface MAC, and the destination MAC becomes the next hop's MAC."
+  },
+  {
+   "id": "cn-300",
+   "topic": "network-layer",
+   "text": "In the context of LS routing algorithms, a node's routing table:",
+   "options": [
+    "Is used to calculate the minimum cost path to other nodes",
+    "Is compiled once the minimum cost path to other nodes is known"
+   ],
+   "answer": 1,
+   "hint": "Link-State algorithms (like Dijkstra) first calculate the shortest path tree; the results are then used to populate the routing/forwarding table."
+  },
+  {
+   "id": "cn-301",
+   "topic": "transport-layer",
+   "text": "Port numbers in layer 4 protocols:",
+   "options": [
+    "Are present only in UDP",
+    "Are present only in TCP",
+    "Are present in both UDP and TCP",
+    "Do not concern UDP and TCP protocols"
+   ],
+   "answer": 2,
+   "hint": "Both TCP and UDP use 16-bit port numbers to identify specific application processes (multiplexing/demultiplexing)."
+  },
+  {
+   "id": "cn-302",
+   "topic": "network-layer",
+   "text": "In a system with WIFI 802.11 protocol, two terminals A and B transmit simultaneously, what can happen?:",
+   "options": [
+    "Terminal B terminates transmission when it receives a NACK (Negative ACK)",
+    "Terminal B waits to receive an ack"
+   ],
+   "answer": 1,
+   "hint": "802.11 does not have collision detection (CD) during transmission. If a collision occurs, the sender simply won't receive an ACK and will retry after a timeout."
+  },
+  {
+   "id": "cn-303",
+   "topic": "network-topologies",
+   "text": "Adding a bidirectional channel between two nodes of a tree topology what happens:",
+   "options": [
+    "Always creates a ring",
+    "Creates a cycle"
+   ],
+   "answer": 1,
+   "hint": "By definition, a tree is a connected graph without cycles. Adding any edge between two existing nodes creates exactly one cycle."
+  },
+  {
+   "id": "cn-304",
+   "topic": "network-layer",
+   "text": "In classless addressing what is the prefix length in a network composed of 512 IP addresses?",
+   "options": [
+    "22",
+    "23"
+   ],
+   "answer": 1,
+   "hint": "A network with 512 addresses ($2^9$) needs 9 bits for the host part. $32 - 9 = 23$, so the prefix is /23."
+  },
+  {
+   "id": "cn-305",
+   "topic": "application-layer",
+   "text": "DNS:",
+   "options": [
+    "Uses UDP to resolve names to IP addresses",
+    "Is a distributed server"
+   ],
+   "answer": 0,
+   "hint": "DNS primarily uses UDP port 53 for queries because it is fast and low-overhead."
+  },
+  {
+   "id": "cn-306",
+   "topic": "application-layer",
+   "text": "DHCP:",
+   "options": [
+    "Configures IP network parameters on the local network",
+    "Configures any network that requests it"
+   ],
+   "answer": 0,
+   "hint": "DHCP (Dynamic Host Configuration Protocol) is used to automatically assign IP addresses and other parameters within a local subnet."
+  },
+  {
+   "id": "cn-307",
+   "topic": "network-topologies",
+   "text": "In the ALOHA protocol all stations use frames of the same duration, a station sends a frame that starts at time t0 + 1100 and ends at time t0 + 1300. At which of the following start times of a transmission by another station does a collision occur:",
+   "options": [
+    "t0 + 1370",
+    "t0 + 890",
+    "t0 + 910",
+    "t0 + 1310"
+   ],
+   "answer": 2,
+   "hint": "The vulnerable period is $2 \\times \\text{frame duration}$ (400 units). Any frame starting between $1100 - 200 = 900$ and 1300 will collide. $t0 + 910$ falls in this range."
+  },
+  {
+   "id": "cn-308",
+   "topic": "network-topologies",
+   "text": "Using Selective Repeat with transmission window 10, numbering packets starting from 0, transmits the following sequence: 4 5 6, acquiring reception of ACK 9. Assuming sequential channel and cumulative ACKs, which statement is true:",
+   "options": [
+    "Can transmit PDU 19",
+    "Transmits PDU 8",
+    "Transmits PDU 7",
+    "Can transmit PDU 18"
+   ],
+   "answer": 3,
+   "hint": "ACK 9 implies all packets up to 9 are received. The window of 10 starts at 10. The allowed sequence numbers are $10 \\dots 19$ (10 slots). Therefore, it can send up to PDU 18."
+  },
+  {
+   "id": "cn-309",
+   "topic": "network-layer",
+   "text": "In the introduction to subnet masks in Internet addressing:",
+   "options": [
+    "Allows subdividing a class B network into multiple physical networks",
+    "Allows using a single IP logical network on multiple physical networks"
+   ],
+   "answer": 0,
+   "hint": "Subnetting allows administrators to break a large network block (like a Class B) into smaller, manageable logical segments matching physical segments."
+  },
+  {
+   "id": "cn-310",
+   "topic": "transport-layer",
+   "text": "Which statement about traceroute is false:",
+   "options": [
+    "It uses IP TTL field",
+    "Special application TRACERT on TCP connection is used",
+    "It uses ICMP echo request messages",
+    "It uses variable number of messages"
+   ],
+   "answer": 1,
+   "hint": "Traceroute uses UDP or ICMP, not a persistent TCP connection."
+  },
+  {
+   "id": "cn-311",
+   "topic": "network-layer",
+   "text": "What frames does a switch on Ethernet 802.3ab usually receive?",
+   "options": [
+    "Unicast frames from default LAN router, whatever MAC address, and broadcast or multicast frames from default router",
+    "Unicast frames from terminal connected to the same switch, whatever the MAC address, and only broadcast or multicast frame among terminal connected to the same switch",
+    "Unicast frames from terminal connected to the same switch, whatever the MAC address, and only broadcast or multicast frame among terminal connected to the same router",
+    "Unicast frames from terminal connected to the same switch with MAC address of the switch and only broadcast or multicast frame among terminal connected to the same router"
+   ],
+   "answer": 1,
+   "hint": "A switch's port receives all frames physically sent to it; it then filters or forwards based on the MAC table."
+  },
+  {
+   "id": "cn-312",
+   "topic": "network-topologies",
+   "text": "VLANs are used to:",
+   "options": [
+    "Logically separate physically connected network segment by configuring a local router",
+    "Physically separate logically connected network segment by configuring a local switch",
+    "Logically separate physically connected network segment by configuring a local switch",
+    "Physically separate logically connected network segment by configuring a local router"
+   ],
+   "answer": 2,
+   "hint": "VLANs create separate broadcast domains on the same physical switch hardware."
+  },
+  {
+   "id": "cn-313",
+   "topic": "transport-layer",
+   "text": "TCP connection synchronizes before data transmission by:",
+   "options": [
+    "One-way hand shake",
+    "Two-way hand shake",
+    "Three-way hand shake",
+    "Four-way handshake"
+   ],
+   "answer": 2,
+   "hint": "TCP uses the SYN, SYN-ACK, ACK sequence to establish a connection."
+  },
+  {
+   "id": "cn-314",
+   "topic": "physical-layer",
+   "text": "Which of the following line encodings does at least one signal transition per symbol period?",
+   "options": [
+    "Bipolar",
+    "NRZ",
+    "RZ",
+    "nBmB"
+   ],
+   "answer": 2,
+   "hint": "RZ (Return-to-Zero) ensures a transition back to zero in every bit period."
+  },
+  {
+   "id": "cn-315",
+   "topic": "error-and-flow-control",
+   "text": "Which error forwarding technique uses the most physical space when used to send 12 byte data?",
+   "options": [
+    "Double repeat per byte",
+    "One parity bit per byte",
+    "Row and column parity bits when the data is organized into a matrix with 1 byte per row",
+    "One checksum per 16-bit chunks"
+   ],
+   "answer": 0,
+   "hint": "Double repetition effectively doubles the data size (100% overhead). Parity and checksums add only a few bits or bytes of overhead."
+  }
+ ]
+}

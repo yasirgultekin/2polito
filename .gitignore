@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# course material (professor's slides/notes are NOT part of the repo)
+materials/*
+!materials/README.md
+
+# derived from the material: embedding cache, generated flashcards, reports
+.cache/
+data/flashcards/
+
+# local tooling / OS
+.claude/
+.DS_Store
+*.log

@@ -1,0 +1,15 @@
+[
+  { "id": "computer-networks", "code": "CN", "name": "Computer Networks", "year": 3, "semester": 1, "credits": 10, "unlocked": true,
+    "blurb": "Layered architectures, TCP/IP, routing, LANs and the protocols that hold the Internet together." },
+  { "id": "operating-systems", "code": "OS", "name": "Operating Systems", "year": 3, "semester": 1, "credits": 10, "unlocked": false },
+  { "id": "databases", "code": "DB", "name": "Databases", "year": 3, "semester": 1, "credits": 8, "unlocked": false },
+  { "id": "software-engineering", "code": "SE", "name": "Software Engineering", "year": 3, "semester": 2, "credits": 8, "unlocked": false },
+  { "id": "web-applications", "code": "WA", "name": "Web Applications I", "year": 3, "semester": 2, "credits": 6, "unlocked": false },
+  { "id": "computer-architectures", "code": "CA", "name": "Computer Architectures", "year": 2, "semester": 2, "credits": 10, "unlocked": false },
+  { "id": "algorithms-programming", "code": "AP", "name": "Algorithms and Programming", "year": 2, "semester": 1, "credits": 12, "unlocked": false },
+  { "id": "object-oriented-programming", "code": "OOP", "name": "Object Oriented Programming", "year": 2, "semester": 2, "credits": 8, "unlocked": false },
+  { "id": "signals-systems", "code": "SS", "name": "Signals and Systems", "year": 2, "semester": 1, "credits": 6, "unlocked": false },
+  { "id": "electronics", "code": "EL", "name": "Electronic Circuits", "year": 2, "semester": 2, "credits": 10, "unlocked": false },
+  { "id": "physics-1", "code": "PH1", "name": "Physics I", "year": 1, "semester": 1, "credits": 10, "unlocked": false },
+  { "id": "math-analysis-1", "code": "MA1", "name": "Mathematical Analysis I", "year": 1, "semester": 1, "credits": 10, "unlocked": false }
+]

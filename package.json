@@ -1,0 +1,29 @@
+{
+  "name": "2polito-portal",
+  "version": "1.0.0",
+  "description": "A study portal for Politecnico di Torino courses: an AI tutor grounded in the course material, past exam questions, a question generator, exam analysis and flashcards.",
+  "scripts": {
+    "test": "node --check server.js && for f in lib/*.js public/*.js; do node --check $f || exit 1; done",
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "polito",
+    "study",
+    "openai",
+    "rag",
+    "flashcards"
+  ],
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "openai": "^7.53.0",
+    "pdfjs-dist": "^6.5.438"
+  },
+  "private": "true",
+  "engines": {
+    "node": ">=20"
+  }
+}
