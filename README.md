@@ -177,6 +177,6 @@ Progress (mistakes, flashcard schedule, past analyses, chat history) stays in th
 
 ## License
 
-The **source code** is released under the [MIT License](LICENSE) © 2026 Yusuf Gultekin.
+The **source code** is released under the [MIT License](LICENSE) © 2026 Yasir Yusuf Gultekin.
 
 The **past exam questions** (`data/exams/`) and the **flashcards** (`data/flashcards/`) are derived from Politecnico di Torino course exams and course material. All rights remain with their respective authors. They are shared for study purposes only and are **not** covered by the MIT License. If you are a rights holder and want something removed, please open an issue and it will be taken down.
