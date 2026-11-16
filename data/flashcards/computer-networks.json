@@ -1,0 +1,2079 @@
+{
+ "course": "computer-networks",
+ "cards": [
+  {
+   "id": "application-layer-01",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What is the primary function of the POP3 protocol?",
+   "back": "POP3 is used to transfer email messages from the server to the client. It allows clients to download and optionally delete messages from the mail server. **POP3** is a client-server protocol for email access.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-02",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What does the Domain Name System (DNS) resolve?",
+   "back": "DNS maps logical domain names to IP addresses, enabling hosts to find the IP of a website given its name. **DNS** performs address/name translation.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-03",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What network information must a host know to communicate on the Internet?",
+   "back": "A host must know its own IP address and mask, its MAC address, the IP address of the default router, and the IP address of a DNS server. These are essential for communication.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-04",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What is the purpose of cookies in the HTTP protocol?",
+   "back": "Cookies allow associating multiple requests made by the same browser or user, enabling session management and user tracking. **Cookies** link multiple HTTP requests.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-05",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What was the main design goal of ADSL technology?",
+   "back": "ADSL was designed to provide voice and data access to residential users primarily accessing the Web as clients. It is an asymmetric digital subscriber line technology.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-06",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "How is the DNS system structured?",
+   "back": "DNS is based on hierarchical servers, each responsible for a zone. The hierarchy includes root servers, top-level domain servers, and authoritative servers.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-07",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What does the MIME protocol enable in email messages?",
+   "back": "MIME allows data to be encoded differently within an email message, supporting multimedia and various content types. **MIME** extends email message formats.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-08",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What is a key property of DHCP clients regarding disconnection?",
+   "back": "A DHCP client may disconnect from the network without notifying the server; leases expire if not renewed. **DHCP** leases are time-limited and clients can leave silently.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-09",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What does the Address Resolution Protocol (ARP) do?",
+   "back": "ARP maps Layer 3 IP addresses to Layer 2 MAC addresses, providing address translation within a local network. It realizes a mapping between network and link layer addresses.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-10",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "Which statement about HTTP is false?",
+   "back": "HTTP is not a language to define web page formats; that is the role of HTML. **HTTP** is a transfer protocol, not a markup language.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-11",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What IP address is used as the destination for DHCP discover messages?",
+   "back": "DHCP discover messages are sent over UDP to the limited broadcast IP address 255.255.255.255. This allows clients to find DHCP servers on the local network.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-12",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "How are ARP messages encapsulated in a network frame?",
+   "back": "ARP messages are encapsulated directly in Ethernet frames without IP headers. **ARP** operates at Layer 2 and uses Ethernet frames.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-13",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "In the DNS hierarchy, which server level is immediately below the Root DNS Server?",
+   "back": "The Top-Level Domain (TLD) DNS servers are located immediately below the Root DNS servers in the DNS hierarchy.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-14",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What is the main use of the SMTP protocol?",
+   "back": "SMTP is used to push email messages from clients to mail servers and between mail servers, including sender identification. **SMTP** handles mail transfer.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-15",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What is the purpose of the HTTP HEAD method?",
+   "back": "The HEAD method requests only the HTTP response headers without the message body, useful for checking metadata or resource status.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-16",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "How does an Ethernet switch handle an ARP Request packet?",
+   "back": "An Ethernet switch forwards an ARP Request on all ports except the one it was received from, effectively broadcasting it within the LAN.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-17",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What type of database is the DNS?",
+   "back": "DNS is a distributed, hierarchical database that stores resource records mapping names to IP addresses and other data.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-18",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "Which statement about DASH is false?",
+   "back": "DASH does not produce messages packaged in RTP for internet telephony; it is a streaming protocol over HTTP for multimedia content.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-19",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "Can multiple DHCP servers exist on the same network?",
+   "back": "Yes, multiple DHCP servers can coexist on a network for redundancy or subnet management. The claim that only one DHCP server can exist is false.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-20",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "Does the browser create a new cookie each time it accesses the same HTTP server?",
+   "back": "No, the server creates cookies and the browser sends back existing cookies; it does not create a new cookie on each access.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-21",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What is the role of the ICMP protocol?",
+   "back": "ICMP exchanges error messages and operational information between routers and hosts to support IP layer functions.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-22",
+   "topic": "application-layer",
+   "kind": "fact",
+   "front": "What paradigm does HTTP 1.1 follow?",
+   "back": "HTTP 1.1 is based on a client-server paradigm, where clients send requests and servers send responses over TCP connections.",
+   "source": "past exams"
+  },
+  {
+   "id": "application-layer-23",
+   "topic": "application-layer",
+   "kind": "definition",
+   "front": "What does a DNS Type A record provide?",
+   "back": "A DNS Type A record maps a hostname to its IPv4 address, enabling IP address lookup given a domain name.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-01",
+   "topic": "data-link-layer-and-lans",
+   "kind": "definition",
+   "front": "What are the two sublayers of the IEEE 802.3 data link layer in LANs?",
+   "back": "The two sublayers are **LLC (Logical Link Control)** and **MAC (Medium Access Control)**.",
+   "source": "05-Data_link_layer (33966299).pdf p.27"
+  },
+  {
+   "id": "data-link-layer-and-lans-02",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Which IEEE 802 standard defines the CSMA/CD Ethernet protocol?",
+   "back": "**IEEE 802.3** defines the CSMA/CD Ethernet protocol.",
+   "source": "computernetworks (1).pdf p.29"
+  },
+  {
+   "id": "data-link-layer-and-lans-03",
+   "topic": "data-link-layer-and-lans",
+   "kind": "definition",
+   "front": "What is the main function of the LLC sublayer in IEEE 802 LANs?",
+   "back": "The **LLC sublayer** provides a link-layer interface between the LAN and upper network layers.",
+   "source": "computernetworks (1).pdf p.29"
+  },
+  {
+   "id": "data-link-layer-and-lans-04",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Why does PPP not use address fields in its frames?",
+   "back": "PPP operates on **point-to-point links** where only one recipient exists, making addressing redundant.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-05",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What is the purpose of the P/F bit in LAPB protocol frames?",
+   "back": "The **P/F (Poll/Final) bit** requests confirmation from the receiver: Poll to ask, Final to respond.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-06",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Which protocol does not perform data unit delimitation functions?",
+   "back": "**IEEE 802.2 LLC** does not perform data unit delimitation; delimiters are inserted by the MAC protocol.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-07",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What is the purpose of distinguishing commands and responses in LAPB layer 2 frames?",
+   "back": "To distinguish **supervisory frames** from **information frames** for control purposes.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-08",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What does Frame Relay technology predict about data units?",
+   "back": "Frame Relay transfers **variable size data units** on **virtual circuits**.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-09",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Why is the preamble prepended to IEEE 802.3 Ethernet frames?",
+   "back": "The preamble allows **synchronization of repeaters and receivers** on the local network.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-10",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What constraints limit the maximum extension of an IEEE 802.3 CSMA/CD LAN?",
+   "back": "Constraints arise from **signal propagation delay** and **signal attenuation** on the transmission media.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-11",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What is the size range of IEEE 802.3 Ethernet frames?",
+   "back": "Frames vary in size from **64 to 1518 octets**.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-12",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What technique does PPP use to ensure data transparency?",
+   "back": "PPP uses **byte-stuffing** to escape special flag bytes and ensure transparency.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-13",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Which protocol does not perform error detection on data?",
+   "back": "**IEEE 802.2 LLC (Type 1)** does not perform error detection functions.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-14",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "How does increasing the minimum PDU size in 1 Gb/s Ethernet help collision recognition?",
+   "back": "Increasing minimum PDU size maintains **transmission time greater than round-trip time** for collision detection.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-15",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What is the effect of partitioning an Ethernet LAN with bridges on network performance?",
+   "back": "Performance improves only if traffic is mostly inter-segment; otherwise, bridge processing may limit gains.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-16",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Does code division multiplexing require coupling with time or frequency multiplexing?",
+   "back": "No, **code division multiplexing (CDMA)** does not necessarily require time or frequency multiplexing.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-17",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "What causes instability in Aloha and Slotted Aloha protocols?",
+   "back": "Instability is caused by a **decrease in throughput** when offered traffic exceeds a threshold due to collisions.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-18",
+   "topic": "data-link-layer-and-lans",
+   "kind": "fact",
+   "front": "Which IP subnet mask can accommodate 200 Ethernet stations?",
+   "back": "The **130.192.2.0/24** subnet mask provides enough addresses for 200 stations.",
+   "source": "past exams"
+  },
+  {
+   "id": "data-link-layer-and-lans-19",
+   "topic": "data-link-layer-and-lans",
+   "kind": "definition",
+   "front": "What is the main function of the MAC sublayer in IEEE 802 LANs?",
+   "back": "The MAC sublayer is responsible for **solving the multiple access problem** and controlling access to the shared medium.",
+   "source": "05-Data_link_layer (33966299).pdf p.4"
+  },
+  {
+   "id": "error-and-flow-control-01",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Which factors favor the choice of small packet sizes in packet-switched networks?",
+   "back": "Small packets favor **parallel transmission**, reduce **packetization delay**, and lower the **probability of packet error**.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-02",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "When is it convenient to increase the transmission window size in a Go-Back-N protocol?",
+   "back": "When the **transmission speed increases** with the same data unit size and transfer delays, to maintain efficiency.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-03",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "In Go-Back-N protocol, which complexity aspect does NOT increase compared to Stop-And-Wait?",
+   "back": "The **amount of memory required at the receiver** remains the same as Stop-And-Wait.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-04",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What is the condition for Selective Repeat protocol window sizes Wt and Wr?",
+   "back": "Selective Repeat works only if **Wt + Wr ≤ 2^k**, where k is the sequence number bits.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-05",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Which bit sequence does PPP use to delimit data frames?",
+   "back": "PPP uses the sequence **01111110** to delimit data frames.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-06",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What advantage does store-and-forward switching provide regarding channel speeds?",
+   "back": "It allows adaptation to **different speeds between channels** on the same switch.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-07",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Why is Go-Back-N protocol more complex than Stop-And-Wait?",
+   "back": "Because the **transmitter** manages a window larger than one, increasing its complexity.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-08",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "In packet switching, how are network resources allocated to users?",
+   "back": "Resources are **not exclusively allocated**; packets wait in queues until resources are available.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-09",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What problem arises using Stop-And-Wait on a non-sequential channel?",
+   "back": "It can cause **protocol malfunctions and algorithm blocking** due to sequence number issues.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-10",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "How does circuit switching allocate network resources?",
+   "back": "It allocates a **subset of resources exclusively** for the communication until it ends.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-11",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "At which OSI layer is frame delimitation typically performed?",
+   "back": "Frame delimitation is a function of the **Data Link Layer (Layer 2)**, adjacent to the physical layer.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-12",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Why are window protocols called ARQ (Automatic Retransmission reQuest)?",
+   "back": "Because **timeout expiration at the transmitter triggers automatic retransmission requests**.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-13",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "How does common channel signaling operate?",
+   "back": "A **single signaling channel** controls multiple user channels and operates in **packet mode**.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-14",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "For what type of communication are window protocols applicable?",
+   "back": "Only for **connection-oriented communications** requiring state synchronization.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-15",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Why does Ethernet define a minimum packet size?",
+   "back": "To ensure **correct collision detection** within the collision domain.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-16",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What is a main difference between Frame Relay and IP networks?",
+   "back": "Frame Relay is **connection-oriented** (virtual circuits), while IP is **connectionless** (datagrams).",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-17",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What identifier do signaling messages in common channel signaling contain?",
+   "back": "They contain the **connection identifier** to which the message refers.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-18",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Between which entities does an (N)-protocol regulate interactions?",
+   "back": "Between **(N)-entities of the same or different systems** at the same layer.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-19",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What advantage does piggybacking provide in window protocols?",
+   "back": "It **reduces the percentage of control information** by combining ACKs with data packets.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-20",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "How does Stop-And-Wait protocol efficiency compare to Go-Back-N in absence of errors?",
+   "back": "Stop-And-Wait efficiency is always **less than Go-Back-N** due to window size 1 limitation.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-21",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What determines the minimum time to send a 100KB packet over a 300m wired network with 3 store-and-forward nodes?",
+   "back": "It depends on the **transmission bit rate**; without it, time cannot be calculated.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-22",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "How does RTS/CTS handshaking in Wi-Fi DCF affect collisions?",
+   "back": "It **reduces collisions on data packets** by addressing the hidden node problem.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-23",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Why must Ethernet packets have a minimum size?",
+   "back": "To ensure the transmitter is still sending when a collision signal returns, enabling **collision recognition**.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-24",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "Can two stations in the same Ethernet collision domain cause collisions?",
+   "back": "Yes, they can create **collisions** when transmitting simultaneously.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-25",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What causes a duplicate PDU delivery in Selective Repeat with cumulative ACKs?",
+   "back": "A **transmitter timeout that is too short** causing premature retransmissions.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-26",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "How does a Go-Back-N receiver respond to a duplicate PDU?",
+   "back": "It **always sends an ACK for the expected sequence number** to indicate the next expected PDU.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-27",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "What does receiving multiple hits with the same sequence number indicate in ARQ?",
+   "back": "It indicates a **loss of a data unit**, triggering retransmissions.",
+   "source": "past exams"
+  },
+  {
+   "id": "error-and-flow-control-28",
+   "topic": "error-and-flow-control",
+   "kind": "fact",
+   "front": "In Go-Back-N with window size 5, after sending PDUs 9-11 and receiving ACK 8, what can be sent next?",
+   "back": "The transmitter can **send PDU 12** as it is within the allowed window.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-01",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What characterizes conversational interactive telecommunication services?",
+   "back": "They are characterized by the **transfer of information in real time** between end points.",
+   "source": "networks_quiz.pdf p.1"
+  },
+  {
+   "id": "general-networking-02",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "How many levels organize the architecture of Internet protocols?",
+   "back": "The Internet protocol architecture is organized in **four levels**.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-03",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What can an (N)-PCI contain in the OSI reference model?",
+   "back": "An (N)-PCI can contain **(N)-addresses** as part of the header information.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-04",
+   "topic": "general-networking",
+   "kind": "comparison",
+   "front": "What is the difference between teleservices, bearer services, and supplementary services?",
+   "back": "Bearer services offer only information transfer; teleservices involve user equipment functions; supplementary services modify or integrate bearer and teleservices.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-05",
+   "topic": "general-networking",
+   "kind": "definition",
+   "front": "What does the term 'commutation' mean in networking?",
+   "back": "Commutation is the process of **interconnecting resources for the time necessary for communication**.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-06",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What type of service does the IP protocol provide?",
+   "back": "IP provides an **unreliable and connectionless** service with no delivery guarantee.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-07",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "How does DSL separate data and voice on the same transmission medium?",
+   "back": "DSL uses **frequency multiplexing** to separate data and voice signals.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-08",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "How many OSI layers are involved in data transfer between two application processes?",
+   "back": "Data transfer involves **at least one entity for each of the seven OSI layers** in both systems.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-09",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "Between which entities does an (N-1)-protocol allow interaction?",
+   "back": "An (N-1)-protocol allows interaction between **two (N-1)-entities** at the same layer.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-10",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What does the (N + 1)-directory function associate in the OSI model?",
+   "back": "It associates a **(N + 1)-title to an (N)-address** following OSI naming conventions.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-11",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What is the necessary and sufficient condition to avoid malfunctions in a windowed protocol on a non-reordering channel?",
+   "back": "The total sequence numbers **N must be at least Wt + Wr**, where Wt and Wr are transmission and receive window sizes.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-12",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What are the three fundamental elements that define a protocol?",
+   "back": "A protocol is defined by its **algorithms, formats, and timings**.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-13",
+   "topic": "general-networking",
+   "kind": "mechanism",
+   "front": "How can blocking or data loss be avoided in windowed protocols on non-sequential channels?",
+   "back": "By numbering PDUs on more than one bit and limiting the PDUs' lifetime in the network.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-14",
+   "topic": "general-networking",
+   "kind": "definition",
+   "front": "What is a protocol in networking?",
+   "back": "A protocol is a set of **semantic and syntactic rules** allowing communication between two peer entities at the same layer.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-15",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "How are IPv4 addresses generally assigned?",
+   "back": "IPv4 addresses are assigned on a **geographical and topological basis** to favor aggregation.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-16",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What happens to an (N)-PDU when passed down to level (N-1) in the OSI model?",
+   "back": "It becomes one or more **(N-1)-SDUs** encapsulated in the lower layer.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-17",
+   "topic": "general-networking",
+   "kind": "number",
+   "front": "If a host sends a 4800-byte file using 800-byte PDUs with 100-byte PCI, what is the size of the last PDU sent?",
+   "back": "The last PDU carries **700 bytes** of data (800 - 100 PCI), so the last PDU size is 700 bytes.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-18",
+   "topic": "general-networking",
+   "kind": "mechanism",
+   "front": "What happens to the escape byte in the byte stuffing procedure at the receiver?",
+   "back": "The receiver **discards the escape byte** preceding the delimiter during de-stuffing.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-19",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "Which of these cannot be a network ID: 130.192.55.0/16 or 130.192.0.0/16?",
+   "back": "**130.192.55.0/16 cannot be a network ID** because the network ID for /16 must be 130.192.0.0.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-20",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "Which of these is not a network ID: 192.168.16.0/16 or 192.168.0.0/16?",
+   "back": "**192.168.16.0/16 is not a network ID**; the correct network ID for /16 is 192.168.0.0.",
+   "source": "past exams"
+  },
+  {
+   "id": "general-networking-21",
+   "topic": "general-networking",
+   "kind": "fact",
+   "front": "What is the function of a hub in a star-based network topology?",
+   "back": "A hub **regenerates and forwards signals to all ports**, creating a single collision domain without packet recognition.",
+   "source": "computernetworks (1).pdf p.33"
+  },
+  {
+   "id": "multimedia-networking-01",
+   "topic": "multimedia-networking",
+   "kind": "definition",
+   "front": "Which application type allows playout before the entire file is downloaded?",
+   "back": "**Streaming stored audio/video** allows playout before the entire file is downloaded.",
+   "source": "06_MultimediaNetworking.pdf p.8"
+  },
+  {
+   "id": "multimedia-networking-02",
+   "topic": "multimedia-networking",
+   "kind": "comparison",
+   "front": "What is the main delay tolerance difference between streaming stored content and VoIP?",
+   "back": "Streaming stored content tolerates playout delays of seconds; VoIP requires very low delay due to interactivity.",
+   "source": "ComputerNetworksCatogorized.pdf p.113"
+  },
+  {
+   "id": "multimedia-networking-03",
+   "topic": "multimedia-networking",
+   "kind": "definition",
+   "front": "What is the function of a playout buffer in multimedia streaming?",
+   "back": "A **playout buffer** compensates for network delay jitter by storing data before playback.",
+   "source": "06_MultimediaNetworking.pdf p.12"
+  },
+  {
+   "id": "multimedia-networking-04",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "Why is a 2-second playout delay incompatible with VoIP?",
+   "back": "Because VoIP requires low latency for real-time conversation; 2 seconds delay causes unacceptable lag.",
+   "source": "ComputerNetworksCatogorized.pdf p.113"
+  },
+  {
+   "id": "multimedia-networking-05",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "What does RTP provide for VoIP and streaming?",
+   "back": "RTP provides **timing and sequencing** but does not guarantee real-time delivery or reliability.",
+   "source": "ComputerNetworksCatogorized.pdf p.114"
+  },
+  {
+   "id": "multimedia-networking-06",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "Which protocol is used to open and close VoIP sessions?",
+   "back": "**SIP** (Session Initiation Protocol) is used to open and close VoIP sessions.",
+   "source": "ComputerNetworksCatogorized.pdf p.114"
+  },
+  {
+   "id": "multimedia-networking-07",
+   "topic": "multimedia-networking",
+   "kind": "mechanism",
+   "front": "How does DASH adapt video streaming quality?",
+   "back": "DASH adapts quality by requesting video chunks at bitrates matching available bandwidth.",
+   "source": "Summary2ndPartEN.pdf p.28"
+  },
+  {
+   "id": "multimedia-networking-08",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "What are the advantages of streaming multimedia over UDP?",
+   "back": "UDP streaming offers **low delay** and constant encoding/transmission rates but no congestion control.",
+   "source": "Summary2ndPartEN.pdf p.28"
+  },
+  {
+   "id": "multimedia-networking-09",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "What are the disadvantages of streaming multimedia over TCP?",
+   "back": "TCP streaming has higher delay due to retransmissions and congestion control but more stable delivery.",
+   "source": "Summary2ndPartEN.pdf p.28"
+  },
+  {
+   "id": "multimedia-networking-10",
+   "topic": "multimedia-networking",
+   "kind": "definition",
+   "front": "What is the continuous playout constraint in streaming stored video?",
+   "back": "Playback must match original timing once started, requiring client buffering to handle jitter.",
+   "source": "06_MultimediaNetworking.pdf p.11"
+  },
+  {
+   "id": "multimedia-networking-11",
+   "topic": "multimedia-networking",
+   "kind": "mechanism",
+   "front": "How does client-side buffering help multimedia streaming?",
+   "back": "It smooths out network delay variability by storing data before playback, reducing jitter effects.",
+   "source": "Summary2ndPartEN.pdf p.28"
+  },
+  {
+   "id": "multimedia-networking-12",
+   "topic": "multimedia-networking",
+   "kind": "fact",
+   "front": "Why is RTP considered a 'best-effort' protocol?",
+   "back": "Because RTP runs over UDP and does not guarantee packet delivery or timing, only sequencing and timing info.",
+   "source": "ComputerNetworksCatogorized.pdf p.114"
+  },
+  {
+   "id": "network-layer-01",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What are the two key functions of the network layer?",
+   "back": "The network layer performs **forwarding** (moving packets from input to output) and **routing** (determining the path from source to destination).",
+   "source": "01_NetworkLayer.pdf p.5"
+  },
+  {
+   "id": "network-layer-02",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What does the network layer encapsulate and deliver?",
+   "back": "On sending side, it encapsulates transport segments into **datagrams**; on receiving side, delivers segments to the transport layer.",
+   "source": "01_NetworkLayer.pdf p.4"
+  },
+  {
+   "id": "network-layer-03",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the role of a router in the network layer?",
+   "back": "A router examines header fields in all IP datagrams passing through it to forward packets appropriately.",
+   "source": "01_NetworkLayer.pdf p.4"
+  },
+  {
+   "id": "network-layer-04",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "How are physical networks defined in relation to the network layer?",
+   "back": "Physical networks are sets of devices that can physically reach each other via link layer mechanisms, forming isolated islands.",
+   "source": "01_NetworkLayer.pdf p.26"
+  },
+  {
+   "id": "network-layer-05",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the relationship between physical networks and IP subnets?",
+   "back": "IP assumes a one-to-one correspondence between physical networks and **subnets**; direct communication occurs within subnets, routing between subnets.",
+   "source": "01_NetworkLayer.pdf p.27"
+  },
+  {
+   "id": "network-layer-06",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What is hierarchical addressing in IP routing?",
+   "back": "Hierarchical addressing allows **route aggregation**, enabling routers to advertise routes for address blocks efficiently.",
+   "source": "01_NetworkLayer.pdf p.52"
+  },
+  {
+   "id": "network-layer-07",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "How does hierarchical addressing improve routing efficiency?",
+   "back": "It enables routers to advertise a single route for many networks sharing a common prefix, reducing routing table size.",
+   "source": "01_NetworkLayer.pdf p.52"
+  },
+  {
+   "id": "network-layer-08",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the purpose of more specific routes in hierarchical addressing?",
+   "back": "More specific routes allow routing to finer-grained subnets within aggregated address blocks, improving routing precision.",
+   "source": "01_NetworkLayer.pdf p.60"
+  },
+  {
+   "id": "network-layer-09",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What organization allocates IP address blocks and manages DNS?",
+   "back": "The **ICANN** (Internet Corporation for Assigned Names and Numbers) allocates IP addresses and manages DNS.",
+   "source": "01_NetworkLayer.pdf p.73"
+  },
+  {
+   "id": "network-layer-10",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What is the function of an Autonomous System (AS) in Internet routing?",
+   "back": "An AS is a group of routers under a common administration using the same intra-AS routing protocol and connected to other ASes via gateway routers.",
+   "source": "Computer Networks.pdf p.69; 01_NetworkLayer.pdf p.96"
+  },
+  {
+   "id": "network-layer-11",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What routing protocols are used inside an Autonomous System?",
+   "back": "Intra-AS routing protocols include **RIP**, **OSPF**, and **IGRP**.",
+   "source": "Computer Networks.pdf p.70"
+  },
+  {
+   "id": "network-layer-12",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "Which routing protocol is used between Autonomous Systems?",
+   "back": "The **Exterior Gateway Protocol (EGP)** is used between different Autonomous Systems.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-13",
+   "topic": "network-layer",
+   "kind": "comparison",
+   "front": "What is the main difference between forwarding and routing?",
+   "back": "**Routing** plans the path from source to destination; **forwarding** moves packets through a single router from input to output.",
+   "source": "01_NetworkLayer.pdf p.5"
+  },
+  {
+   "id": "network-layer-14",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What does the metric (cost) in a routing algorithm represent?",
+   "back": "The metric expresses the **weight** of a link used in path selection during routing.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-15",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What are the advantages of virtual circuit services over datagram services?",
+   "back": "Virtual circuits maintain **sequence**, have less delay variability, and perform routing only when opening the connection.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-16",
+   "topic": "network-layer",
+   "kind": "mechanism",
+   "front": "How does an IP router update the TTL and checksum fields?",
+   "back": "The router decrements the **TTL** field and recalculates the **header checksum** accordingly.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-17",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What does the IP header checksum verify?",
+   "back": "The **header checksum** detects errors only in the IP header, not in the payload.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-18",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What is the structure of an IPv4 address?",
+   "back": "IPv4 addresses have fixed length and consist of a variable-length **network** part and a variable-length **host** part.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-19",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the purpose of CIDR in IP addressing?",
+   "back": "**CIDR** (Classless Inter-Domain Routing) uses netmasks to efficiently allocate and use IP address space.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-20",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What does a subnet mask with 24 leading 1 bits and 8 trailing 0 bits indicate?",
+   "back": "It can be associated with a **subnetted Class B** address.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-21",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "How does a router decide the output interface for forwarding a packet without masks?",
+   "back": "It uses the **network part** (net_id) of the destination IP address.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-22",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What information do Internet routing tables contain?",
+   "back": "They indicate only the **next router** to cross to reach the destination.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-23",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What characterizes Class C IPv4 addresses?",
+   "back": "Class C addresses provide **many networks** with a **small number of hosts** each.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-24",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What does the NAT mechanism do to IP packets?",
+   "back": "NAT can **modify the IP addresses** of packets to enable address translation.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-25",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "How does packet size affect store-and-forward switching delay?",
+   "back": "Larger packets increase the time a switch takes to receive and forward the packet.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-26",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What function does the OSI session layer provide?",
+   "back": "It defines **synchronization points** in a data unit stream to manage communication sessions.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-27",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "Which packet switching mode has the greatest routing complexity per packet?",
+   "back": "**Datagram mode** (packet switching without virtual circuits) requires routing decisions for every packet.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-28",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What frames does an Ethernet switch process?",
+   "back": "An Ethernet switch processes **all packets** regardless of destination address to learn and forward frames.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-29",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the disadvantage of datagram packet switching compared to circuit switching?",
+   "back": "Datagram switching causes **variability of data delays** (jitter) due to independent routing.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-30",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What is the piggybacking technique in window protocols?",
+   "back": "It carries **acknowledgment information** and user data in the same data unit in opposite directions.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-31",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "What does the ARP protocol do?",
+   "back": "ARP obtains the **MAC address** of a host from its IP address on the same local network.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-32",
+   "topic": "network-layer",
+   "kind": "number",
+   "front": "How many hosts can a network with netmask 255.255.255.128 support?",
+   "back": "It supports up to **126 hosts** (7 bits for host, 2 addresses reserved).",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-33",
+   "topic": "network-layer",
+   "kind": "number",
+   "front": "What is the prefix length for a network with 512 IP addresses in classless addressing?",
+   "back": "The prefix length is **/23** (32 - 9 bits for hosts = 23).",
+   "source": "past exams"
+  },
+  {
+   "id": "network-layer-34",
+   "topic": "network-layer",
+   "kind": "definition",
+   "front": "What is the role of a gateway router in an Autonomous System?",
+   "back": "A gateway router connects its AS to other ASes and runs inter-AS routing protocols.",
+   "source": "01_NetworkLayer.pdf p.96"
+  },
+  {
+   "id": "network-layer-35",
+   "topic": "network-layer",
+   "kind": "fact",
+   "front": "How does a router handle fragmentation and reassembly of IP datagrams?",
+   "back": "Routers perform **fragmentation** but only the destination host performs **reassembly**.",
+   "source": "past exams"
+  },
+  {
+   "id": "network-topologies-01",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What does common channel signaling provide in packet switching?",
+   "back": "Control equipment of switching centers exchange signaling information in **packet switching** using a single signaling channel separate from user data channels.",
+   "source": "Computer networks QUIZ.pdf p.31, networks_quiz.pdf p.1"
+  },
+  {
+   "id": "network-topologies-02",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What are the characteristics of a fully connected mesh topology?",
+   "back": "It has a **high number of channels**, **good fault tolerance**, and **easy routing** due to direct connections between each node pair.",
+   "source": "ComputerNetworksCatogorized.pdf p.116, 01-Network_fundamentals (33966293).pdf p.35"
+  },
+  {
+   "id": "network-topologies-03",
+   "topic": "network-topologies",
+   "kind": "mechanism",
+   "front": "How do Aloha and Slotted-Aloha protocols handle interference between transmissions?",
+   "back": "They do not implement preventive control; only upon collision do they repeat transmission after a **random delay**.",
+   "source": "Computer networks QUIZ.pdf p.3"
+  },
+  {
+   "id": "network-topologies-04",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Compared to CBR, what is a key characteristic of VBR sources?",
+   "back": "VBR sources have a **greater difference between maximum and minimum transmission speed**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-05",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What are the characteristics of a tree topology?",
+   "back": "It has a **low number of channels**, **poor fault tolerance**, and **easy routing**.",
+   "source": "ComputerNetworksCatogorized.pdf p.116"
+  },
+  {
+   "id": "network-topologies-06",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "How does a topology with smaller average distance between nodes affect traffic handling?",
+   "back": "It allows handling a **greater amount of traffic** on the channels under uniform traffic distribution.",
+   "source": "ComputerNetworksCatogorized.pdf p.116"
+  },
+  {
+   "id": "network-topologies-07",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "In LAN bus topology with CSMA, what does channel access depend on?",
+   "back": "It depends on the **position relative to transmitters** due to propagation delays.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-08",
+   "topic": "network-topologies",
+   "kind": "number",
+   "front": "In a fully connected mesh topology with N nodes, how many bidirectional channels exist?",
+   "back": "The number of bidirectional channels is **N(N-1)/2**.",
+   "source": "Computer Networks.pdf p.4, 01-Network_fundamentals (33966293).pdf p.35"
+  },
+  {
+   "id": "network-topologies-09",
+   "topic": "network-topologies",
+   "kind": "number",
+   "front": "How many bidirectional channels are in a tree topology with N nodes?",
+   "back": "There are **N-1** bidirectional channels in a tree topology.",
+   "source": "Computer Networks.pdf p.4"
+  },
+  {
+   "id": "network-topologies-10",
+   "topic": "network-topologies",
+   "kind": "number",
+   "front": "What is the minimum number of numbering bits required for a Go-Back-N protocol with window size Wt?",
+   "back": "At least **log2(Wt + 1)** bits are needed for numbering.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-11",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What is false about the comparison between Aloha and Slotted-Aloha protocols?",
+   "back": "The performance of Aloha is **more dependent** than Slotted-Aloha on propagation delays (not less).",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-12",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What is the role of SMTP protocol?",
+   "back": "SMTP is used for **delivering outgoing email messages** from a client to a mail server.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-13",
+   "topic": "network-topologies",
+   "kind": "mechanism",
+   "front": "How do CSMA and CSMA-CD protocols avoid interference?",
+   "back": "They use **preventive listening** to the channel; transmission begins only if the channel is heard free.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-14",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What regulates the increment of the TCP transmitter's current window?",
+   "back": "It is regulated by the **slow-start and congestion avoidance** phases of TCP congestion control.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-15",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What does 'persistence' mean in CSMA and CSMA-CD protocols?",
+   "back": "It defines the behavior when the channel is busy: either wait a random delay (non-persistent) or transmit immediately after channel is free (1-persistent).",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-16",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What happens to transmission speed in Go-Back-N ARQ when channel speed increases?",
+   "back": "Increasing transmission speed **increases the average amount of information transferred** per unit time.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-17",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "How does decreasing average path length D affect network throughput with fixed nodes, channels, and capacity?",
+   "back": "Decreasing D **increases the maximum amount of traffic** the network can handle.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-18",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What is statistical multiplexing?",
+   "back": "Sharing the same resource by traffic sources that use it **on an instantaneous need basis**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-19",
+   "topic": "network-topologies",
+   "kind": "mechanism",
+   "front": "What does a router do if it detects an incorrect checksum on an IP packet?",
+   "back": "It **discards the packet without reporting** it to any other network entity.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-20",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What does the IEEE 802.2 LLC SNAP format allow?",
+   "back": "It allows **coexistence of multiple protocols** at higher layers over the same network.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-21",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What is contained in the IP header to manage fragmentation?",
+   "back": "The **Identification** and **Fragment Offset** fields manage packet fragmentation.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-22",
+   "topic": "network-topologies",
+   "kind": "mechanism",
+   "front": "How does the TCP congestion window grow during slow-start?",
+   "back": "It grows by **one segment for each ACK received**, doubling approximately every RTT.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-23",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What situation is impossible in a windowed protocol on a sequential channel?",
+   "back": "The smallest sequence number in the receive window cannot be smaller than that in the transmission window.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-24",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What is the purpose of Medium Access Control (MAC) sublevel protocols?",
+   "back": "To allow **sharing of a broadcast channel** by means of a distributed algorithm.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-25",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What mandatory fields are in the TCP header?",
+   "back": "The **sequence number** and **acknowledgment number** fields are mandatory.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-26",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Is a different access protocol used in Fast Ethernet compared to Ethernet?",
+   "back": "No, both use the **same CSMA/CD access protocol**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-27",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What does the TCP transmitter window size depend on?",
+   "back": "It varies with **network congestion** and **receiver's flow control**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-28",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What limits the number of unacknowledged packets in a Go-Back-N protocol?",
+   "back": "The **transmission window size N** limits the number of unacknowledged packets.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-29",
+   "topic": "network-topologies",
+   "kind": "number",
+   "front": "What is the initial size of the TCP congestion window at connection start?",
+   "back": "It is equal to **one maximum segment size (MSS)**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-30",
+   "topic": "network-topologies",
+   "kind": "number",
+   "front": "What is the average number of channels traversed by a packet in a unidirectional ring with 10 nodes?",
+   "back": "The average number of channels traversed is **5**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-31",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What is the purpose of the DHCP protocol?",
+   "back": "It is used for **automatic configuration of an IP station**, including IP address assignment.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-32",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Are shortest paths the same using link state or distance vector routing algorithms?",
+   "back": "Yes, both find the **same optimal path** given the same topology and costs.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-33",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Why might a ring topology be preferred over a mesh topology?",
+   "back": "Because **routing is simpler** in a ring topology.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-34",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "How can multiple sources share the same physical channel simultaneously?",
+   "back": "Through **frequency multiplexing** (FDM).",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-35",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Which protocol guarantees shorter access delay: Aloha or Slotted-Aloha?",
+   "back": "**Aloha** guarantees shorter access delay since it transmits immediately without waiting for slots.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-36",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "Where can full-duplex Fast Ethernet be used?",
+   "back": "Between a user station and a switch port or between two switch ports.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-37",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "When does TCP switch from slow-start to congestion avoidance?",
+   "back": "When the congestion window reaches a **threshold value (ssthresh)**.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-38",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What is necessary for window protocol operation on a non-sequential channel?",
+   "back": "An **increase in the number of bits** used for numbering data units.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-39",
+   "topic": "network-topologies",
+   "kind": "fact",
+   "front": "What happens if a bidirectional channel is added between two nodes in a tree topology?",
+   "back": "It **creates a cycle**, turning the tree into a cyclic graph.",
+   "source": ""
+  },
+  {
+   "id": "network-topologies-40",
+   "topic": "network-topologies",
+   "kind": "definition",
+   "front": "What IP header field prevents packets from looping forever?",
+   "back": "The **Time To Live (TTL)** field decrements at each router and discards packets when zero.",
+   "source": ""
+  },
+  {
+   "id": "physical-layer-01",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "Which line encoding requires the lowest physical bit rate for the same information rate?",
+   "back": "**64B66B encoding** requires only a 1.03× increase in physical bit rate, lower than 4B5B or 8B10B which require about 1.25×.",
+   "source": "networks_quiz.pdf p.73"
+  },
+  {
+   "id": "physical-layer-02",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "What are the quality requirements for telephony service in terms of delay and jitter?",
+   "back": "Maximum delay of the order of **hundreds of milliseconds** and **extremely low jitter** are required for telephony service quality.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-03",
+   "topic": "physical-layer",
+   "kind": "number",
+   "front": "What is the order of magnitude of the maximum transmission speed on an optical fiber?",
+   "back": "The maximum transmission speed on an optical fiber is about **1 Tbit/s**.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-04",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "Which transmission medium allows information transmission over greater distances without amplification?",
+   "back": "The **Hertzian channel** (radio, satellite) allows transmission over very long distances without intermediate amplification.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-05",
+   "topic": "physical-layer",
+   "kind": "mechanism",
+   "front": "Why does VDSL require the user to be within about 100 meters from the street cabinet?",
+   "back": "Because **high-frequency signals attenuate quickly over copper**, requiring short distances for high bit rate modulation in VDSL.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-06",
+   "topic": "physical-layer",
+   "kind": "number",
+   "front": "What is the typical maximum transmission rate order of magnitude on coaxial cable?",
+   "back": "The maximum transmission rate on coaxial cable is about **1 Mbit/s**.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-07",
+   "topic": "physical-layer",
+   "kind": "number",
+   "front": "What is the typical maximum transmission rate order of magnitude on twisted pair copper cable?",
+   "back": "Modern twisted pair cables support transmission rates of about **1 Gbit/s**.",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-08",
+   "topic": "physical-layer",
+   "kind": "mechanism",
+   "front": "How is signal transmission achieved in an Unshielded Twisted Pair (UTP) cable?",
+   "back": "Signal transmission exploits the **difference between voltages on the two conductors of a pair** (differential signaling).",
+   "source": "networks_quiz.pdf p.74"
+  },
+  {
+   "id": "physical-layer-09",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "Which line encoding guarantees at least one signal transition per symbol period?",
+   "back": "**Return-to-Zero (RZ)** encoding guarantees at least one signal transition per symbol period.",
+   "source": "past exams"
+  },
+  {
+   "id": "physical-layer-10",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "How does Manchester encoding affect the physical bit rate compared to the information bit rate?",
+   "back": "**Manchester encoding doubles the physical bit rate** because it uses two signal changes per information bit.",
+   "source": "past exams"
+  },
+  {
+   "id": "physical-layer-11",
+   "topic": "physical-layer",
+   "kind": "comparison",
+   "front": "What is the difference between line coding and digital modulation in terms of transmission media?",
+   "back": "**Line coding** is used for electrical (guided) media; **digital modulation** is used for radio (unguided) media.",
+   "source": "past exams"
+  },
+  {
+   "id": "physical-layer-12",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "Why is digital modulation like 64-QAM preferred for radio channel data transmission?",
+   "back": "Because it allows transmission in the appropriate frequency band and improves spectral efficiency.",
+   "source": "past exams"
+  },
+  {
+   "id": "physical-layer-13",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "How many bits per symbol does 16-QAM digital modulation transmit?",
+   "back": "**16-QAM transmits 4 bits per symbol**, since 16 = 2^4 possible states.",
+   "source": "past exams"
+  },
+  {
+   "id": "physical-layer-14",
+   "topic": "physical-layer",
+   "kind": "definition",
+   "front": "What are the main functions of the physical layer in network protocol architecture?",
+   "back": "The physical layer provides mechanical, physical, functional, and procedural means to activate, maintain, and disable physical connections and transfers bits or symbols.",
+   "source": "02-protocol_architectures (33966296).pdf p.31"
+  },
+  {
+   "id": "physical-layer-15",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "What data units does the physical layer handle?",
+   "back": "The physical layer handles **bits or symbols** as its data units.",
+   "source": "02-protocol_architectures (33966296).pdf p.31"
+  },
+  {
+   "id": "physical-layer-16",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "What does the physical layer define besides transmission of bits?",
+   "back": "It defines **transmission codes, connectors, voltage levels**, and other physical parameters.",
+   "source": "02-protocol_architectures (33966296).pdf p.31"
+  },
+  {
+   "id": "physical-layer-17",
+   "topic": "physical-layer",
+   "kind": "fact",
+   "front": "What is the typical speed range of twisted pair copper wire used in networks?",
+   "back": "Twisted pair copper wire typically supports speeds in the range of **Mbps to Gbps**, with modern cables reaching about 1 Gbit/s.",
+   "source": "0. Summary of Computer Networks (1).pdf p.11"
+  },
+  {
+   "id": "switching-and-signaling-01",
+   "topic": "switching-and-signaling",
+   "kind": "definition",
+   "front": "What is meant by signaling in telecommunications networks?",
+   "back": "**Signaling** is the exchange of control information to manage telecommunications network functions, such as call setup and resource allocation.",
+   "source": "Computer Networks.pdf p.2"
+  },
+  {
+   "id": "switching-and-signaling-02",
+   "topic": "switching-and-signaling",
+   "kind": "mechanism",
+   "front": "What are the three phases of circuit switching?",
+   "back": "The three phases are **opening**, **data transfer**, and **closing** of the circuit connection.",
+   "source": "computernetworks (1).pdf p.5"
+  },
+  {
+   "id": "switching-and-signaling-03",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "How does store-and-forward packet switching affect transfer delay with large PDUs?",
+   "back": "Using large PDUs in store-and-forward increases overall transfer delay because each node must receive the entire PDU before forwarding.",
+   "source": "Networks Tests.pdf p.51"
+  },
+  {
+   "id": "switching-and-signaling-04",
+   "topic": "switching-and-signaling",
+   "kind": "definition",
+   "front": "What is common channel signaling?",
+   "back": "**Common channel signaling** uses a separate managed packet-switched channel carrying signaling messages with connection identifiers.",
+   "source": "networks_quiz.pdf p.96"
+  },
+  {
+   "id": "switching-and-signaling-05",
+   "topic": "switching-and-signaling",
+   "kind": "comparison",
+   "front": "What is the difference between circuit switching and packet switching?",
+   "back": "**Circuit switching** allocates dedicated resources for the call duration; **packet switching** shares resources dynamically for bursty data flows.",
+   "source": "computernetworks (1).pdf p.5"
+  },
+  {
+   "id": "switching-and-signaling-06",
+   "topic": "switching-and-signaling",
+   "kind": "definition",
+   "front": "What does network signaling refer to?",
+   "back": "**Network signaling** is the exchange of control information within the network to execute switching functions.",
+   "source": "Computer Networks.pdf p.2"
+  },
+  {
+   "id": "switching-and-signaling-07",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "Why is signaling important in telephone networks?",
+   "back": "Signaling establishes a circuit between users by exchanging control information to set up and release the connection.",
+   "source": "Computer Networks.pdf p.2"
+  },
+  {
+   "id": "switching-and-signaling-08",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "What is the role of a signaling channel in common channel signaling?",
+   "back": "A **signaling channel** is logically or physically separated from data channels and carries control information for multiple circuits.",
+   "source": "Computer Networks.pdf p.18"
+  },
+  {
+   "id": "switching-and-signaling-09",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "What is the main advantage of virtual circuit service over datagram service?",
+   "back": "Virtual circuits guarantee packet sequence, reduce delay variability, and require routing only at connection setup.",
+   "source": "computernetworks (1).pdf p.7"
+  },
+  {
+   "id": "switching-and-signaling-10",
+   "topic": "switching-and-signaling",
+   "kind": "comparison",
+   "front": "How does common channel signaling differ from associated channel signaling?",
+   "back": "Common channel signaling uses a separate channel for signaling; associated channel signaling uses channels linked to each connection.",
+   "source": "networks_quiz.pdf p.97"
+  },
+  {
+   "id": "switching-and-signaling-11",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "What tasks are included in network management functions?",
+   "back": "Network management includes adding channels/nodes, upgrading devices, reconfiguration after faults, performance monitoring, and device control.",
+   "source": "Computer Networks.pdf p.2"
+  },
+  {
+   "id": "switching-and-signaling-12",
+   "topic": "switching-and-signaling",
+   "kind": "fact",
+   "front": "Why is it preferable to send small packets in store-and-forward networks?",
+   "back": "Small packets minimize storage time at nodes, reducing overall transfer delay compared to large packets.",
+   "source": "Computer networks QUIZ.pdf p.7"
+  },
+  {
+   "id": "transport-layer-01",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "In the OSI model, on which layer does the transport layer rely for its services?",
+   "back": "The transport layer provides services relying on the **network layer** below it.",
+   "source": "ComputerNetworksCatogorized.pdf p.3"
+  },
+  {
+   "id": "transport-layer-02",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What type of acknowledgments does the TCP receiver send?",
+   "back": "The TCP receiver sends **cumulative acknowledgments (ACKs)** acknowledging all bytes up to the last received in order.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-03",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "How does the size of the TCP segment header vary?",
+   "back": "The TCP segment header has a **variable size** depending on the presence of options.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-04",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "How does the MAC protocol change from 10 Mbit/s to 100 Mbit/s Ethernet?",
+   "back": "The MAC protocol is **unchanged**, accepting a reduction of the collision domain size by about a factor of ten.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-05",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "At which layer is end-to-end error recovery performed in the Internet?",
+   "back": "End-to-end error recovery is performed at the **transport layer** (e.g., TCP).",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-06",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What defines a collision domain in Ethernet?",
+   "back": "A collision domain is the portion of the network where **collisions can be detected** by nodes.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-07",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "How does TCP provide error detection on data?",
+   "back": "TCP provides error detection using a **checksum** on each segment's data and header.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-08",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What does Ethernet full-duplex mode require?",
+   "back": "Full-duplex Ethernet requires the ability to **transmit and receive simultaneously** using separate channels.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-09",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "In TCP slow start, how does the congestion window change upon receiving an ACK?",
+   "back": "The congestion window increases by **one segment per ACK** received during slow start.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-10",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "In the OSI model, which layer provides logical communication between processes?",
+   "back": "The **transport layer** provides logical communication between processes on different hosts.",
+   "source": "04_TCP-UDP_Kurose.pdf p.5"
+  },
+  {
+   "id": "transport-layer-11",
+   "topic": "transport-layer",
+   "kind": "comparison",
+   "front": "What is the main difference between the network and transport layers?",
+   "back": "Network layer provides logical communication between hosts; transport layer provides logical communication between **processes**.",
+   "source": "04_TCP-UDP_Kurose.pdf p.5"
+  },
+  {
+   "id": "transport-layer-12",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What are the main functions of the transport layer?",
+   "back": "Main functions include **error control, sequence control, flow control, multiplexing, segmentation, and reassembly**.",
+   "source": "02-protocol_architectures (33966296).pdf p.34"
+  },
+  {
+   "id": "transport-layer-13",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What service does UDP provide?",
+   "back": "UDP provides an **unreliable, connectionless** transport service with multiplexing/demultiplexing.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-14",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What service does TCP provide?",
+   "back": "TCP provides a **reliable, connection-oriented** transport service with flow and congestion control.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-15",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What fields are mandatory in the UDP header?",
+   "back": "UDP header must contain **source port, destination port, length, and checksum** fields.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-16",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What fields are mandatory in the TCP header?",
+   "back": "TCP header must contain **source port, destination port, sequence number, acknowledgment number, flags, window size, checksum, and options (variable size)**.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-17",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What is the purpose of the source and destination port fields in TCP and UDP?",
+   "back": "Ports implement **multiplexing and demultiplexing** to direct data to the correct application process on a host.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-18",
+   "topic": "transport-layer",
+   "kind": "mechanism",
+   "front": "How does TCP flow control operate?",
+   "back": "TCP flow control uses the **receive window (rwnd)** field to limit sender's data to the receiver's buffer capacity.",
+   "source": "04_TCP-UDP_Kurose.pdf p.44-45"
+  },
+  {
+   "id": "transport-layer-19",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What happens to the TCP congestion window after detecting segment loss by triple duplicate ACKs in TCP Reno?",
+   "back": "The congestion window is reduced to about **half of its current value** (fast recovery).",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-20",
+   "topic": "transport-layer",
+   "kind": "mechanism",
+   "front": "What is the TCP three-way handshake sequence?",
+   "back": "TCP connection is established by exchanging **SYN, SYN-ACK, and ACK** messages.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-21",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What does the TCP sequence number indicate?",
+   "back": "The TCP sequence number indicates the **byte position of the first data byte** in the segment within the byte stream.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-22",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What does the TCP acknowledgment number indicate?",
+   "back": "The acknowledgment number indicates the **next byte expected** by the receiver from the sender.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-23",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "How does TCP congestion control limit transmission?",
+   "back": "TCP congestion control limits the **size of the congestion window** based on network feedback (loss or delay).",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-24",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What is statistical multiplexing?",
+   "back": "Statistical multiplexing is a scheme without predetermined resource allocation, sharing bandwidth dynamically among flows.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-25",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the effect of setting TCP timeout significantly less than the round-trip time?",
+   "back": "It causes **unnecessary retransmissions** of segments still in transit.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-26",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What is the role of the playout buffer in streaming?",
+   "back": "The playout buffer compensates for **network delay variations (jitter)** in multimedia streaming.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-27",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the function of the Ethernet preamble?",
+   "back": "The preamble allows the receiver to **synchronize its clock** with the transmitter's clock.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-28",
+   "topic": "transport-layer",
+   "kind": "comparison",
+   "front": "What is the difference between connection-oriented and connectionless transport services?",
+   "back": "Connection-oriented (TCP) establishes a session with reliability; connectionless (UDP) sends datagrams without setup or guarantees.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-29",
+   "topic": "transport-layer",
+   "kind": "mechanism",
+   "front": "How does the transport layer perform segmentation?",
+   "back": "It creates multiple (N+1)-PDUs from a single (N+1)-SDU by breaking large messages into smaller segments.",
+   "source": "ComputerNetworksCatogorized.pdf p.3"
+  },
+  {
+   "id": "transport-layer-30",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the relationship between the number of labels in a virtual circuit network and active connections?",
+   "back": "The number of labels used for routing is proportional to the **number of active connections**.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-31",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What happens when a router receives a TCP packet destined for a non-existent TCP port?",
+   "back": "The router ignores the TCP port and forwards the packet based on IP; no error is generated at the router.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-32",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the effect of full-duplex Ethernet on collision domains?",
+   "back": "Full-duplex Ethernet **eliminates collisions** because transmit and receive occur on separate channels.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-33",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "How does a switch forward an ARP broadcast packet between two LANs?",
+   "back": "The switch forwards the ARP broadcast to all ports on the LAN, including the other LAN if connected.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-34",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the function of the TCP receive window (rwnd)?",
+   "back": "The receive window advertises the **available buffer space** at the receiver to control sender's transmission rate.",
+   "source": "04_TCP-UDP_Kurose.pdf p.45"
+  },
+  {
+   "id": "transport-layer-35",
+   "topic": "transport-layer",
+   "kind": "comparison",
+   "front": "What is the difference between TCP and UDP in terms of reliability?",
+   "back": "TCP provides **reliable** data transfer with error recovery; UDP provides **unreliable** transfer without guarantees.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-36",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "Which layer in the OSI model is responsible for flow control and error recovery?",
+   "back": "The **link layer** provides flow control and recovery of transmission errors over a physical link.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-37",
+   "topic": "transport-layer",
+   "kind": "definition",
+   "front": "What is the role of multiplexing and demultiplexing in the transport layer?",
+   "back": "Multiplexing combines data from multiple applications into segments; demultiplexing delivers received segments to correct applications.",
+   "source": "04_TCP-UDP_Kurose.pdf p.8"
+  },
+  {
+   "id": "transport-layer-38",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What happens to the TCP sender window when the receiver advertises a maximum window size?",
+   "back": "The sender's window can increase up to the **maximum receiver window** advertised, but not beyond it.",
+   "source": "past exams"
+  },
+  {
+   "id": "transport-layer-39",
+   "topic": "transport-layer",
+   "kind": "fact",
+   "front": "What is the purpose of the TCP checksum?",
+   "back": "The TCP checksum detects errors in the TCP header and data to ensure data integrity.",
+   "source": "past exams"
+  },
+  {
+   "id": "wireless-and-mobile-networks-01",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "What causes the fading phenomenon in a real mobile radio channel?",
+   "back": "Fading is caused by **rapid variation of the received power** due to moving obstacles in the channel.",
+   "source": "poliquiz CN (1).pdf p.4"
+  },
+  {
+   "id": "wireless-and-mobile-networks-02",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "Give an example of multiple access in cellular networks.",
+   "back": "Multiple access occurs when **mobile terminals transmit to the base station**, competing for the shared uplink channel.",
+   "source": "ComputerNetworksCatogorized.pdf p.55"
+  },
+  {
+   "id": "wireless-and-mobile-networks-03",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "Which scenario is NOT an example of multiple access?",
+   "back": "A **switch transmitting packets on an output interface** is not multiple access, as it is a point-to-point link.",
+   "source": "poliquiz CN (1).pdf p.4"
+  },
+  {
+   "id": "wireless-and-mobile-networks-04",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "definition",
+   "front": "What does roaming mean in a cellular network?",
+   "back": "Roaming is the ability to **track and locate a terminal regardless of the cell it is in**, allowing calls outside the home network.",
+   "source": "Computer Networks.pdf p.36"
+  },
+  {
+   "id": "wireless-and-mobile-networks-05",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "When must a WiFi receiver send an ACK frame?",
+   "back": "An ACK is **mandatory for every correctly received unicast frame** in WiFi to ensure reliability.",
+   "source": "poliquiz CN (1).pdf p.4"
+  },
+  {
+   "id": "wireless-and-mobile-networks-06",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "number",
+   "front": "What is the typical speed range of modern WiFi technologies?",
+   "back": "Modern WiFi standards achieve speeds of **a few Gigabit per second**.",
+   "source": "poliquiz CN (1).pdf p.4"
+  },
+  {
+   "id": "wireless-and-mobile-networks-07",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "How are data and TV signals separated in hybrid fiber coaxial (HFC) networks?",
+   "back": "Data and TV signals are separated by using **different frequency bandwidths** on the same cable.",
+   "source": "Computer Networks.pdf p.36"
+  },
+  {
+   "id": "wireless-and-mobile-networks-08",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "comparison",
+   "front": "What is the main difference between wireless networks and cellular networks?",
+   "back": "Wireless networks have **no mobility support** and connect terminals to access points; cellular networks cover large areas with adjacent cells and support terminal mobility.",
+   "source": "04-Physical_layer_Access_Transport_Networks (33966298).pdf p.49"
+  },
+  {
+   "id": "wireless-and-mobile-networks-09",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "What is the relationship between cell size and bit rate in cellular networks?",
+   "back": "Smaller cells provide **higher bit rates** but increase operational costs.",
+   "source": "Computer Networks.pdf p.36"
+  },
+  {
+   "id": "wireless-and-mobile-networks-10",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "definition",
+   "front": "What is the Friis equation used for in radio mobile channels?",
+   "back": "It relates **received power to transmitted power, antenna gains, frequency, and distance** in free space propagation.",
+   "source": "04-Physical_layer_Access_Transport_Networks (33966298).pdf p.19"
+  },
+  {
+   "id": "wireless-and-mobile-networks-11",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "comparison",
+   "front": "What is the difference between multiplexing and multiple access?",
+   "back": "Multiplexing is a **centralized channel division** at a single access point; multiple access is a **distributed problem** with many transmitters sharing the channel.",
+   "source": "Computer Networks.pdf p.47"
+  },
+  {
+   "id": "wireless-and-mobile-networks-12",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "fact",
+   "front": "Name four techniques used for multiplexing and multiple access.",
+   "back": "Time division, frequency division, code division, and space division are used for **multiplexing and multiple access**.",
+   "source": "computernetworks (1).pdf p.5"
+  },
+  {
+   "id": "wireless-and-mobile-networks-13",
+   "topic": "wireless-and-mobile-networks",
+   "kind": "mechanism",
+   "front": "Why are distributed access protocols used in multiple access channels?",
+   "back": "Because static division is unsuitable for bursty traffic, **distributed protocols emulate statistical multiplexing** to dynamically share the channel.",
+   "source": "Computer Networks.pdf p.47"
+  }
+ ],
+ "model": "gpt-4.1-mini",
+ "builtAt": "2026-11-07T13:46:50.204Z"
+}

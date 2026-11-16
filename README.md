@@ -19,7 +19,7 @@ A study portal for Politecnico di Torino courses: an AI tutor that answers from 
 | 02 | **Past questions** | 315 real exam questions in 11 topics. Exam simulation (33 questions, 60 minutes), topic practice and a mistake log you re-test until it’s empty. |
 | 03 | **Question forge** | Generates new exam-style questions for a topic, using past questions as style references and the slides as ground truth. |
 | 04 | **Exam analysis** | Upload the PDF the exam platform gives you (or photos of the screen) and get an estimated grade out of 30, question by question. |
-| 05 | **Flashcards** | Short recall cards with spaced repetition. Topics you got wrong elsewhere come first. |
+| 05 | **Flashcards** | 259 short recall cards with spaced repetition. Topics you got wrong elsewhere come first. |
 
 The tools feed each other: wrong answers in practice or in a real exam mark their topic as weak, flashcards for weak topics come first, and every question, card and result has an **ask the tutor** button.
 
@@ -47,12 +47,9 @@ cp .env.example .env        # paste your OPENAI_API_KEY
 npm start                   # → http://localhost:3000
 ```
 
-Then:
+Past questions and flashcards work right away, without an API key: the repo ships with a ready-made deck of 259 cards.
 
-1. **Add the course material.** Put the slides in `materials/computer-networks/` (PDF, MD or TXT), or drag and drop them into the portal’s sidebar. They are indexed on start. See [`materials/README.md`](materials/README.md).
-2. **Build the flashcard deck** once: open *Flashcards* and press **Build the deck** (about a minute).
-
-Past questions work right away, without an API key.
+For the Tutor, Question forge and Exam analysis, **add the course material**: put the slides in `materials/computer-networks/` (PDF, MD or TXT), or drag and drop them into the portal’s sidebar. They are indexed on start. See [`materials/README.md`](materials/README.md).
 
 > The professors’ material is **not** in this repository and never should be. The past questions are; they come from [Portale dei Quiz](https://yusuf.gultekin.me/portale/).
 
@@ -87,7 +84,7 @@ The grade is only as good as the key, so each question’s key comes from the fi
 Then the grade is computed in the browser with your rule (default: +1 correct, 0 wrong, 0 blank, capped at 30), so you can change the rule or fix a misread answer and the grade updates instantly. On a controlled 12-question test exam the result was exact on two separate runs.
 
 ### Question forge and flashcards
-Both use structured outputs. The forge makes the model solve each question in a hidden scratch field *before* it commits to an answer, then shuffles the options. The flashcard deck is generated once per course into `data/flashcards/<course>.json`, so everyone studies the same cards and wrong ones can be fixed by hand; cards students report land in `data/flashcards/<course>.flags.json`.
+Both use structured outputs. The forge makes the model solve each question in a hidden scratch field *before* it commits to an answer, then shuffles the options. The flashcard deck is generated once per course into `data/flashcards/<course>.json` (the Computer Networks deck is included), so everyone studies the same cards and wrong ones can be fixed by hand. Cards students report land in `data/flashcards/<course>.flags.json`; **rebuild** at the bottom of the Flashcards tab regenerates the deck.
 
 Progress (mistakes, flashcard schedule, past analyses, chat history) stays in the browser’s `localStorage`.
 
@@ -110,7 +107,8 @@ Progress (mistakes, flashcard schedule, past analyses, chat history) stays in th
 │   └── flashcards.js         Spaced repetition
 ├── data/
 │   ├── courses.json          Courses on the panel (set "unlocked": true to open one)
-│   └── exams/<course>.json   Past exam questions
+│   ├── exams/<course>.json   Past exam questions
+│   └── flashcards/<course>.json  Flashcard deck
 ├── materials/<course>/       Course material (git-ignored)
 └── docs/screenshots/
 ```

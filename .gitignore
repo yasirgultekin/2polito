@@ -10,9 +10,9 @@ node_modules/
 materials/*
 !materials/README.md
 
-# derived from the material: embedding cache, generated flashcards, reports
+# derived from the material: embedding cache, local flashcard reports
 .cache/
-data/flashcards/
+data/flashcards/*.flags.json
 
 # local tooling / OS
 .claude/
